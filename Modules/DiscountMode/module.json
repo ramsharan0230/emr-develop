@@ -1,0 +1,13 @@
+{
+    "name": "DiscountMode",
+    "alias": "discountmode",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\DiscountMode\\Providers\\DiscountModeServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

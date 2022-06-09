@@ -1,0 +1,13 @@
+{
+    "name": "Dispensar",
+    "alias": "dispensar",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Dispensar\\Providers\\DispensarServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,13 @@
+{
+    "name": "IrdPurchaseReport",
+    "alias": "irdpurchasereport",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\IrdPurchaseReport\\Providers\\IrdPurchaseReportServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

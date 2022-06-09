@@ -1,0 +1,7 @@
+guid=%E2%80%8B0bff388d-7963-49ad-86ff-3e9dcc610da2&username=cogent%40sms123go.com&password=%7ENepal%40123&countryCode=np&mobileNumber=%2B9779843095917&message=Hello+Dinesh++Shah+Your+Username+and+Pssword+is+dinesh.shah+and+dinesh.shah+respectively.+Please+Visit+neuro.cogenthealth.com.np%2Fpatient-portal%2Flogin+to+view+reports+of+laboratory+and+Radiology.
+Response: SMS queued for delivery for : +9779843095917
+{Automessage : 
+NTC |+OK Message received for 9843095917
+}
+=============================================
+

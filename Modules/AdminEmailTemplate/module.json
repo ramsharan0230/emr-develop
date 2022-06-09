@@ -1,0 +1,13 @@
+{
+    "name": "AdminEmailTemplate",
+    "alias": "adminemailtemplate",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\AdminEmailTemplate\\Providers\\AdminEmailTemplateServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

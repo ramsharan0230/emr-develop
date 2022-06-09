@@ -1,0 +1,13 @@
+{
+    "name": "Neuro",
+    "alias": "neuro",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Neuro\\Providers\\NeuroServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

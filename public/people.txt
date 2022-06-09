@@ -1,0 +1,19 @@
+GET /chirayu/public/eappointment/save-patient HTTP/1.1
+Accept:                    text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding:           gzip, deflate, br
+Accept-Language:           en-US,en;q=0.9
+Cache-Control:             max-age=0
+Connection:                keep-alive
+Cookie:                    XSRF-TOKEN=eyJpdiI6Ino3eXRtU0pqZWM4MHRhWEo4dk1iTVE9PSIsInZhbHVlIjoibUtST3BtWGtyNE1HQ3BxQSs0c25hN1Z1NHFLTStDOGowcmZUZTZpRHZlY0l0TEM4RnJQS1dXQlU4Vk51blFNNSIsIm1hYyI6IjlhMzI1MDI2N2U3NGVlMjRlZGNiYmMxYzgxMmY1Y2M2NDM1ZDE4OTJiYzc1ZDNiNGYyNGE1ZDdlODYxODczNzYifQ%3D%3D; laravel_session=eyJpdiI6IlwvUWhDTzJCQ2F3d0tOaHNIY0xcL1lLdz09IiwidmFsdWUiOiJYMTk1SHBVZU94bDg5K1B5QW1OY2lzbTE0cDZEUDlKVGhtakFuenNHSzVHNktNN2htXC9BQ3FNcDUzcmd1Y2hFSyIsIm1hYyI6IjQ0ZjMzYTJjNDEyNTVlZDdiNjU1ODc4M2JhOGI3NzcwOThiODZmOWRhNWVhODBiZGFiNzFiMDk5OWE0NDczNTEifQ%3D%3D
+Host:                      localhost
+Sec-Ch-Ua:                 "Google Chrome";v="95", "Chromium";v="95", ";Not A Brand";v="99"
+Sec-Ch-Ua-Mobile:          ?0
+Sec-Ch-Ua-Platform:        "Windows"
+Sec-Fetch-Dest:            document
+Sec-Fetch-Mode:            navigate
+Sec-Fetch-Site:            none
+Sec-Fetch-User:            ?1
+Upgrade-Insecure-Requests: 1
+User-Agent:                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36
+Cookie: XSRF-TOKEN=sAXhKL7hVZE88OPd6OjvrVJqglxc0UM5uKry0mmy; laravel_session=06i6nQ7IYS3CtHOBwmV1j27fyWghqUk6NuPCEt72
+

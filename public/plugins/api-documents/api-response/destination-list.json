@@ -1,0 +1,651 @@
+{
+  "success": true,
+  "message": "List of packages by destination.",
+  "data": {
+    "packages_list": {
+      "current_page": 1,
+      "data": [
+        {
+          "id": 34,
+          "title": "WILD WILD WEST",
+          "slug": "wild-wild-west",
+          "overview": "<p>Bardia National Park is a protected area in Nepal that was established in 1988 as&nbsp;Royal Bardia National Park. Covering an area of 968 km2 (374 sq mi) it is the largest and most undisturbed wilderness area in Nepal&rsquo;s Terai, adjoining the eastern bank of the Karnali River in the Bardiya District. About 70% of the park is covered with forest, with the balance a mixture of grassland, savannah and riverine forest The flora recorded in the park comprises 839 species of flora, including 173 vascular plant species comprising 140 dicots, 26 monocots, six fern, and one gymnosperm species. Bardiya national park has the greatest number of deer species.</p>\r\n\r\n<p>&nbsp;</p>",
+          "inclusions": "<ul>\r\n\t<li>One Dinner with Cultural show per Package.</li>\r\n\t<li>Driver&#39;s allowance, Road tax, and Fuel charges.</li>\r\n\t<li>Meet &amp; greet at arrival/departure</li>\r\n\t<li>Airport Pick and Drop at time of arrival/departure.</li>\r\n\t<li>Sightseeing by private vehicle.</li>\r\n\t<li>Domestic airfare according to Packages.</li>\r\n\t<li>Parking and Toll tax</li>\r\n\t<li>Wi-Fi and Breakfast</li>\r\n\t<li>Entry fees for Heritage Site and Conservation Area</li>\r\n\t<li>Accommodation on twin Sharing Basis in 3 Star hotel or similar</li>\r\n\t<li>At Bardiya Full Board</li>\r\n\t<li>Tour guide as per package itinerary</li>\r\n</ul>",
+          "exclusions": "<ul>\r\n\t<li>All personal expenses and Optional activities</li>\r\n\t<li>Expenses caused by factors beyond our control like flight delays, roadblocks, vehicle mal-functions, political disturbances etc.</li>\r\n\t<li>Alcoholic / Non- Alcoholic beverages</li>\r\n\t<li>Travel insurance</li>\r\n\t<li>Camera fee</li>\r\n\t<li>Tips, laundry &amp; phone call</li>\r\n\t<li>Additional Sightseeing or extra usage of vehicle, other than mentioned in the itinerary.</li>\r\n\t<li>Boating Charges.</li>\r\n\t<li>Anything which is not included in the inclusion.</li>\r\n</ul>",
+          "payment_policy": "<p><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><span style=\"font-size:10.0pt\"><span style=\"font-family:&quot;Open Sans&quot;,&quot;sans-serif&quot;\">The company accepts all major credit cards (MasterCard and Visa Cards).&nbsp;</span></span></span></span></p>\r\n\r\n<p><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><span style=\"font-size:10.0pt\"><span style=\"font-family:&quot;Open Sans&quot;,&quot;sans-serif&quot;\">The client also has the option to wire transfer the payment of booking the package to the following bank account in Nepal:&nbsp;</span></span></span></span></p>\r\n\r\n<p><br />\r\n<span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><span style=\"font-size:10.0pt\"><span style=\"font-family:&quot;Open Sans&quot;,&quot;sans-serif&quot;\">Name of Account Holder: Buddha Holidays Tours and Travels&nbsp;Pvt. Ltd., Jawalakhel, Lalitpur<br />\r\nAccount Number (USD):&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;006 08082190011<br />\r\nAccount Number (NPR/INR):&nbsp; &nbsp; &nbsp;006 08082190019<br />\r\nName of the Bank: Himalayan Bank Ltd, Patan Branch, Lalitpur<br />\r\nSwift Code: HIMANPKA</span></span></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>",
+          "cancellation_policy": null,
+          "duration_day": 5,
+          "duration_night": 4,
+          "sector_from": 6,
+          "sector_to": 8,
+          "discount": null,
+          "order_by": null,
+          "service_charge": 10,
+          "meta_keyword": null,
+          "meta_description": "The Bardia National Park is the largest and most undisturbed protected area in the terai that is home to the endangered Royal Bengal Tiger and Nepal's famous one horned rhinoceros. Spread in the 968 sq km area, Bardia is the largest National park in Terai.",
+          "meta_title": null,
+          "has_alternate_flight": 1,
+          "star_id": 3,
+          "display_buddhaair": 1,
+          "galleries": [],
+          "itinerary": [
+            {
+              "id": 755,
+              "package_id": 34,
+              "day": 1,
+              "title": "Arrival at Kathmandu, Nepal and Half Day Sightseeing",
+              "summary": null,
+              "day_title": 1,
+              "itinerary_detail": [
+                {
+                  "id": 2146,
+                  "package_id": 34,
+                  "itineraries_id": 755,
+                  "day": 1,
+                  "title": "Airport to Hotel",
+                  "itinerary_type": "transportation",
+                  "itinerary_type_id": 0,
+                  "itinerary_title": "Airport to Hotel",
+                  "destination": "KATHMANDU",
+                  "summary": "Arrival at the Tribhuvan International Airport (TIA), Kathmandu, transfer to the hotel with a briefing about Holiday Package.",
+                  "hotel": null
+                },
+                {
+                  "id": 2147,
+                  "package_id": 34,
+                  "itineraries_id": 755,
+                  "day": 1,
+                  "title": "Airport to Hotel",
+                  "itinerary_type": "activity",
+                  "itinerary_type_id": 85,
+                  "itinerary_title": "Airport to Hotel",
+                  "destination": "KATHMANDU",
+                  "summary": "After refreshment, you’ll make your way to Pashupatinath and Guheshwori. \r\nPashupatinath is one of Nepal’s important Hindu Temple. The present pagoda-style temple was constructed in 1696 A.D. The Pashupatinath Temple complex resembles a life-size collage of life: faith, generosity, poverty, life, death mingle here in an unceasing flow. \r\nRegarded as a Shakti Peetha, Guheshwori Temple was built by King Pratap Malla in the 17th century. The temple is dedicated to Goddess Parvati (wife of Lord Shiva). It is considered an important Hindu pilgrimage destination.",
+                  "hotel": null
+                },
+                {
+                  "id": 2148,
+                  "package_id": 34,
+                  "itineraries_id": 755,
+                  "day": 1,
+                  "title": "Airport to Hotel",
+                  "itinerary_type": "hotel",
+                  "itinerary_type_id": 5,
+                  "itinerary_title": "Airport to Hotel",
+                  "destination": "KATHMANDU",
+                  "summary": "Overnight stay at the hotel.",
+                  "hotel": {
+                    "id": 5,
+                    "accommodation_type_id": 3,
+                    "title": "Rama Inn",
+                    "address": "Durbar Marg, Kathmandu 44600, Nepal",
+                    "latitude": "27.7126380",
+                    "longitude": "85.3201139",
+                    "contact_name": "Dhirendra Pomo subba",
+                    "phone": "01-4418900",
+                    "email": "info@theboutiquehomes.com",
+                    "accommodation_type": {
+                      "id": 3,
+                      "title": "3 Star",
+                      "orderby": 2,
+                      "default_type": 1
+                    }
+                  }
+                }
+              ],
+              "itinerary_detail_activity": [
+                {
+                  "id": 2147,
+                  "package_id": 34,
+                  "itineraries_id": 755,
+                  "day": 1,
+                  "title": "Airport to Hotel",
+                  "itinerary_type": "activity",
+                  "itinerary_type_id": 85,
+                  "itinerary_title": "Airport to Hotel",
+                  "destination": "KATHMANDU",
+                  "summary": "After refreshment, you’ll make your way to Pashupatinath and Guheshwori. \r\nPashupatinath is one of Nepal’s important Hindu Temple. The present pagoda-style temple was constructed in 1696 A.D. The Pashupatinath Temple complex resembles a life-size collage of life: faith, generosity, poverty, life, death mingle here in an unceasing flow. \r\nRegarded as a Shakti Peetha, Guheshwori Temple was built by King Pratap Malla in the 17th century. The temple is dedicated to Goddess Parvati (wife of Lord Shiva). It is considered an important Hindu pilgrimage destination."
+                }
+              ],
+              "itinerary_detail_hotel": [
+                {
+                  "id": 2148,
+                  "package_id": 34,
+                  "itineraries_id": 755,
+                  "day": 1,
+                  "title": "Airport to Hotel",
+                  "itinerary_type": "hotel",
+                  "itinerary_type_id": 5,
+                  "itinerary_title": "Airport to Hotel",
+                  "destination": "KATHMANDU",
+                  "summary": "Overnight stay at the hotel."
+                }
+              ]
+            },
+            {
+              "id": 756,
+              "package_id": 34,
+              "day": 2,
+              "title": "Flight to Nepalgunj and Reach Bardiya",
+              "summary": null,
+              "day_title": 1,
+              "itinerary_detail": [
+                {
+                  "id": 2149,
+                  "package_id": 34,
+                  "itineraries_id": 756,
+                  "day": 2,
+                  "title": "Breakfast at the hotel",
+                  "itinerary_type": "meal",
+                  "itinerary_type_id": 0,
+                  "itinerary_title": "Breakfast at the hotel",
+                  "destination": "KATHMANDU",
+                  "summary": "Wake up and grab breakfast at the hotel.",
+                  "hotel": null
+                },
+                {
+                  "id": 2150,
+                  "package_id": 34,
+                  "itineraries_id": 756,
+                  "day": 2,
+                  "title": "Hotel to Airport",
+                  "itinerary_type": "transportation",
+                  "itinerary_type_id": 0,
+                  "itinerary_title": "Hotel to Airport",
+                  "destination": "KATHMANDU",
+                  "summary": "Transfer domestic terminal to grab flight to Nepalgunj.",
+                  "hotel": null
+                },
+                {
+                  "id": 2151,
+                  "package_id": 34,
+                  "itineraries_id": 756,
+                  "day": 2,
+                  "title": "Drive to Bardiya",
+                  "itinerary_type": "transportation",
+                  "itinerary_type_id": 0,
+                  "itinerary_title": "Drive to Bardiya",
+                  "destination": "BARDIA",
+                  "summary": "After reaching Nepalgunj we will then drive to Bardia National Park.",
+                  "hotel": null
+                },
+                {
+                  "id": 2152,
+                  "package_id": 34,
+                  "itineraries_id": 756,
+                  "day": 2,
+                  "title": "Drive to Bardiya",
+                  "itinerary_type": "activity",
+                  "itinerary_type_id": 58,
+                  "itinerary_title": "Drive to Bardiya",
+                  "destination": "BARDIA",
+                  "summary": "Village tour to a nearby ethnic Tharu village where you will learn more about the lifestyle and cultures of the Tharus.",
+                  "hotel": null
+                },
+                {
+                  "id": 2153,
+                  "package_id": 34,
+                  "itineraries_id": 756,
+                  "day": 2,
+                  "title": "Tharu Museum",
+                  "itinerary_type": "transportation",
+                  "itinerary_type_id": 0,
+                  "itinerary_title": "Tharu Museum",
+                  "destination": "BARDIA",
+                  "summary": "Learn lifestyle and cultures of the Tharus and see various items used by the indigineous people of Bardia.",
+                  "hotel": null
+                },
+                {
+                  "id": 2154,
+                  "package_id": 34,
+                  "itineraries_id": 756,
+                  "day": 2,
+                  "title": "Tharu Museum",
+                  "itinerary_type": "hotel",
+                  "itinerary_type_id": 44,
+                  "itinerary_title": "Tharu Museum",
+                  "destination": "BARDIA",
+                  "summary": "Overnight stay at the hotel.",
+                  "hotel": {
+                    "id": 44,
+                    "accommodation_type_id": 3,
+                    "title": "Karnali Jungle Camp",
+                    "address": "Thakudwara 21800, Nepal",
+                    "latitude": "28.4400000",
+                    "longitude": "81.2600000",
+                    "contact_name": "Manager",
+                    "phone": "985-1193370",
+                    "email": "holidays@buddhaair.com",
+                    "accommodation_type": {
+                      "id": 3,
+                      "title": "3 Star",
+                      "orderby": 2,
+                      "default_type": 1
+                    }
+                  }
+                }
+              ],
+              "itinerary_detail_activity": [
+                {
+                  "id": 2152,
+                  "package_id": 34,
+                  "itineraries_id": 756,
+                  "day": 2,
+                  "title": "Drive to Bardiya",
+                  "itinerary_type": "activity",
+                  "itinerary_type_id": 58,
+                  "itinerary_title": "Drive to Bardiya",
+                  "destination": "BARDIA",
+                  "summary": "Village tour to a nearby ethnic Tharu village where you will learn more about the lifestyle and cultures of the Tharus."
+                }
+              ],
+              "itinerary_detail_hotel": [
+                {
+                  "id": 2154,
+                  "package_id": 34,
+                  "itineraries_id": 756,
+                  "day": 2,
+                  "title": "Tharu Museum",
+                  "itinerary_type": "hotel",
+                  "itinerary_type_id": 44,
+                  "itinerary_title": "Tharu Museum",
+                  "destination": "BARDIA",
+                  "summary": "Overnight stay at the hotel."
+                }
+              ]
+            },
+            {
+              "id": 757,
+              "package_id": 34,
+              "day": 3,
+              "title": "Bardiya",
+              "summary": null,
+              "day_title": 1,
+              "itinerary_detail": [
+                {
+                  "id": 2155,
+                  "package_id": 34,
+                  "itineraries_id": 757,
+                  "day": 3,
+                  "title": "Breakfast at the hotel",
+                  "itinerary_type": "meal",
+                  "itinerary_type_id": 0,
+                  "itinerary_title": "Breakfast at the hotel",
+                  "destination": "BARDIA",
+                  "summary": "Wake up and Breakfast at the hotel.",
+                  "hotel": null
+                },
+                {
+                  "id": 2156,
+                  "package_id": 34,
+                  "itineraries_id": 757,
+                  "day": 3,
+                  "title": "Breakfast at the hotel",
+                  "itinerary_type": "activity",
+                  "itinerary_type_id": 61,
+                  "itinerary_title": "Breakfast at the hotel",
+                  "destination": "BARDIA",
+                  "summary": "Bardia National Park provides a number of well looked after domestic elephants. These fearless, majestic animals provide the safest and easiest way to move around inside the park. Walking through tall grasslands and dense jungle, you’ll sight wildlife safely from the back of the elephant.",
+                  "hotel": null
+                },
+                {
+                  "id": 2157,
+                  "package_id": 34,
+                  "itineraries_id": 757,
+                  "day": 3,
+                  "title": "Breakfast at the hotel",
+                  "itinerary_type": "activity",
+                  "itinerary_type_id": 92,
+                  "itinerary_title": "Breakfast at the hotel",
+                  "destination": "BARDIA",
+                  "summary": "Located next to the fee office, this simple visitor centre consists of two large rooms with placards on the park's species.",
+                  "hotel": null
+                },
+                {
+                  "id": 2158,
+                  "package_id": 34,
+                  "itineraries_id": 757,
+                  "day": 3,
+                  "title": "Breakfast at the hotel",
+                  "itinerary_type": "activity",
+                  "itinerary_type_id": 93,
+                  "itinerary_title": "Breakfast at the hotel",
+                  "destination": "BARDIA",
+                  "summary": "Crocodile breeding center is one of the most enjoyable program.Along with the Crocodile you can enjoy viewing scary Mugger Crocodile.The charming view of Crocodile from egg to giant one will make your visit fruitful.",
+                  "hotel": null
+                },
+                {
+                  "id": 2159,
+                  "package_id": 34,
+                  "itineraries_id": 757,
+                  "day": 3,
+                  "title": "Breakfast at the hotel",
+                  "itinerary_type": "activity",
+                  "itinerary_type_id": 94,
+                  "itinerary_title": "Breakfast at the hotel",
+                  "destination": "BARDIA",
+                  "summary": "Jungle Walk. An excellent opportunity to see the wild animals, small mammals, birds and waits in the tower (Machan) to have the wild sightseeing, accompanied by our experienced naturalists and wildlife tracker. Excellent photographic opportunities are plentiful.",
+                  "hotel": null
+                },
+                {
+                  "id": 2160,
+                  "package_id": 34,
+                  "itineraries_id": 757,
+                  "day": 3,
+                  "title": "Breakfast at the hotel",
+                  "itinerary_type": "hotel",
+                  "itinerary_type_id": 44,
+                  "itinerary_title": "Breakfast at the hotel",
+                  "destination": "BARDIA",
+                  "summary": "Overnight stay at the hotel.",
+                  "hotel": {
+                    "id": 44,
+                    "accommodation_type_id": 3,
+                    "title": "Karnali Jungle Camp",
+                    "address": "Thakudwara 21800, Nepal",
+                    "latitude": "28.4400000",
+                    "longitude": "81.2600000",
+                    "contact_name": "Manager",
+                    "phone": "985-1193370",
+                    "email": "holidays@buddhaair.com",
+                    "accommodation_type": {
+                      "id": 3,
+                      "title": "3 Star",
+                      "orderby": 2,
+                      "default_type": 1
+                    }
+                  }
+                }
+              ],
+              "itinerary_detail_activity": [
+                {
+                  "id": 2156,
+                  "package_id": 34,
+                  "itineraries_id": 757,
+                  "day": 3,
+                  "title": "Breakfast at the hotel",
+                  "itinerary_type": "activity",
+                  "itinerary_type_id": 61,
+                  "itinerary_title": "Breakfast at the hotel",
+                  "destination": "BARDIA",
+                  "summary": "Bardia National Park provides a number of well looked after domestic elephants. These fearless, majestic animals provide the safest and easiest way to move around inside the park. Walking through tall grasslands and dense jungle, you’ll sight wildlife safely from the back of the elephant."
+                },
+                {
+                  "id": 2157,
+                  "package_id": 34,
+                  "itineraries_id": 757,
+                  "day": 3,
+                  "title": "Breakfast at the hotel",
+                  "itinerary_type": "activity",
+                  "itinerary_type_id": 92,
+                  "itinerary_title": "Breakfast at the hotel",
+                  "destination": "BARDIA",
+                  "summary": "Located next to the fee office, this simple visitor centre consists of two large rooms with placards on the park's species."
+                },
+                {
+                  "id": 2158,
+                  "package_id": 34,
+                  "itineraries_id": 757,
+                  "day": 3,
+                  "title": "Breakfast at the hotel",
+                  "itinerary_type": "activity",
+                  "itinerary_type_id": 93,
+                  "itinerary_title": "Breakfast at the hotel",
+                  "destination": "BARDIA",
+                  "summary": "Crocodile breeding center is one of the most enjoyable program.Along with the Crocodile you can enjoy viewing scary Mugger Crocodile.The charming view of Crocodile from egg to giant one will make your visit fruitful."
+                },
+                {
+                  "id": 2159,
+                  "package_id": 34,
+                  "itineraries_id": 757,
+                  "day": 3,
+                  "title": "Breakfast at the hotel",
+                  "itinerary_type": "activity",
+                  "itinerary_type_id": 94,
+                  "itinerary_title": "Breakfast at the hotel",
+                  "destination": "BARDIA",
+                  "summary": "Jungle Walk. An excellent opportunity to see the wild animals, small mammals, birds and waits in the tower (Machan) to have the wild sightseeing, accompanied by our experienced naturalists and wildlife tracker. Excellent photographic opportunities are plentiful."
+                }
+              ],
+              "itinerary_detail_hotel": [
+                {
+                  "id": 2160,
+                  "package_id": 34,
+                  "itineraries_id": 757,
+                  "day": 3,
+                  "title": "Breakfast at the hotel",
+                  "itinerary_type": "hotel",
+                  "itinerary_type_id": 44,
+                  "itinerary_title": "Breakfast at the hotel",
+                  "destination": "BARDIA",
+                  "summary": "Overnight stay at the hotel."
+                }
+              ]
+            },
+            {
+              "id": 758,
+              "package_id": 34,
+              "day": 4,
+              "title": "Half day Bardia Natural Sightseeing and Flight  to Kathmandu",
+              "summary": null,
+              "day_title": 1,
+              "itinerary_detail": [
+                {
+                  "id": 2161,
+                  "package_id": 34,
+                  "itineraries_id": 758,
+                  "day": 4,
+                  "title": "Breakfast at the hotel",
+                  "itinerary_type": "meal",
+                  "itinerary_type_id": 0,
+                  "itinerary_title": "Breakfast at the hotel",
+                  "destination": "BARDIA",
+                  "summary": "Wake up early in the morning and Breakfast at the hotel.",
+                  "hotel": null
+                },
+                {
+                  "id": 2162,
+                  "package_id": 34,
+                  "itineraries_id": 758,
+                  "day": 4,
+                  "title": "Breakfast at the hotel",
+                  "itinerary_type": "activity",
+                  "itinerary_type_id": 95,
+                  "itinerary_title": "Breakfast at the hotel",
+                  "destination": "BARDIA",
+                  "summary": "Bird Watching. An excellent opportunity to see a great many species of birds found in Bardia. Visit Karnali River for Dolphin sightseeing.",
+                  "hotel": null
+                },
+                {
+                  "id": 2163,
+                  "package_id": 34,
+                  "itineraries_id": 758,
+                  "day": 4,
+                  "title": "Nepalgunj to Kathmandu",
+                  "itinerary_type": "flight",
+                  "itinerary_type_id": 0,
+                  "itinerary_title": "Nepalgunj to Kathmandu",
+                  "destination": "KATHMANDU",
+                  "summary": "Flight from Nepalgunj to Kathmandu.",
+                  "hotel": null
+                },
+                {
+                  "id": 2164,
+                  "package_id": 34,
+                  "itineraries_id": 758,
+                  "day": 4,
+                  "title": "Nepali Thali with cultural dance",
+                  "itinerary_type": "meal",
+                  "itinerary_type_id": 0,
+                  "itinerary_title": "Nepali Thali with cultural dance",
+                  "destination": "KATHMANDU",
+                  "summary": "Nepali dinner with a live cultural show at Nepali Restaurant.",
+                  "hotel": null
+                },
+                {
+                  "id": 2165,
+                  "package_id": 34,
+                  "itineraries_id": 758,
+                  "day": 4,
+                  "title": "Nepali Thali with cultural dance",
+                  "itinerary_type": "hotel",
+                  "itinerary_type_id": 5,
+                  "itinerary_title": "Nepali Thali with cultural dance",
+                  "destination": "KATHMANDU",
+                  "summary": "Overnight stay at the hotel.",
+                  "hotel": {
+                    "id": 5,
+                    "accommodation_type_id": 3,
+                    "title": "Rama Inn",
+                    "address": "Durbar Marg, Kathmandu 44600, Nepal",
+                    "latitude": "27.7126380",
+                    "longitude": "85.3201139",
+                    "contact_name": "Dhirendra Pomo subba",
+                    "phone": "01-4418900",
+                    "email": "info@theboutiquehomes.com",
+                    "accommodation_type": {
+                      "id": 3,
+                      "title": "3 Star",
+                      "orderby": 2,
+                      "default_type": 1
+                    }
+                  }
+                }
+              ],
+              "itinerary_detail_activity": [
+                {
+                  "id": 2162,
+                  "package_id": 34,
+                  "itineraries_id": 758,
+                  "day": 4,
+                  "title": "Breakfast at the hotel",
+                  "itinerary_type": "activity",
+                  "itinerary_type_id": 95,
+                  "itinerary_title": "Breakfast at the hotel",
+                  "destination": "BARDIA",
+                  "summary": "Bird Watching. An excellent opportunity to see a great many species of birds found in Bardia. Visit Karnali River for Dolphin sightseeing."
+                }
+              ],
+              "itinerary_detail_hotel": [
+                {
+                  "id": 2165,
+                  "package_id": 34,
+                  "itineraries_id": 758,
+                  "day": 4,
+                  "title": "Nepali Thali with cultural dance",
+                  "itinerary_type": "hotel",
+                  "itinerary_type_id": 5,
+                  "itinerary_title": "Nepali Thali with cultural dance",
+                  "destination": "KATHMANDU",
+                  "summary": "Overnight stay at the hotel."
+                }
+              ]
+            },
+            {
+              "id": 759,
+              "package_id": 34,
+              "day": 5,
+              "title": "Depart from Kathmandu",
+              "summary": null,
+              "day_title": 1,
+              "itinerary_detail": [
+                {
+                  "id": 2166,
+                  "package_id": 34,
+                  "itineraries_id": 759,
+                  "day": 5,
+                  "title": "Breakfast at the hotel",
+                  "itinerary_type": "meal",
+                  "itinerary_type_id": 0,
+                  "itinerary_title": "Breakfast at the hotel",
+                  "destination": "KATHMANDU",
+                  "summary": "Wake up and Breakfast at the hotel.",
+                  "hotel": null
+                },
+                {
+                  "id": 2167,
+                  "package_id": 34,
+                  "itineraries_id": 759,
+                  "day": 5,
+                  "title": "Hotel to Airport",
+                  "itinerary_type": "transportation",
+                  "itinerary_type_id": 0,
+                  "itinerary_title": "Hotel to Airport",
+                  "destination": "KATHMANDU",
+                  "summary": "Transfer to the international airport for final departure.",
+                  "hotel": null
+                }
+              ],
+              "itinerary_detail_activity": [],
+              "itinerary_detail_hotel": []
+            }
+          ],
+          "themes": [
+            {
+              "id": 5,
+              "name": "ADVENTURE",
+              "description": "A little bit different from other Inntravel holidays, these adventures promise more than just the thrill of exploring off the beaten track. Indeed, so unusual are some of the holidays below, that you will return home with some great stories, and many more fantastic memories.",
+              "icon": "fa-area-chart",
+              "status": 1,
+              "created_at": "2019-09-11 15:40:46",
+              "updated_at": "2019-12-30 12:01:50",
+              "pivot": {
+                "package_id": 34,
+                "package_themes_id": 5
+              }
+            },
+            {
+              "id": 8,
+              "name": "FAMILY",
+              "description": "Tours that strengthen family connections in a fun, educational way.",
+              "icon": "fa-american-sign-language-interpreting",
+              "status": 1,
+              "created_at": "2019-09-25 10:39:11",
+              "updated_at": "2019-11-12 10:40:03",
+              "pivot": {
+                "package_id": 34,
+                "package_themes_id": 8
+              }
+            },
+            {
+              "id": 11,
+              "name": "JUNGLE SAFARI",
+              "description": "Jungle safari tour in Nepal is one of the amazing adventure trip in Nepal. Nepal Jungle safari tour offer unique wild adventure for Nature lovers, bird watchers, wild animals spectators. Jungle safari tour in Nepal suite for those trekkers/travelers/adventure seekers after Nepal trekking , Nepal tours or other adventure tour in Nepal but we offer Nepal Jungle safari tours with originally as per travelers / trekkers wish and holiday schedule. Jungle safari tour in Nepal offer you the chance to enter the jungle and view some of the rarest and most endangered wildlife on earth",
+              "icon": "fa-safari",
+              "status": 1,
+              "created_at": "2019-11-12 11:11:53",
+              "updated_at": "2019-11-12 11:12:14",
+              "pivot": {
+                "package_id": 34,
+                "package_themes_id": 11
+              }
+            },
+            {
+              "id": 13,
+              "name": "CITY BREAK",
+              "description": "Ranging from short tours to cultural and heritage excursions, day tours in Nepal will take you to some of the most popular destinations offering you the grandeur of the stunning Himalayas. In addition, Kathmandu day tour will lead you to some of the historical monuments and heritage sites within the valley. Short hikes to beautiful green forests, brilliant walks in the outskirts of the valley or extreme sports adventures like river rafting, bungee jumping, or mountain flights to view Everest, will make your day trip in Nepal a wonderful experience.",
+              "icon": "fa-hourglass-half",
+              "status": 1,
+              "created_at": "2019-11-12 11:40:41",
+              "updated_at": "2019-11-12 15:16:14",
+              "pivot": {
+                "package_id": 34,
+                "package_themes_id": 13
+              }
+            }
+          ]
+        }
+      ],
+      "first_page_url": "http://localhost/buddha-holidays/public/api/v1/destination/BARDIA?page=1",
+      "from": 1,
+      "last_page": 1,
+      "last_page_url": "http://localhost/buddha-holidays/public/api/v1/destination/BARDIA?page=1",
+      "next_page_url": null,
+      "path": "http://localhost/buddha-holidays/public/api/v1/destination/BARDIA",
+      "per_page": 10,
+      "prev_page_url": null,
+      "to": 1,
+      "total": 1
+    }
+  }
+}

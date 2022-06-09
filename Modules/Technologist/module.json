@@ -1,0 +1,13 @@
+{
+    "name": "Technologist",
+    "alias": "technologist",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Technologist\\Providers\\TechnologistServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

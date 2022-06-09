@@ -1,0 +1,13 @@
+{
+    "name": "Outpatient",
+    "alias": "outpatient",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Outpatient\\Providers\\OutpatientServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

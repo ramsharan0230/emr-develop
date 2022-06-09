@@ -1,0 +1,13 @@
+{
+    "name": "Dental",
+    "alias": "dental",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Dental\\Providers\\DentalServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,13 @@
+{
+    "name": "PaymentGatewaySetting",
+    "alias": "paymentgatewaysetting",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\PaymentGatewaySetting\\Providers\\PaymentGatewaySettingServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

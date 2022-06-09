@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/bedoccupancy",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Bedoccupancy\\Providers\\BedoccupancyServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Bedoccupancy\\": ""
+        }
+    }
+}

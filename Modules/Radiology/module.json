@@ -1,0 +1,13 @@
+{
+    "name": "Radiology",
+    "alias": "radiology",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Radiology\\Providers\\RadiologyServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

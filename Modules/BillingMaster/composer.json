@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/billingmaster",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\BillingMaster\\Providers\\BillingMasterServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\BillingMaster\\": ""
+        }
+    }
+}

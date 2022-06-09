@@ -1,0 +1,13 @@
+{
+    "name": "HMISMapping",
+    "alias": "hmismapping",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\HMISMapping\\Providers\\HMISMappingServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

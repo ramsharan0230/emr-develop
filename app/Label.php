@@ -1,0 +1,35 @@
+<?php
+
+namespace App;
+
+// use App\Utils\Helpers;
+// use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
+use Spatie\Activitylog\Traits\LogsActivity;
+
+class Label extends Model
+{
+    use LogsActivity;
+    protected $table = 'tbllabel';
+
+    protected $primaryKey = 'fldlabel';
+    protected $keyType = 'string';
+    public $timestamps = false;
+    protected static $logUnguarded = true;
+
+    public function Drug() {
+        return $this->belongsTo(Drug::class, 'flddrug');
+    }
+
+    public function medbrand() {
+        return $this->belongsTo(MedicineBrand::class, 'flddrug', 'flddrug');
+    }
+
+    // protected static function boot()
+    // {
+    //     parent::boot();
+    //     static::addGlobalScope('hospital_department_id', function (Builder $builder) {
+    //         $builder->where('hospital_department_id',Helpers::getUserSelectedHospitalDepartmentIdSession());
+    //     });
+    // }
+}

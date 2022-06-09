@@ -1,0 +1,150 @@
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 1)  { 
+	.navbar-collapse {
+		top: -22px;
+	}
+	.box__color {
+		width: 12%;
+		margin-left: 4px;
+		text-align: center;
+		font-weight: 600;
+		font-size: 10px;
+	}
+	.box__color__er {
+		margin-left: 4px;
+		text-align: center;
+		font-weight: 300;
+		font-size: 11px;
+		width: 11%;
+	}
+	.box__color__er3 {
+		margin-left: 4px;
+		text-align: center;
+		font-weight: 300;
+		font-size: 11px;
+		width: 19%;
+	}
+	.box__color__er2 {
+		margin-left: 4px;
+		text-align: center;
+		font-weight: 500;
+		font-size: 11px;
+		width: 30%;
+	}
+	.custom-control-inline {
+		display: -ms-inline-flexbox;
+		display: inline-flex;
+		margin-right: 0 !important;
+	}
+	.iq-card .iq-card-header .er-digo{
+		padding: 0 3px !important;
+	} 
+	.allergy-add{
+		display:flex;
+	}
+	.accordion-nav li a {
+		color: #fff;
+		padding: 8px 7px;
+		display: inline-block;
+	}
+	.navbar-list li>a.language-title {
+		font-size: 11px;
+	}
+	.box__collipsble1{
+		font-size: 12px;
+	}
+	.tittle-resp{
+		font-size:10px !important;
+	}
+	.width-label-td {
+		width: 65%;
+	}
+	.td-eye{
+		width:4%;
+	}
+	.td-eye-input{
+		width:4%;
+	}
+	.td-eye-input1{
+		width:6%;
+	}
+	.td-eye-input2{
+		width:2%;
+	}
+	.body_anatomy_form{
+		width:100%;
+	}
+	.iq-footer{
+		width:calc(100% - 30px)
+	}
+.canvas__img{
+	width: 90%;
+}
+.color-choose li {
+    width: 21px;
+    height: 21px;
+    margin: 0 4px;
+    text-align: center;
+    transition: 0.3s all ease-in-out;
+}
+.ent-img {
+    margin-bottom: 10px;
+    height: 159px;
+}
+}
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1280px)
+and (-webkit-min-device-pixel-ratio: 1)  { 
+	.body_anatomy_form{
+		width:217px;
+	}
+	
+}
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px)
+and (-webkit-min-device-pixel-ratio: 1)  { 
+	.canvas__img{
+		width: 90%;
+	}
+	.img-audiogram-ear img {
+    position: absolute;
+    width: 90%;
+    /*left: 16px;
+    top: 54px;*/
+}
+.img-audiogram-nose img {
+    position: absolute;
+    width: 90%;
+   /* top: 43px;*/
+}
+.img-audiogram-throat img {
+   position: absolute;
+    width: 90%;
+   /* left: 21px;*/
+}
+.img-audiogram-tongue img {
+    position: absolute;
+    width: 90%;
+    /*left: 24px;
+    top: 46px;*/
+}
+.ent-img {
+    margin-bottom: 10px;
+    height: 232px;
+}
+.accordion-nav li a {
+    color: #fff;
+    padding: 8px 9px;
+    display: inline-block;
+    font-size: 13px;
+}
+.body_anatomy {
+		width: 217px;
+	}
+
+}
+

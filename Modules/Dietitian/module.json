@@ -1,0 +1,13 @@
+{
+    "name": "Dietitian",
+    "alias": "dietitian",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Dietitian\\Providers\\DietitianServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

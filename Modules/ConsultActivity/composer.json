@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/consultactivity",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\ConsultActivity\\Providers\\ConsultActivityServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\ConsultActivity\\": ""
+        }
+    }
+}

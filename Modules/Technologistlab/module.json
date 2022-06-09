@@ -1,0 +1,13 @@
+{
+    "name": "Technologistlab",
+    "alias": "technologistlab",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Technologistlab\\Providers\\TechnologistlabServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

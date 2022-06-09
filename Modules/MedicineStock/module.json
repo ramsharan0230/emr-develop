@@ -1,0 +1,13 @@
+{
+    "name": "MedicineStock",
+    "alias": "medicinestock",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\MedicineStock\\Providers\\MedicineStockServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

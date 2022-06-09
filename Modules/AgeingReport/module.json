@@ -1,0 +1,13 @@
+{
+    "name": "AgeingReport",
+    "alias": "ageingreport",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\AgeingReport\\Providers\\AgeingReportServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

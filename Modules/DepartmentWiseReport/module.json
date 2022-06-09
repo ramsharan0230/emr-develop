@@ -1,0 +1,13 @@
+{
+    "name": "DepartmentWiseReport",
+    "alias": "departmentwisereport",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\DepartmentWiseReport\\Providers\\DepartmentWiseReportServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

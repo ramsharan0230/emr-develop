@@ -1,0 +1,13 @@
+{
+    "name": "UserShare",
+    "alias": "usershare",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\UserShare\\Providers\\UserShareServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Coreaccount",
+    "alias": "coreaccount",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Coreaccount\\Providers\\CoreaccountServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

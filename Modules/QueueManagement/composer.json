@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/queuemanagement",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\QueueManagement\\Providers\\QueueManagementServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\QueueManagement\\": ""
+        }
+    }
+}

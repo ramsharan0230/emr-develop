@@ -1,0 +1,13 @@
+{
+    "name": "Xray",
+    "alias": "xray",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Xray\\Providers\\XrayServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

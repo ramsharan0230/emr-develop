@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/coreaccount",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Coreaccount\\Providers\\CoreaccountServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Coreaccount\\": ""
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Ssf",
+    "alias": "ssf",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Ssf\\Providers\\SsfServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

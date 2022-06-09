@@ -1,0 +1,549 @@
+.padding-none {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.f-btn {
+    background: linear-gradient(to bottom, #fbfbfb 5%, #f3f1f1 100%) !important;
+}
+
+.box__input > input,
+.box__input > select {
+    width: 99%;
+    border: 1px solid #a9a8a8;
+    outline: none;
+    border-radius: 3px;
+    color: #000;
+    font-size: 15px;
+    padding: 4px;
+}
+
+.box__label > label {
+    padding: 3px 11px;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #000;
+    font-size: 15px;
+    border: 1px solid #a9a8a8;
+    font-weight: 400;
+}
+
+.patient__detail_box {
+    border: 1px solid #a7a5a3;
+    background-color: #e9e5e1;
+    padding: 9px;
+}
+
+.btn {
+    border: 1px solid #c1c1c1 !important;
+}
+
+.label-width {
+    width: 106px;
+}
+
+.label-width-second {
+    width: 88px;
+}
+
+.label-width-third {
+    width: 69px;
+}
+
+.label-width-fourth {
+    width: 92px;
+}
+
+.select-year {
+    width: 76px !important;
+}
+
+.modal .form-group label {
+    margin-right: 5px;
+}
+
+.inpatient__profile_heading > span.patient__color_bar {
+    background-color: blue;
+    height: 18px;
+}
+
+.group__box {
+    margin-bottom: 3px;
+}
+
+.dlagnosis__title {
+    color: #333 !important;
+}
+
+/*patient__detail_box*/
+
+.group__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 9px;
+}
+
+.group__box > .box__label {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 21%;
+    flex: 0 0 21%;
+}
+
+.group__box > .box__input {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 69%;
+    flex: 0 0 69%;
+}
+
+.group__box > .box__icon {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 10%;
+    flex: 0 0 10%;
+}
+
+.group__box.half_box > .box__label {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 37%;
+    flex: 0 0 37%;
+}
+
+.group__box.half_box > .box__input {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 63%;
+    flex: 0 0 63%;
+}
+
+.group__box.half_box2 > .box__label {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 37%;
+    flex: 0 0 37%;
+}
+
+.group__box.half_box2 > .box__input {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 53%;
+    flex: 0 0 53%;
+}
+
+.group__box.half_box2 > .box__icon {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 10%;
+    flex: 0 0 10%;
+}
+
+.group__box.half_box3 > .box__label {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 37%;
+    flex: 0 0 37%;
+}
+
+.group__box.half_box3 > .box__input {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 28%;
+    flex: 0 0 28%;
+}
+
+.group__box.half_box3 > .box__input:nth-child(2) {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+}
+
+.group__box.half_box3 > .box__icon {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 10%;
+    flex: 0 0 10%;
+}
+
+.group__box.single_box > .box__input {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+}
+
+.box__input > select {
+    height: 26px;
+}
+
+.box__icon > a > img,
+.box__icon > img,
+.box__icon_append > a > img,
+.box__icon > a > i {
+    width: 23px;
+    height: 23px;
+    margin-left: 3px;
+}
+
+.box__input_for_append {
+    position: relative;
+}
+
+.box__input_for_append > .box__icon_append {
+    position: absolute;
+    top: 0;
+    right: 6px;
+}
+
+select.form-input {
+    padding: 0px;
+    width: 88%;
+}
+
+.box__input > select {
+    height: 30px !important;
+}
+
+.inpatient__profile_heading > h3.inpatient__profile_title {
+    margin: 5;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 11%;
+    flex: 0 0 11%;
+}
+
+form {
+    margin-block-end: 0;
+}
+
+table {
+    width: 100%;
+}
+
+input[type="date"] {
+    position: relative;
+}
+
+/* create a new arrow, because we are going to mess up the native one
+see "List of symbols" below if you want another, you could also try to add a font-awesome icon.. */
+
+input[type="date"]:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f073";
+    color: #939393;
+    padding: 0 5px;
+    font-size: 15px;
+}
+
+/* change color of symbol on hover */
+
+input[type="date"]:hover:after {
+    color: #bf1400;
+}
+
+/* make the native arrow invisible and stretch it over the whole field so you can click anywhere in the input field to trigger the native datepicker*/
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    color: transparent;
+    background: transparent;
+}
+
+/* adjust increase/decrease button */
+
+input[type="date"]::-webkit-inner-spin-button {
+    z-index: 1;
+}
+
+/* adjust clear button */
+
+input[type="date"]::-webkit-clear-button {
+    z-index: 1;
+}
+
+.f-input-date-newborn {
+    outline: none !important;
+    border-radius: 3px;
+    width: 127px;
+    height: 30px;
+    padding: 6px;
+    font-size: 12px;
+    border: 1px solid #939393;
+    color: #fff;
+}
+
+.content-border {
+    border-left: 1px solid #a7a5a3;
+    border-right: 1px solid #a7a5a3;
+    border-bottom: 1px solid #a7a5a3;
+    border-top: none;
+    min-height: 260px;
+}
+
+.padding-right {
+    padding-right: 0 !important;
+}
+
+/*pre delivery css*/
+
+.th-predelivery {
+    background-color: #efebe7;
+    padding: 4px;
+    border: 1px solid #c1c1c1;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.tablepredelivery {
+    border: 1px solid #c1c1c1;
+    height: 500px;
+    min-height: 500px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: scroll;
+    background-color: white;
+}
+
+.tablepredelivery-right {
+    border: 1px solid #c1c1c1;
+    height: 500px;
+    min-height: 500px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: scroll;
+    background-color: white;
+}
+
+.btn-width-big {
+    width: 100%;
+    margin-top: 5px;
+}
+
+/*  ondelivery css*/
+
+.th-ondelivery {
+    background-color: #efebe7;
+    padding: 4px;
+    border: 1px solid #c1c1c1;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.tableondelivery {
+    border: 1px solid #c1c1c1;
+    height: 300px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: scroll;
+    background-color: white;
+}
+
+.tableondelivery-right {
+    border: 1px solid #c1c1c1;
+    height: 300px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: scroll;
+    background-color: white;
+}
+
+/* postdelivery css*/
+.th-postdelivery {
+    background-color: #efebe7;
+    padding: 4px;
+    border: 1px solid #c1c1c1;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.tablepostdelivery {
+    border: 1px solid #c1c1c1;
+    height: 300px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: scroll;
+    background-color: white;
+}
+
+.tablepostdelivery-right {
+    border: 1px solid #c1c1c1;
+    height: 300px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: scroll;
+    background-color: white;
+}
+
+.td-postdelivery {
+    border: 1px solid #c1c1c1;
+}
+
+/*newborn css*/
+.btn-newborn {
+    width: 123px;
+}
+
+.tablenewborn {
+    border: 1px solid #c1c1c1;
+    height: 500px;
+    min-height: 500px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: scroll;
+    background-color: white;
+}
+
+.tablenewborn-right {
+    border: 1px solid #c1c1c1;
+    height: 500px;
+    min-height: 500px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: scroll;
+    background-color: white;
+}
+
+.td-newborn {
+    border: 1px solid #c1c1c1;
+}
+
+.newborn-top {
+    margin-top: 13px;
+}
+
+.box__button {
+    float: right;
+    margin-top: 2px;
+}
+
+/*pharmacy css*/
+.tablepharmacy {
+    border: 1px solid #c1c1c1;
+    height: 500px;
+    min-height: 500px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: scroll;
+    background-color: white;
+}
+
+.td-pharmacy {
+    border: 1px solid #c1c1c1;
+}
+
+.th-pharmacy {
+    background-color: #efebe7;
+    padding: 4px;
+    border: 1px solid #c1c1c1;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/*newdelivery css*/
+.label-width-newdeli {
+    width: 173px;
+}
+
+.label-width-newdeli2 {
+    width: 80%;
+}
+
+.f-input-date-newdelivery {
+    width: 215px;
+}
+
+.input-newdeli {
+    width: 96% !important;
+}
+
+.input-newdeli2 {
+    width: 36% !important;
+}
+
+.label-width-smallnew {
+    border: 1px solid #a9a8a8;
+    padding: 3px 11px;
+    border-radius: 4px;
+}
+
+.btn-newdeli {
+    width: 36%;
+}
+
+select .form-input-select {
+    width: 257px !important;
+}
+
+.radio-1-newdeli {
+    border: 1px solid #b1afaf;
+    text-align: center;
+    width: 214px;
+    padding: 4px;
+}
+
+.form-text-newdeli {
+    width: 100%;
+}
+
+.form-input-newdeli {
+    margin-left: 2%;
+}
+
+.tablenewdelivery {
+    border: 1px solid #c1c1c1;
+    height: 300px;
+    width: 100%;
+    min-height: 300px;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+.td-newdelivery {
+    border: 1px solid #c1c1c1;
+}
+
+.th-newdelivery {
+    background-color: #efebe7;
+    padding: 4px;
+    border: 1px solid #c1c1c1;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.newdelivery-top {
+    margin-top: 13px;
+}
+
+.action-fluids-newdelivery {
+    margin-bottom: 12px;
+}
+
+.btm {
+    margin-bottom: 5px;
+}
+
+.delivery_tab {
+    background-color: #d8d6d6;
+}
+
+button {
+    border: 1px solid #a7a5a3;
+}
+.row {
+    margin-top: 5px;
+}
+
+/* 2020/1/19 Bhuwan */
+
+.box__input_for_append > .box__icon_append {
+    height: 30px;
+}

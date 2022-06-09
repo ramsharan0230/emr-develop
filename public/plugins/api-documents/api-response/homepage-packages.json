@@ -1,0 +1,1828 @@
+{
+  "success": true,
+  "message": "List of packages.",
+  "data": {
+    "popular_holiday": {
+      "id": 2,
+      "title": "POPULAR PACKAGE",
+      "slug": "popular-package",
+      "description": "POPULAR PACKAGE Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet sem ac lectus semper lacinia. Aliquam tincidunt tellus vel diam feugiat, ac tincidunt sem tincidunt. Fusce scelerisque ac tortor dictum tincidunt. Ut ac tristique nulla. Maecenas pellentesque tortor lorem, id venenatis purus elementum quis. Aliquam dictum, augue eu pellentesque ultrices, velit leo bibendum elit, ac accumsan purus purus a massa. Mauris quis nunc purus.",
+      "discount": 0,
+      "is_published": 1,
+      "created_at": "2019-06-04 00:00:00",
+      "updated_at": "2019-08-18 08:53:43",
+      "packages": [
+        {
+          "id": 10,
+          "title": "Provident dolor nih",
+          "slug": "provident-dolor-nih",
+          "overview": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "inclusions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "exclusions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "payment_policy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "cancellation_policy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "duration_day": 2,
+          "duration_night": 1,
+          "sector_from": 2,
+          "sector_to": 5,
+          "meta_keyword": "Qui inventore ea aut",
+          "meta_description": "Eum et voluptatum do",
+          "meta_title": "Et dolorem iste nobi",
+          "has_flight": 0,
+          "is_published": 1,
+          "created_at": "2019-08-16 09:31:38",
+          "updated_at": "2019-08-27 04:54:23",
+          "display_homepage": 1,
+          "pivot": {
+            "package_type_id": 2,
+            "package_id": 10
+          },
+          "galleries": [
+            {
+              "id": 12,
+              "package_id": 10,
+              "title": "test",
+              "image": "1566368074-161288.jpg",
+              "type": "wide",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-08-07 14:26:46",
+              "updated_at": "2019-08-07 14:26:46"
+            },
+            {
+              "id": 13,
+              "package_id": 10,
+              "title": "test 2",
+              "image": "1566368096-233396.jpg",
+              "type": "square",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-08-07 14:26:46",
+              "updated_at": "2019-08-07 14:26:46"
+            }
+          ],
+          "destination_from": {
+            "id": 2,
+            "name": "Kathmandu",
+            "code": "KTM",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:37",
+            "updated_at": "2019-07-16 06:17:37"
+          },
+          "destination_to": {
+            "id": 5,
+            "name": "Lumbini",
+            "code": "LUM",
+            "status": 1,
+            "created_at": "2019-07-16 06:18:09",
+            "updated_at": "2019-07-16 06:18:09"
+          }
+        },
+        {
+          "id": 9,
+          "title": "Et voluptas voluptat",
+          "slug": "et-voluptas-voluptat",
+          "overview": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "inclusions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "exclusions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "payment_policy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "cancellation_policy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "duration_day": 5,
+          "duration_night": 4,
+          "sector_from": 5,
+          "sector_to": 2,
+          "meta_keyword": "Eaque nihil sapiente",
+          "meta_description": "Labore omnis omnis m",
+          "meta_title": "Voluptatem maiores",
+          "has_flight": 0,
+          "is_published": 1,
+          "created_at": "2019-08-16 09:31:05",
+          "updated_at": "2019-08-27 04:58:55",
+          "display_homepage": 1,
+          "pivot": {
+            "package_type_id": 2,
+            "package_id": 9
+          },
+          "galleries": [],
+          "destination_from": {
+            "id": 5,
+            "name": "Lumbini",
+            "code": "LUM",
+            "status": 1,
+            "created_at": "2019-07-16 06:18:09",
+            "updated_at": "2019-07-16 06:18:09"
+          },
+          "destination_to": {
+            "id": 2,
+            "name": "Kathmandu",
+            "code": "KTM",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:37",
+            "updated_at": "2019-07-16 06:17:37"
+          }
+        },
+        {
+          "id": 8,
+          "title": "Rerum qui sit veniam",
+          "slug": "rerum-qui-sit-veniam",
+          "overview": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "inclusions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "exclusions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "payment_policy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "cancellation_policy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "duration_day": 4,
+          "duration_night": 3,
+          "sector_from": 6,
+          "sector_to": 3,
+          "meta_keyword": "A et illum veritati",
+          "meta_description": "Autem enim officia f",
+          "meta_title": "Non maiores eu amet",
+          "has_flight": 0,
+          "is_published": 1,
+          "created_at": "2019-08-16 09:30:35",
+          "updated_at": "2019-08-27 05:00:25",
+          "display_homepage": 1,
+          "pivot": {
+            "package_type_id": 2,
+            "package_id": 8
+          },
+          "galleries": [],
+          "destination_from": {
+            "id": 6,
+            "name": "Nepalgunj",
+            "code": "NPG",
+            "status": 1,
+            "created_at": "2019-07-16 06:18:22",
+            "updated_at": "2019-07-16 06:18:22"
+          },
+          "destination_to": {
+            "id": 3,
+            "name": "Pokhara",
+            "code": "PKR",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:49",
+            "updated_at": "2019-07-16 06:17:49"
+          }
+        },
+        {
+          "id": 7,
+          "title": "Tempor distinctio I",
+          "slug": "tempor-distinctio-i",
+          "overview": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit, nisl vitae dictum bibendum, justo velit porttitor libero, non ultricies odio quam ac velit. Donec sit amet bibendum mi, at tempor tellus. Phasellus a condimentum mi. Donec diam enim, tincidunt at sagittis vitae, cursus vitae sapien. Maecenas ante ante, mattis sed libero at, ullamcorper facilisis orci. Quisque in lectus at sem sollicitudin auctor ac at libero. Praesent venenatis justo ex, quis rhoncus enim consequat hendrerit. Fusce cursus nisl nec lobortis dignissim. Nam cursus fringilla eros a sollicitudin. Curabitur arcu dui, imperdiet vel facilisis a, convallis a lectus.</p>\r\n\r\n<p>Nullam pretium vehicula mollis. Duis tincidunt mi ac lectus hendrerit sodales. Pellentesque viverra, leo quis tempus semper, erat risus lacinia augue, ut ornare mauris arcu ut risus. Etiam dapibus venenatis quam, et venenatis nulla lacinia in. Ut porta sapien justo, nec fermentum velit commodo quis. Maecenas ut lectus id metus posuere aliquam id eu ligula. In ultricies luctus eros vehicula tristique. Fusce faucibus blandit nulla, a laoreet arcu rhoncus ut. Suspendisse vehicula orci non eleifend aliquam. Quisque et venenatis est. Nullam purus lectus, vestibulum vel semper non, iaculis et ligula. Quisque fermentum nunc in magna malesuada aliquam. Etiam in diam porttitor, malesuada tortor vel, tempor dui. Proin scelerisque lectus a metus maximus accumsan. Quisque non tempus elit, sit amet faucibus orci.</p>",
+          "inclusions": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "exclusions": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "payment_policy": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "cancellation_policy": "<title></title>\r\n<p>ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit, nisl vitae dictum bibendum, justo velit porttitor libero, non ultricies odio quam ac velit. Donec sit amet bibendum mi, at tempor tellus. Phasellus a condimentum mi. Donec diam enim, tincidunt at sagittis vitae, cursus vitae sapien. Maecenas ante ante, mattis sed libero at, ullamcorper facilisis orci. Quisque in lectus at sem sollicitudin auctor ac at libero. Praesent venenatis justo ex, quis rhoncus enim consequat hendrerit. Fusce cursus nisl nec lobortis dignissim. Nam cursus fringilla eros a sollicitudin. Curabitur arcu dui, imperdiet vel facilisis a, convallis a lectus. Nullam pretium vehicul</p>",
+          "duration_day": 22,
+          "duration_night": 21,
+          "sector_from": 2,
+          "sector_to": 4,
+          "meta_keyword": "Sed ea amet quasi s",
+          "meta_description": "In est excepteur nis",
+          "meta_title": "Ut molestiae amet r",
+          "has_flight": 1,
+          "is_published": 1,
+          "created_at": "2019-07-23 04:28:43",
+          "updated_at": "2019-08-18 06:17:28",
+          "display_homepage": 0,
+          "pivot": {
+            "package_type_id": 2,
+            "package_id": 7
+          },
+          "galleries": [
+            {
+              "id": 15,
+              "package_id": 7,
+              "title": "test",
+              "image": "1566370247-179557.jpg",
+              "type": "wide",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-08-07 14:26:46",
+              "updated_at": "2019-08-07 14:26:46"
+            },
+            {
+              "id": 16,
+              "package_id": 7,
+              "title": "test",
+              "image": "1566370275-862120.jpg",
+              "type": "square",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-08-07 14:26:46",
+              "updated_at": "2019-08-07 14:26:46"
+            }
+          ],
+          "destination_from": {
+            "id": 2,
+            "name": "Kathmandu",
+            "code": "KTM",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:37",
+            "updated_at": "2019-07-16 06:17:37"
+          },
+          "destination_to": {
+            "id": 4,
+            "name": "Chitwan",
+            "code": "CHI",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:57",
+            "updated_at": "2019-07-16 06:17:57"
+          }
+        },
+        {
+          "id": 6,
+          "title": "Aliquip ratione pers",
+          "slug": "aliquip-ratione-pers",
+          "overview": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus sollicitudin eros, sit amet iaculis ligula hendrerit et. Donec mollis nibh vel mi vestibulum imperdiet. Nam fermentum, enim at dictum posuere, orci mauris lacinia nunc, sit amet fringilla enim urna in erat. Nulla nulla nisl, bibendum nec ex ornare, pulvinar pharetra velit. Donec at nibh augue. Quisque gravida, eros in maximus porttitor, odio urna viverra arcu, ut vehicula dui ex vitae erat. Morbi pretium eget nibh ut vestibulum. Donec sit amet enim vitae erat luctus pellentesque. Nullam gravida nisi id leo tempor, vitae vestibulum velit maximus. Aenean eget venenatis ligula. Nunc semper tempor justo, quis condimentum urna interdum non. Nunc venenatis volutpat sem, eget condimentum quam blandit quis. Pellentesque sed enim efficitur, efficitur dolor vel, dignissim enim. Sed congue sem mauris.</p>\r\n\r\n<p>Quisque tincidunt quam quis dolor sagittis pharetra sed vel tortor. Sed lorem erat, vehicula sed sagittis quis, congue eget mi. Sed non lectus sagittis, ultricies sapien a, sagittis nunc. Integer at laoreet lorem. In pretium ex at mi gravida placerat. In non consequat nisl. Fusce vehicula augue eu justo convallis maximus. Duis laoreet ligula augue, ac laoreet enim convallis ultrices.</p>",
+          "inclusions": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "exclusions": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "payment_policy": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "cancellation_policy": "<title></title>\r\n<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "duration_day": 1,
+          "duration_night": 2,
+          "sector_from": 2,
+          "sector_to": 3,
+          "meta_keyword": "Ullamco ut excepteur",
+          "meta_description": "Nisi nulla at placea",
+          "meta_title": "Sit cum ea quasi com",
+          "has_flight": 1,
+          "is_published": 1,
+          "created_at": "2019-07-23 04:23:36",
+          "updated_at": "2019-08-18 06:17:36",
+          "display_homepage": 0,
+          "pivot": {
+            "package_type_id": 2,
+            "package_id": 6
+          },
+          "galleries": [
+            {
+              "id": 8,
+              "package_id": 6,
+              "title": "test",
+              "image": "1565945760-958696.jpg",
+              "type": "type_1",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-08-07 14:26:46",
+              "updated_at": "2019-08-07 14:26:46"
+            }
+          ],
+          "destination_from": {
+            "id": 2,
+            "name": "Kathmandu",
+            "code": "KTM",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:37",
+            "updated_at": "2019-07-16 06:17:37"
+          },
+          "destination_to": {
+            "id": 3,
+            "name": "Pokhara",
+            "code": "PKR",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:49",
+            "updated_at": "2019-07-16 06:17:49"
+          }
+        },
+        {
+          "id": 4,
+          "title": "Temple and Tigers sdfasdfasdf",
+          "slug": "temple-and-tigers",
+          "overview": "<title></title>\r\n<p><strong>Kathmandu Valley and Chitwan National Park Tour 4 nights, 5 days<br />\r\nTemples &amp; Tigers</strong></p>\r\n\r\n<p>A visit to Chitwan reveals an unexpected side to Nepal yet an attractive proposition for nature lovers. Located on the terai at the fringe of the Indian plains, the national park boasts diverse forest with magnificent wildlife experiences. The Royal Bengal Tiger, Asian Rhinoceros, Gharial, Langur, Rhesus, Macaque Monkey are some of them.</p>\r\n\r\n<p><strong>Day 1: Arrival in Kathmandu </strong></p>\r\n\r\n<p>Assistance at the airport upon arrival and transfer to hotel</p>\r\n\r\n<p><strong>Day 2: Fly to Bharatpur<br />\r\nEnjoy a Tharu Village Tour and the sunset view from the Rapti River.</strong></p>\r\n\r\n<p>***(Optional Everest Experience Mountain Flight - Fly with us to the top of the world, and indulge in the majestic views of Himalayas of Nepal, including Mt. Everest.)***</p>\r\n\r\n<p>After breakfast at the hotel, you&rsquo;ll depart for Tribhuvan International Airport (Domestic terminal) for an early morning flight with Buddha Air to Bharatpur - the gateway to Chitwan.</p>\r\n\r\n<p>Once you land at Bharatpur, you&rsquo;ll transfer to the hotel for check-in and have lunch at the hotel.</p>\r\n\r\n<p>You can rest and have some time to yourselves. Later in the afternoon, you&rsquo;ll get a guided tour of an authentic Tharu Village. The Tharus are an ethnic indigenous to the southern foothills of the Himalayas. They pride themselves as people of the forest, and build their communities around forest. Tharus believe in animism and celebrate Hindu festivals. While in the village, you get to observe the lives of the Tharus, how their homes are built, what they cook and wear, etc. Then you&rsquo;ll make your way to the Rapti River to view the sun illuminating the waters orange as it sets.</p>\r\n\r\n<p>Make your way back to the hotel for a Tharu cultural dance presentation. This cultural show involves traditional Tharu songs and dances, including the stick dance. Try to learn the steps of the dances and move along with the beat. After the fantastic presentation, enjoy your dinner and rest for the night.</p>\r\n\r\n<p><strong>Day 3: Canoe ride on the Rapti River, Bird watching, Elephant bathing, jungle walk and elephant safari. </strong></p>\r\n\r\n<p>Rise up early for a good breakfast and get ready for a canoe ride on the Rapti River.</p>\r\n\r\n<p>A canoe ride at Chitwan&rsquo;s Rapti River is the best way to view the aquatic wildlife of the river. Wisps of mist rise from the water surface, creating a dramatic effect, as your canoe glides deeper into the wilderness. A log on the river bank moves. You peek through your binoculars and realize it&rsquo;s a mugger crocodile or a <em>gharial</em>, warming its body in the sun.</p>\r\n\r\n<p>In Chitwan, a bird watching tour guide moves his hands as if he were shooting at a circle of enemies. Eyes and hands need to move fast in a place that has 450 species of birds. Aerial duels between birds of prey, serpent eagles with a snake in its talons, Ruddy Shelducks gliding on the water surface like two ice skaters in love, kingfishers plunging into the water and emerging with a glistening fish in its beak.</p>\r\n\r\n<p>Cool off the summer heat by taking a dip in the river with an elephant. Usually done in the morning, mahouts lead their elephants in the river to bathe them - and you are welcome to join the fun. Play with the elephants and take a dive in the river while on the back of the elephant. The elephant also splashes you with water from its trunk. Listen to the instructions of the mahout when bathing the elephants.</p>\r\n\r\n<p>Talk a walk on the wild side and go deep in the jungles of Chitwan National Park. The guide will warm you to walk silently to not scare the animals away. Fingers point frantically, eyes widen and necks crane to get a better view of the animals. The presence of over 50 mammal species in the park make the jungle walks an exciting and exhilarating experience.</p>\r\n\r\n<p>Take a well deserved rest and enjoy lunch at the hotel, and get ready for an elephant safari.</p>\r\n\r\n<p>Riding an elephant provides a lofty perch from which to cover the rivers, grasslands and Sal forests of Chitwan. With the help of an experienced mahout, the elephant is carefully guided through the dense forest. You&rsquo;ll get to see mammals like the endangered one horned rhinoceros, hear birds chirping in the distance and if you&rsquo;re lucky enough, even Royal Bengal Tigers.</p>\r\n\r\n<p>Rest at the hotel and enjoy dinner.</p>\r\n\r\n<p><strong>Day 4: Fly to Kathmandu and enjoy sightseeing of Kathmandu Durbar Square and Swayambhunath Stupa. </strong></p>\r\n\r\n<p>Have an early morning breakfast at the hotel and you&rsquo;ll be transferred to Bharatpur Airport to take a flight back to Kathmandu. After you land, check in at the hotel for lunch.</p>\r\n\r\n<p>Get ready for a sightseeing tour of Kathmandu Durbar Square and Swayambhunath Stupa.</p>\r\n\r\n<p>A living goddess, known as a Kumari resides at Kathmandu Durbar Square. Here, you&rsquo;ll experience wonders, eccentricities and diversity of Nepali temples. Take a trip back in time when you enter Hanuman Dhoka Palace. Inside, there are residential quarters of kings of the Malla Dynasty (1200 - 1769 A.D). When Nepal was a kingdom, kings were crowned at Hanuman Dhoka.</p>\r\n\r\n<p>In the evening, you&rsquo;ll visit Swayambhunath. The white domed stupa with its all-seeing eyes of Lord Buddha beckon you. From the top of Swayambhunath Stupa, you get to see panoramic views of Kathmandu Valley. Both Hindus and Buddhists visit Swayambhunath and is one of the best places to observe religious harmony.</p>\r\n\r\n<p>Enjoy an authentic and organic dinner at <strong>Bhojan Griha.</strong> Along with dinner, there&rsquo;ll be Nepali folk music and dances.</p>\r\n\r\n<p><strong>Day 5: Pashupatinath and Guheshwori Darshan </strong></p>\r\n\r\n<p>Breakfast at Hotel, and visit Guheshwori and Pashupatinath for Darshan.</p>\r\n\r\n<p>Regarded as a Shakti Peetha, Guheshwori Temple was built by King Pratap Malla in the 17th century. The temple is dedicated to Goddess Parvati (wife of Lord Shiva). It is considered an important Hindu pilgrimage destination. After Guheshwori Temple, you will make your way to Pashupatinath Temple. Pashupatinath is one of Nepal&rsquo;s important Hindu Temple. The present pagoda style temple was constructed in 1696 A.D. The Pashupatinath Temple complex resembles a life-size collage of life: faith, generosity, poverty, life, death mingle here in unceasing flow.</p>\r\n\r\n<p>Enjoy a light lunch at the hotel and get ready for departure.</p>",
+          "inclusions": "<title></title>\r\n<ul>\r\n\t<li>2 nights accommodation in Athens hotel on BB basis. Package rates are based in STANDARD ROOM TYPE</li>\r\n\t<li>Half day City tour of Athens with new Acropolis Museum SIC, with English speaking guide, entrance fees and the transportation from/to hotel.</li>\r\n\t<li>Private round trip transfers in Athens from airport-hotel-port-with private air onditioned taxi</li>\r\n</ul>",
+          "exclusions": "<title></title>\r\n<ul>\r\n\t<li>Return Airfare</li>\r\n\t<li>Items of personal nature viz , drinks, laundry, calls, etc.</li>\r\n\t<li>Anything not mentioned in inclusions</li>\r\n\t<li>Meals other than specified in the itinerary</li>\r\n\t<li>5% GST</li>\r\n</ul>",
+          "payment_policy": "<title></title>\r\n<p>Standard check in time is at 1500 hours &amp; check out time is 1200 hours. In case a new local city tax is introduced by the Greek Government in 2018, guests will have to pay this directly at the hotel and this tax is NOT included in the package rates (tax rates may vary from 0,50 to 4 Euros on a night basis depending on hotel category).</p>",
+          "cancellation_policy": "<title></title>\r\n<p>Standard check in time is at 1500 hours &amp; check out time is 1200 hours. In case a new local city tax is introduced by the Greek Government in 2018, guests will have to pay this directly at the hotel and this tax is NOT included in the package rates (tax rates may vary from 0,50 to 4 Euros on a night basis depending on hotel category).</p>",
+          "duration_day": 4,
+          "duration_night": 3,
+          "sector_from": 6,
+          "sector_to": 2,
+          "meta_keyword": null,
+          "meta_description": null,
+          "meta_title": null,
+          "has_flight": 0,
+          "is_published": 1,
+          "created_at": "2019-06-04 05:40:32",
+          "updated_at": "2019-08-27 05:00:32",
+          "display_homepage": 1,
+          "pivot": {
+            "package_type_id": 2,
+            "package_id": 4
+          },
+          "galleries": [
+            {
+              "id": 1,
+              "package_id": 4,
+              "title": "test",
+              "image": "1560681463-687043.jpg",
+              "type": "null",
+              "is_active": 1,
+              "caption": "test caption",
+              "created_at": "2019-06-16 16:22:15",
+              "updated_at": "2019-06-17 09:37:45"
+            },
+            {
+              "id": 2,
+              "package_id": 4,
+              "title": "Another test",
+              "image": "1560682150-456349.jpg",
+              "type": "null",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-06-16 16:34:10",
+              "updated_at": "2019-06-17 09:57:17"
+            },
+            {
+              "id": 3,
+              "package_id": 4,
+              "title": "test",
+              "image": "1563273824-519359.jpg",
+              "type": "null",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-07-16 16:28:43",
+              "updated_at": "2019-07-16 16:28:43"
+            },
+            {
+              "id": 4,
+              "package_id": 4,
+              "title": "test 2",
+              "image": "1563273879-796854.jpg",
+              "type": "null",
+              "is_active": 1,
+              "caption": "test 3",
+              "created_at": "2019-07-16 16:29:39",
+              "updated_at": "2019-07-16 16:29:39"
+            }
+          ],
+          "destination_from": {
+            "id": 6,
+            "name": "Nepalgunj",
+            "code": "NPG",
+            "status": 1,
+            "created_at": "2019-07-16 06:18:22",
+            "updated_at": "2019-07-16 06:18:22"
+          },
+          "destination_to": {
+            "id": 2,
+            "name": "Kathmandu",
+            "code": "KTM",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:37",
+            "updated_at": "2019-07-16 06:17:37"
+          }
+        }
+      ]
+    },
+    "special_holiday": {
+      "id": 1,
+      "title": "BUDDHA HOLIDAYS SPECIAL",
+      "slug": "buddha-holidays-special",
+      "description": "BUDDHA HOLIDAYS SPECIAL Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet sem ac lectus semper lacinia. Aliquam tincidunt tellus vel diam feugiat, ac tincidunt sem tincidunt. Fusce scelerisque ac tortor dictum tincidunt. Ut ac tristique nulla. Maecenas pellentesque tortor lorem, id venenatis purus elementum quis. Aliquam dictum, augue eu pellentesque ultrices, velit leo bibendum elit, ac accumsan purus purus a massa. Mauris quis nunc purus.",
+      "discount": 0,
+      "is_published": 1,
+      "created_at": "2019-06-04 00:00:00",
+      "updated_at": "2019-08-18 08:53:39",
+      "packages": [
+        {
+          "id": 10,
+          "title": "Provident dolor nih",
+          "slug": "provident-dolor-nih",
+          "overview": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "inclusions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "exclusions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "payment_policy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "cancellation_policy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "duration_day": 2,
+          "duration_night": 1,
+          "sector_from": 2,
+          "sector_to": 5,
+          "meta_keyword": "Qui inventore ea aut",
+          "meta_description": "Eum et voluptatum do",
+          "meta_title": "Et dolorem iste nobi",
+          "has_flight": 0,
+          "is_published": 1,
+          "created_at": "2019-08-16 09:31:38",
+          "updated_at": "2019-08-27 04:54:23",
+          "display_homepage": 1,
+          "pivot": {
+            "package_type_id": 1,
+            "package_id": 10
+          },
+          "galleries": [
+            {
+              "id": 12,
+              "package_id": 10,
+              "title": "test",
+              "image": "1566368074-161288.jpg",
+              "type": "wide",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-08-07 14:26:46",
+              "updated_at": "2019-08-07 14:26:46"
+            },
+            {
+              "id": 13,
+              "package_id": 10,
+              "title": "test 2",
+              "image": "1566368096-233396.jpg",
+              "type": "square",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-08-07 14:26:46",
+              "updated_at": "2019-08-07 14:26:46"
+            }
+          ],
+          "destination_from": {
+            "id": 2,
+            "name": "Kathmandu",
+            "code": "KTM",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:37",
+            "updated_at": "2019-07-16 06:17:37"
+          },
+          "destination_to": {
+            "id": 5,
+            "name": "Lumbini",
+            "code": "LUM",
+            "status": 1,
+            "created_at": "2019-07-16 06:18:09",
+            "updated_at": "2019-07-16 06:18:09"
+          }
+        },
+        {
+          "id": 9,
+          "title": "Et voluptas voluptat",
+          "slug": "et-voluptas-voluptat",
+          "overview": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "inclusions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "exclusions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "payment_policy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "cancellation_policy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "duration_day": 5,
+          "duration_night": 4,
+          "sector_from": 5,
+          "sector_to": 2,
+          "meta_keyword": "Eaque nihil sapiente",
+          "meta_description": "Labore omnis omnis m",
+          "meta_title": "Voluptatem maiores",
+          "has_flight": 0,
+          "is_published": 1,
+          "created_at": "2019-08-16 09:31:05",
+          "updated_at": "2019-08-27 04:58:55",
+          "display_homepage": 1,
+          "pivot": {
+            "package_type_id": 1,
+            "package_id": 9
+          },
+          "galleries": [],
+          "destination_from": {
+            "id": 5,
+            "name": "Lumbini",
+            "code": "LUM",
+            "status": 1,
+            "created_at": "2019-07-16 06:18:09",
+            "updated_at": "2019-07-16 06:18:09"
+          },
+          "destination_to": {
+            "id": 2,
+            "name": "Kathmandu",
+            "code": "KTM",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:37",
+            "updated_at": "2019-07-16 06:17:37"
+          }
+        },
+        {
+          "id": 8,
+          "title": "Rerum qui sit veniam",
+          "slug": "rerum-qui-sit-veniam",
+          "overview": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "inclusions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "exclusions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "payment_policy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "cancellation_policy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "duration_day": 4,
+          "duration_night": 3,
+          "sector_from": 6,
+          "sector_to": 3,
+          "meta_keyword": "A et illum veritati",
+          "meta_description": "Autem enim officia f",
+          "meta_title": "Non maiores eu amet",
+          "has_flight": 0,
+          "is_published": 1,
+          "created_at": "2019-08-16 09:30:35",
+          "updated_at": "2019-08-27 05:00:25",
+          "display_homepage": 1,
+          "pivot": {
+            "package_type_id": 1,
+            "package_id": 8
+          },
+          "galleries": [],
+          "destination_from": {
+            "id": 6,
+            "name": "Nepalgunj",
+            "code": "NPG",
+            "status": 1,
+            "created_at": "2019-07-16 06:18:22",
+            "updated_at": "2019-07-16 06:18:22"
+          },
+          "destination_to": {
+            "id": 3,
+            "name": "Pokhara",
+            "code": "PKR",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:49",
+            "updated_at": "2019-07-16 06:17:49"
+          }
+        },
+        {
+          "id": 7,
+          "title": "Tempor distinctio I",
+          "slug": "tempor-distinctio-i",
+          "overview": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit, nisl vitae dictum bibendum, justo velit porttitor libero, non ultricies odio quam ac velit. Donec sit amet bibendum mi, at tempor tellus. Phasellus a condimentum mi. Donec diam enim, tincidunt at sagittis vitae, cursus vitae sapien. Maecenas ante ante, mattis sed libero at, ullamcorper facilisis orci. Quisque in lectus at sem sollicitudin auctor ac at libero. Praesent venenatis justo ex, quis rhoncus enim consequat hendrerit. Fusce cursus nisl nec lobortis dignissim. Nam cursus fringilla eros a sollicitudin. Curabitur arcu dui, imperdiet vel facilisis a, convallis a lectus.</p>\r\n\r\n<p>Nullam pretium vehicula mollis. Duis tincidunt mi ac lectus hendrerit sodales. Pellentesque viverra, leo quis tempus semper, erat risus lacinia augue, ut ornare mauris arcu ut risus. Etiam dapibus venenatis quam, et venenatis nulla lacinia in. Ut porta sapien justo, nec fermentum velit commodo quis. Maecenas ut lectus id metus posuere aliquam id eu ligula. In ultricies luctus eros vehicula tristique. Fusce faucibus blandit nulla, a laoreet arcu rhoncus ut. Suspendisse vehicula orci non eleifend aliquam. Quisque et venenatis est. Nullam purus lectus, vestibulum vel semper non, iaculis et ligula. Quisque fermentum nunc in magna malesuada aliquam. Etiam in diam porttitor, malesuada tortor vel, tempor dui. Proin scelerisque lectus a metus maximus accumsan. Quisque non tempus elit, sit amet faucibus orci.</p>",
+          "inclusions": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "exclusions": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "payment_policy": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "cancellation_policy": "<title></title>\r\n<p>ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit, nisl vitae dictum bibendum, justo velit porttitor libero, non ultricies odio quam ac velit. Donec sit amet bibendum mi, at tempor tellus. Phasellus a condimentum mi. Donec diam enim, tincidunt at sagittis vitae, cursus vitae sapien. Maecenas ante ante, mattis sed libero at, ullamcorper facilisis orci. Quisque in lectus at sem sollicitudin auctor ac at libero. Praesent venenatis justo ex, quis rhoncus enim consequat hendrerit. Fusce cursus nisl nec lobortis dignissim. Nam cursus fringilla eros a sollicitudin. Curabitur arcu dui, imperdiet vel facilisis a, convallis a lectus. Nullam pretium vehicul</p>",
+          "duration_day": 22,
+          "duration_night": 21,
+          "sector_from": 2,
+          "sector_to": 4,
+          "meta_keyword": "Sed ea amet quasi s",
+          "meta_description": "In est excepteur nis",
+          "meta_title": "Ut molestiae amet r",
+          "has_flight": 1,
+          "is_published": 1,
+          "created_at": "2019-07-23 04:28:43",
+          "updated_at": "2019-08-18 06:17:28",
+          "display_homepage": 0,
+          "pivot": {
+            "package_type_id": 1,
+            "package_id": 7
+          },
+          "galleries": [
+            {
+              "id": 15,
+              "package_id": 7,
+              "title": "test",
+              "image": "1566370247-179557.jpg",
+              "type": "wide",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-08-07 14:26:46",
+              "updated_at": "2019-08-07 14:26:46"
+            },
+            {
+              "id": 16,
+              "package_id": 7,
+              "title": "test",
+              "image": "1566370275-862120.jpg",
+              "type": "square",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-08-07 14:26:46",
+              "updated_at": "2019-08-07 14:26:46"
+            }
+          ],
+          "destination_from": {
+            "id": 2,
+            "name": "Kathmandu",
+            "code": "KTM",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:37",
+            "updated_at": "2019-07-16 06:17:37"
+          },
+          "destination_to": {
+            "id": 4,
+            "name": "Chitwan",
+            "code": "CHI",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:57",
+            "updated_at": "2019-07-16 06:17:57"
+          }
+        },
+        {
+          "id": 6,
+          "title": "Aliquip ratione pers",
+          "slug": "aliquip-ratione-pers",
+          "overview": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus sollicitudin eros, sit amet iaculis ligula hendrerit et. Donec mollis nibh vel mi vestibulum imperdiet. Nam fermentum, enim at dictum posuere, orci mauris lacinia nunc, sit amet fringilla enim urna in erat. Nulla nulla nisl, bibendum nec ex ornare, pulvinar pharetra velit. Donec at nibh augue. Quisque gravida, eros in maximus porttitor, odio urna viverra arcu, ut vehicula dui ex vitae erat. Morbi pretium eget nibh ut vestibulum. Donec sit amet enim vitae erat luctus pellentesque. Nullam gravida nisi id leo tempor, vitae vestibulum velit maximus. Aenean eget venenatis ligula. Nunc semper tempor justo, quis condimentum urna interdum non. Nunc venenatis volutpat sem, eget condimentum quam blandit quis. Pellentesque sed enim efficitur, efficitur dolor vel, dignissim enim. Sed congue sem mauris.</p>\r\n\r\n<p>Quisque tincidunt quam quis dolor sagittis pharetra sed vel tortor. Sed lorem erat, vehicula sed sagittis quis, congue eget mi. Sed non lectus sagittis, ultricies sapien a, sagittis nunc. Integer at laoreet lorem. In pretium ex at mi gravida placerat. In non consequat nisl. Fusce vehicula augue eu justo convallis maximus. Duis laoreet ligula augue, ac laoreet enim convallis ultrices.</p>",
+          "inclusions": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "exclusions": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "payment_policy": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "cancellation_policy": "<title></title>\r\n<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "duration_day": 1,
+          "duration_night": 2,
+          "sector_from": 2,
+          "sector_to": 3,
+          "meta_keyword": "Ullamco ut excepteur",
+          "meta_description": "Nisi nulla at placea",
+          "meta_title": "Sit cum ea quasi com",
+          "has_flight": 1,
+          "is_published": 1,
+          "created_at": "2019-07-23 04:23:36",
+          "updated_at": "2019-08-18 06:17:36",
+          "display_homepage": 0,
+          "pivot": {
+            "package_type_id": 1,
+            "package_id": 6
+          },
+          "galleries": [
+            {
+              "id": 8,
+              "package_id": 6,
+              "title": "test",
+              "image": "1565945760-958696.jpg",
+              "type": "type_1",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-08-07 14:26:46",
+              "updated_at": "2019-08-07 14:26:46"
+            }
+          ],
+          "destination_from": {
+            "id": 2,
+            "name": "Kathmandu",
+            "code": "KTM",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:37",
+            "updated_at": "2019-07-16 06:17:37"
+          },
+          "destination_to": {
+            "id": 3,
+            "name": "Pokhara",
+            "code": "PKR",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:49",
+            "updated_at": "2019-07-16 06:17:49"
+          }
+        },
+        {
+          "id": 4,
+          "title": "Temple and Tigers sdfasdfasdf",
+          "slug": "temple-and-tigers",
+          "overview": "<title></title>\r\n<p><strong>Kathmandu Valley and Chitwan National Park Tour 4 nights, 5 days<br />\r\nTemples &amp; Tigers</strong></p>\r\n\r\n<p>A visit to Chitwan reveals an unexpected side to Nepal yet an attractive proposition for nature lovers. Located on the terai at the fringe of the Indian plains, the national park boasts diverse forest with magnificent wildlife experiences. The Royal Bengal Tiger, Asian Rhinoceros, Gharial, Langur, Rhesus, Macaque Monkey are some of them.</p>\r\n\r\n<p><strong>Day 1: Arrival in Kathmandu </strong></p>\r\n\r\n<p>Assistance at the airport upon arrival and transfer to hotel</p>\r\n\r\n<p><strong>Day 2: Fly to Bharatpur<br />\r\nEnjoy a Tharu Village Tour and the sunset view from the Rapti River.</strong></p>\r\n\r\n<p>***(Optional Everest Experience Mountain Flight - Fly with us to the top of the world, and indulge in the majestic views of Himalayas of Nepal, including Mt. Everest.)***</p>\r\n\r\n<p>After breakfast at the hotel, you&rsquo;ll depart for Tribhuvan International Airport (Domestic terminal) for an early morning flight with Buddha Air to Bharatpur - the gateway to Chitwan.</p>\r\n\r\n<p>Once you land at Bharatpur, you&rsquo;ll transfer to the hotel for check-in and have lunch at the hotel.</p>\r\n\r\n<p>You can rest and have some time to yourselves. Later in the afternoon, you&rsquo;ll get a guided tour of an authentic Tharu Village. The Tharus are an ethnic indigenous to the southern foothills of the Himalayas. They pride themselves as people of the forest, and build their communities around forest. Tharus believe in animism and celebrate Hindu festivals. While in the village, you get to observe the lives of the Tharus, how their homes are built, what they cook and wear, etc. Then you&rsquo;ll make your way to the Rapti River to view the sun illuminating the waters orange as it sets.</p>\r\n\r\n<p>Make your way back to the hotel for a Tharu cultural dance presentation. This cultural show involves traditional Tharu songs and dances, including the stick dance. Try to learn the steps of the dances and move along with the beat. After the fantastic presentation, enjoy your dinner and rest for the night.</p>\r\n\r\n<p><strong>Day 3: Canoe ride on the Rapti River, Bird watching, Elephant bathing, jungle walk and elephant safari. </strong></p>\r\n\r\n<p>Rise up early for a good breakfast and get ready for a canoe ride on the Rapti River.</p>\r\n\r\n<p>A canoe ride at Chitwan&rsquo;s Rapti River is the best way to view the aquatic wildlife of the river. Wisps of mist rise from the water surface, creating a dramatic effect, as your canoe glides deeper into the wilderness. A log on the river bank moves. You peek through your binoculars and realize it&rsquo;s a mugger crocodile or a <em>gharial</em>, warming its body in the sun.</p>\r\n\r\n<p>In Chitwan, a bird watching tour guide moves his hands as if he were shooting at a circle of enemies. Eyes and hands need to move fast in a place that has 450 species of birds. Aerial duels between birds of prey, serpent eagles with a snake in its talons, Ruddy Shelducks gliding on the water surface like two ice skaters in love, kingfishers plunging into the water and emerging with a glistening fish in its beak.</p>\r\n\r\n<p>Cool off the summer heat by taking a dip in the river with an elephant. Usually done in the morning, mahouts lead their elephants in the river to bathe them - and you are welcome to join the fun. Play with the elephants and take a dive in the river while on the back of the elephant. The elephant also splashes you with water from its trunk. Listen to the instructions of the mahout when bathing the elephants.</p>\r\n\r\n<p>Talk a walk on the wild side and go deep in the jungles of Chitwan National Park. The guide will warm you to walk silently to not scare the animals away. Fingers point frantically, eyes widen and necks crane to get a better view of the animals. The presence of over 50 mammal species in the park make the jungle walks an exciting and exhilarating experience.</p>\r\n\r\n<p>Take a well deserved rest and enjoy lunch at the hotel, and get ready for an elephant safari.</p>\r\n\r\n<p>Riding an elephant provides a lofty perch from which to cover the rivers, grasslands and Sal forests of Chitwan. With the help of an experienced mahout, the elephant is carefully guided through the dense forest. You&rsquo;ll get to see mammals like the endangered one horned rhinoceros, hear birds chirping in the distance and if you&rsquo;re lucky enough, even Royal Bengal Tigers.</p>\r\n\r\n<p>Rest at the hotel and enjoy dinner.</p>\r\n\r\n<p><strong>Day 4: Fly to Kathmandu and enjoy sightseeing of Kathmandu Durbar Square and Swayambhunath Stupa. </strong></p>\r\n\r\n<p>Have an early morning breakfast at the hotel and you&rsquo;ll be transferred to Bharatpur Airport to take a flight back to Kathmandu. After you land, check in at the hotel for lunch.</p>\r\n\r\n<p>Get ready for a sightseeing tour of Kathmandu Durbar Square and Swayambhunath Stupa.</p>\r\n\r\n<p>A living goddess, known as a Kumari resides at Kathmandu Durbar Square. Here, you&rsquo;ll experience wonders, eccentricities and diversity of Nepali temples. Take a trip back in time when you enter Hanuman Dhoka Palace. Inside, there are residential quarters of kings of the Malla Dynasty (1200 - 1769 A.D). When Nepal was a kingdom, kings were crowned at Hanuman Dhoka.</p>\r\n\r\n<p>In the evening, you&rsquo;ll visit Swayambhunath. The white domed stupa with its all-seeing eyes of Lord Buddha beckon you. From the top of Swayambhunath Stupa, you get to see panoramic views of Kathmandu Valley. Both Hindus and Buddhists visit Swayambhunath and is one of the best places to observe religious harmony.</p>\r\n\r\n<p>Enjoy an authentic and organic dinner at <strong>Bhojan Griha.</strong> Along with dinner, there&rsquo;ll be Nepali folk music and dances.</p>\r\n\r\n<p><strong>Day 5: Pashupatinath and Guheshwori Darshan </strong></p>\r\n\r\n<p>Breakfast at Hotel, and visit Guheshwori and Pashupatinath for Darshan.</p>\r\n\r\n<p>Regarded as a Shakti Peetha, Guheshwori Temple was built by King Pratap Malla in the 17th century. The temple is dedicated to Goddess Parvati (wife of Lord Shiva). It is considered an important Hindu pilgrimage destination. After Guheshwori Temple, you will make your way to Pashupatinath Temple. Pashupatinath is one of Nepal&rsquo;s important Hindu Temple. The present pagoda style temple was constructed in 1696 A.D. The Pashupatinath Temple complex resembles a life-size collage of life: faith, generosity, poverty, life, death mingle here in unceasing flow.</p>\r\n\r\n<p>Enjoy a light lunch at the hotel and get ready for departure.</p>",
+          "inclusions": "<title></title>\r\n<ul>\r\n\t<li>2 nights accommodation in Athens hotel on BB basis. Package rates are based in STANDARD ROOM TYPE</li>\r\n\t<li>Half day City tour of Athens with new Acropolis Museum SIC, with English speaking guide, entrance fees and the transportation from/to hotel.</li>\r\n\t<li>Private round trip transfers in Athens from airport-hotel-port-with private air onditioned taxi</li>\r\n</ul>",
+          "exclusions": "<title></title>\r\n<ul>\r\n\t<li>Return Airfare</li>\r\n\t<li>Items of personal nature viz , drinks, laundry, calls, etc.</li>\r\n\t<li>Anything not mentioned in inclusions</li>\r\n\t<li>Meals other than specified in the itinerary</li>\r\n\t<li>5% GST</li>\r\n</ul>",
+          "payment_policy": "<title></title>\r\n<p>Standard check in time is at 1500 hours &amp; check out time is 1200 hours. In case a new local city tax is introduced by the Greek Government in 2018, guests will have to pay this directly at the hotel and this tax is NOT included in the package rates (tax rates may vary from 0,50 to 4 Euros on a night basis depending on hotel category).</p>",
+          "cancellation_policy": "<title></title>\r\n<p>Standard check in time is at 1500 hours &amp; check out time is 1200 hours. In case a new local city tax is introduced by the Greek Government in 2018, guests will have to pay this directly at the hotel and this tax is NOT included in the package rates (tax rates may vary from 0,50 to 4 Euros on a night basis depending on hotel category).</p>",
+          "duration_day": 4,
+          "duration_night": 3,
+          "sector_from": 6,
+          "sector_to": 2,
+          "meta_keyword": null,
+          "meta_description": null,
+          "meta_title": null,
+          "has_flight": 0,
+          "is_published": 1,
+          "created_at": "2019-06-04 05:40:32",
+          "updated_at": "2019-08-27 05:00:32",
+          "display_homepage": 1,
+          "pivot": {
+            "package_type_id": 1,
+            "package_id": 4
+          },
+          "galleries": [
+            {
+              "id": 1,
+              "package_id": 4,
+              "title": "test",
+              "image": "1560681463-687043.jpg",
+              "type": "null",
+              "is_active": 1,
+              "caption": "test caption",
+              "created_at": "2019-06-16 16:22:15",
+              "updated_at": "2019-06-17 09:37:45"
+            },
+            {
+              "id": 2,
+              "package_id": 4,
+              "title": "Another test",
+              "image": "1560682150-456349.jpg",
+              "type": "null",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-06-16 16:34:10",
+              "updated_at": "2019-06-17 09:57:17"
+            },
+            {
+              "id": 3,
+              "package_id": 4,
+              "title": "test",
+              "image": "1563273824-519359.jpg",
+              "type": "null",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-07-16 16:28:43",
+              "updated_at": "2019-07-16 16:28:43"
+            },
+            {
+              "id": 4,
+              "package_id": 4,
+              "title": "test 2",
+              "image": "1563273879-796854.jpg",
+              "type": "null",
+              "is_active": 1,
+              "caption": "test 3",
+              "created_at": "2019-07-16 16:29:39",
+              "updated_at": "2019-07-16 16:29:39"
+            }
+          ],
+          "destination_from": {
+            "id": 6,
+            "name": "Nepalgunj",
+            "code": "NPG",
+            "status": 1,
+            "created_at": "2019-07-16 06:18:22",
+            "updated_at": "2019-07-16 06:18:22"
+          },
+          "destination_to": {
+            "id": 2,
+            "name": "Kathmandu",
+            "code": "KTM",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:37",
+            "updated_at": "2019-07-16 06:17:37"
+          }
+        }
+      ]
+    },
+    "tour_holiday": {
+      "id": 3,
+      "title": "TOUR PACKAGE",
+      "slug": "tour-package",
+      "description": "TOUR PACKAGE Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet sem ac lectus semper lacinia. Aliquam tincidunt tellus vel diam feugiat, ac tincidunt sem tincidunt. Fusce scelerisque ac tortor dictum tincidunt. Ut ac tristique nulla. Maecenas pellentesque tortor lorem, id venenatis purus elementum quis. Aliquam dictum, augue eu pellentesque ultrices, velit leo bibendum elit, ac accumsan purus purus a massa. Mauris quis nunc purus.",
+      "discount": 0,
+      "is_published": 1,
+      "created_at": "2019-08-07 14:26:46",
+      "updated_at": "2019-08-18 08:53:46",
+      "packages": [
+        {
+          "id": 10,
+          "title": "Provident dolor nih",
+          "slug": "provident-dolor-nih",
+          "overview": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "inclusions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "exclusions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "payment_policy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "cancellation_policy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "duration_day": 2,
+          "duration_night": 1,
+          "sector_from": 2,
+          "sector_to": 5,
+          "meta_keyword": "Qui inventore ea aut",
+          "meta_description": "Eum et voluptatum do",
+          "meta_title": "Et dolorem iste nobi",
+          "has_flight": 0,
+          "is_published": 1,
+          "created_at": "2019-08-16 09:31:38",
+          "updated_at": "2019-08-27 04:54:23",
+          "display_homepage": 1,
+          "pivot": {
+            "package_type_id": 3,
+            "package_id": 10
+          },
+          "galleries": [
+            {
+              "id": 12,
+              "package_id": 10,
+              "title": "test",
+              "image": "1566368074-161288.jpg",
+              "type": "wide",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-08-07 14:26:46",
+              "updated_at": "2019-08-07 14:26:46"
+            },
+            {
+              "id": 13,
+              "package_id": 10,
+              "title": "test 2",
+              "image": "1566368096-233396.jpg",
+              "type": "square",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-08-07 14:26:46",
+              "updated_at": "2019-08-07 14:26:46"
+            }
+          ],
+          "destination_from": {
+            "id": 2,
+            "name": "Kathmandu",
+            "code": "KTM",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:37",
+            "updated_at": "2019-07-16 06:17:37"
+          },
+          "destination_to": {
+            "id": 5,
+            "name": "Lumbini",
+            "code": "LUM",
+            "status": 1,
+            "created_at": "2019-07-16 06:18:09",
+            "updated_at": "2019-07-16 06:18:09"
+          }
+        },
+        {
+          "id": 9,
+          "title": "Et voluptas voluptat",
+          "slug": "et-voluptas-voluptat",
+          "overview": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "inclusions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "exclusions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "payment_policy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "cancellation_policy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "duration_day": 5,
+          "duration_night": 4,
+          "sector_from": 5,
+          "sector_to": 2,
+          "meta_keyword": "Eaque nihil sapiente",
+          "meta_description": "Labore omnis omnis m",
+          "meta_title": "Voluptatem maiores",
+          "has_flight": 0,
+          "is_published": 1,
+          "created_at": "2019-08-16 09:31:05",
+          "updated_at": "2019-08-27 04:58:55",
+          "display_homepage": 1,
+          "pivot": {
+            "package_type_id": 3,
+            "package_id": 9
+          },
+          "galleries": [],
+          "destination_from": {
+            "id": 5,
+            "name": "Lumbini",
+            "code": "LUM",
+            "status": 1,
+            "created_at": "2019-07-16 06:18:09",
+            "updated_at": "2019-07-16 06:18:09"
+          },
+          "destination_to": {
+            "id": 2,
+            "name": "Kathmandu",
+            "code": "KTM",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:37",
+            "updated_at": "2019-07-16 06:17:37"
+          }
+        },
+        {
+          "id": 8,
+          "title": "Rerum qui sit veniam",
+          "slug": "rerum-qui-sit-veniam",
+          "overview": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "inclusions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "exclusions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "payment_policy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "cancellation_policy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "duration_day": 4,
+          "duration_night": 3,
+          "sector_from": 6,
+          "sector_to": 3,
+          "meta_keyword": "A et illum veritati",
+          "meta_description": "Autem enim officia f",
+          "meta_title": "Non maiores eu amet",
+          "has_flight": 0,
+          "is_published": 1,
+          "created_at": "2019-08-16 09:30:35",
+          "updated_at": "2019-08-27 05:00:25",
+          "display_homepage": 1,
+          "pivot": {
+            "package_type_id": 3,
+            "package_id": 8
+          },
+          "galleries": [],
+          "destination_from": {
+            "id": 6,
+            "name": "Nepalgunj",
+            "code": "NPG",
+            "status": 1,
+            "created_at": "2019-07-16 06:18:22",
+            "updated_at": "2019-07-16 06:18:22"
+          },
+          "destination_to": {
+            "id": 3,
+            "name": "Pokhara",
+            "code": "PKR",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:49",
+            "updated_at": "2019-07-16 06:17:49"
+          }
+        },
+        {
+          "id": 7,
+          "title": "Tempor distinctio I",
+          "slug": "tempor-distinctio-i",
+          "overview": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit, nisl vitae dictum bibendum, justo velit porttitor libero, non ultricies odio quam ac velit. Donec sit amet bibendum mi, at tempor tellus. Phasellus a condimentum mi. Donec diam enim, tincidunt at sagittis vitae, cursus vitae sapien. Maecenas ante ante, mattis sed libero at, ullamcorper facilisis orci. Quisque in lectus at sem sollicitudin auctor ac at libero. Praesent venenatis justo ex, quis rhoncus enim consequat hendrerit. Fusce cursus nisl nec lobortis dignissim. Nam cursus fringilla eros a sollicitudin. Curabitur arcu dui, imperdiet vel facilisis a, convallis a lectus.</p>\r\n\r\n<p>Nullam pretium vehicula mollis. Duis tincidunt mi ac lectus hendrerit sodales. Pellentesque viverra, leo quis tempus semper, erat risus lacinia augue, ut ornare mauris arcu ut risus. Etiam dapibus venenatis quam, et venenatis nulla lacinia in. Ut porta sapien justo, nec fermentum velit commodo quis. Maecenas ut lectus id metus posuere aliquam id eu ligula. In ultricies luctus eros vehicula tristique. Fusce faucibus blandit nulla, a laoreet arcu rhoncus ut. Suspendisse vehicula orci non eleifend aliquam. Quisque et venenatis est. Nullam purus lectus, vestibulum vel semper non, iaculis et ligula. Quisque fermentum nunc in magna malesuada aliquam. Etiam in diam porttitor, malesuada tortor vel, tempor dui. Proin scelerisque lectus a metus maximus accumsan. Quisque non tempus elit, sit amet faucibus orci.</p>",
+          "inclusions": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "exclusions": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "payment_policy": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "cancellation_policy": "<title></title>\r\n<p>ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit, nisl vitae dictum bibendum, justo velit porttitor libero, non ultricies odio quam ac velit. Donec sit amet bibendum mi, at tempor tellus. Phasellus a condimentum mi. Donec diam enim, tincidunt at sagittis vitae, cursus vitae sapien. Maecenas ante ante, mattis sed libero at, ullamcorper facilisis orci. Quisque in lectus at sem sollicitudin auctor ac at libero. Praesent venenatis justo ex, quis rhoncus enim consequat hendrerit. Fusce cursus nisl nec lobortis dignissim. Nam cursus fringilla eros a sollicitudin. Curabitur arcu dui, imperdiet vel facilisis a, convallis a lectus. Nullam pretium vehicul</p>",
+          "duration_day": 22,
+          "duration_night": 21,
+          "sector_from": 2,
+          "sector_to": 4,
+          "meta_keyword": "Sed ea amet quasi s",
+          "meta_description": "In est excepteur nis",
+          "meta_title": "Ut molestiae amet r",
+          "has_flight": 1,
+          "is_published": 1,
+          "created_at": "2019-07-23 04:28:43",
+          "updated_at": "2019-08-18 06:17:28",
+          "display_homepage": 0,
+          "pivot": {
+            "package_type_id": 3,
+            "package_id": 7
+          },
+          "galleries": [
+            {
+              "id": 15,
+              "package_id": 7,
+              "title": "test",
+              "image": "1566370247-179557.jpg",
+              "type": "wide",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-08-07 14:26:46",
+              "updated_at": "2019-08-07 14:26:46"
+            },
+            {
+              "id": 16,
+              "package_id": 7,
+              "title": "test",
+              "image": "1566370275-862120.jpg",
+              "type": "square",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-08-07 14:26:46",
+              "updated_at": "2019-08-07 14:26:46"
+            }
+          ],
+          "destination_from": {
+            "id": 2,
+            "name": "Kathmandu",
+            "code": "KTM",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:37",
+            "updated_at": "2019-07-16 06:17:37"
+          },
+          "destination_to": {
+            "id": 4,
+            "name": "Chitwan",
+            "code": "CHI",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:57",
+            "updated_at": "2019-07-16 06:17:57"
+          }
+        },
+        {
+          "id": 6,
+          "title": "Aliquip ratione pers",
+          "slug": "aliquip-ratione-pers",
+          "overview": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus sollicitudin eros, sit amet iaculis ligula hendrerit et. Donec mollis nibh vel mi vestibulum imperdiet. Nam fermentum, enim at dictum posuere, orci mauris lacinia nunc, sit amet fringilla enim urna in erat. Nulla nulla nisl, bibendum nec ex ornare, pulvinar pharetra velit. Donec at nibh augue. Quisque gravida, eros in maximus porttitor, odio urna viverra arcu, ut vehicula dui ex vitae erat. Morbi pretium eget nibh ut vestibulum. Donec sit amet enim vitae erat luctus pellentesque. Nullam gravida nisi id leo tempor, vitae vestibulum velit maximus. Aenean eget venenatis ligula. Nunc semper tempor justo, quis condimentum urna interdum non. Nunc venenatis volutpat sem, eget condimentum quam blandit quis. Pellentesque sed enim efficitur, efficitur dolor vel, dignissim enim. Sed congue sem mauris.</p>\r\n\r\n<p>Quisque tincidunt quam quis dolor sagittis pharetra sed vel tortor. Sed lorem erat, vehicula sed sagittis quis, congue eget mi. Sed non lectus sagittis, ultricies sapien a, sagittis nunc. Integer at laoreet lorem. In pretium ex at mi gravida placerat. In non consequat nisl. Fusce vehicula augue eu justo convallis maximus. Duis laoreet ligula augue, ac laoreet enim convallis ultrices.</p>",
+          "inclusions": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "exclusions": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "payment_policy": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "cancellation_policy": "<title></title>\r\n<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "duration_day": 1,
+          "duration_night": 2,
+          "sector_from": 2,
+          "sector_to": 3,
+          "meta_keyword": "Ullamco ut excepteur",
+          "meta_description": "Nisi nulla at placea",
+          "meta_title": "Sit cum ea quasi com",
+          "has_flight": 1,
+          "is_published": 1,
+          "created_at": "2019-07-23 04:23:36",
+          "updated_at": "2019-08-18 06:17:36",
+          "display_homepage": 0,
+          "pivot": {
+            "package_type_id": 3,
+            "package_id": 6
+          },
+          "galleries": [
+            {
+              "id": 8,
+              "package_id": 6,
+              "title": "test",
+              "image": "1565945760-958696.jpg",
+              "type": "type_1",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-08-07 14:26:46",
+              "updated_at": "2019-08-07 14:26:46"
+            }
+          ],
+          "destination_from": {
+            "id": 2,
+            "name": "Kathmandu",
+            "code": "KTM",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:37",
+            "updated_at": "2019-07-16 06:17:37"
+          },
+          "destination_to": {
+            "id": 3,
+            "name": "Pokhara",
+            "code": "PKR",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:49",
+            "updated_at": "2019-07-16 06:17:49"
+          }
+        },
+        {
+          "id": 4,
+          "title": "Temple and Tigers sdfasdfasdf",
+          "slug": "temple-and-tigers",
+          "overview": "<title></title>\r\n<p><strong>Kathmandu Valley and Chitwan National Park Tour 4 nights, 5 days<br />\r\nTemples &amp; Tigers</strong></p>\r\n\r\n<p>A visit to Chitwan reveals an unexpected side to Nepal yet an attractive proposition for nature lovers. Located on the terai at the fringe of the Indian plains, the national park boasts diverse forest with magnificent wildlife experiences. The Royal Bengal Tiger, Asian Rhinoceros, Gharial, Langur, Rhesus, Macaque Monkey are some of them.</p>\r\n\r\n<p><strong>Day 1: Arrival in Kathmandu </strong></p>\r\n\r\n<p>Assistance at the airport upon arrival and transfer to hotel</p>\r\n\r\n<p><strong>Day 2: Fly to Bharatpur<br />\r\nEnjoy a Tharu Village Tour and the sunset view from the Rapti River.</strong></p>\r\n\r\n<p>***(Optional Everest Experience Mountain Flight - Fly with us to the top of the world, and indulge in the majestic views of Himalayas of Nepal, including Mt. Everest.)***</p>\r\n\r\n<p>After breakfast at the hotel, you&rsquo;ll depart for Tribhuvan International Airport (Domestic terminal) for an early morning flight with Buddha Air to Bharatpur - the gateway to Chitwan.</p>\r\n\r\n<p>Once you land at Bharatpur, you&rsquo;ll transfer to the hotel for check-in and have lunch at the hotel.</p>\r\n\r\n<p>You can rest and have some time to yourselves. Later in the afternoon, you&rsquo;ll get a guided tour of an authentic Tharu Village. The Tharus are an ethnic indigenous to the southern foothills of the Himalayas. They pride themselves as people of the forest, and build their communities around forest. Tharus believe in animism and celebrate Hindu festivals. While in the village, you get to observe the lives of the Tharus, how their homes are built, what they cook and wear, etc. Then you&rsquo;ll make your way to the Rapti River to view the sun illuminating the waters orange as it sets.</p>\r\n\r\n<p>Make your way back to the hotel for a Tharu cultural dance presentation. This cultural show involves traditional Tharu songs and dances, including the stick dance. Try to learn the steps of the dances and move along with the beat. After the fantastic presentation, enjoy your dinner and rest for the night.</p>\r\n\r\n<p><strong>Day 3: Canoe ride on the Rapti River, Bird watching, Elephant bathing, jungle walk and elephant safari. </strong></p>\r\n\r\n<p>Rise up early for a good breakfast and get ready for a canoe ride on the Rapti River.</p>\r\n\r\n<p>A canoe ride at Chitwan&rsquo;s Rapti River is the best way to view the aquatic wildlife of the river. Wisps of mist rise from the water surface, creating a dramatic effect, as your canoe glides deeper into the wilderness. A log on the river bank moves. You peek through your binoculars and realize it&rsquo;s a mugger crocodile or a <em>gharial</em>, warming its body in the sun.</p>\r\n\r\n<p>In Chitwan, a bird watching tour guide moves his hands as if he were shooting at a circle of enemies. Eyes and hands need to move fast in a place that has 450 species of birds. Aerial duels between birds of prey, serpent eagles with a snake in its talons, Ruddy Shelducks gliding on the water surface like two ice skaters in love, kingfishers plunging into the water and emerging with a glistening fish in its beak.</p>\r\n\r\n<p>Cool off the summer heat by taking a dip in the river with an elephant. Usually done in the morning, mahouts lead their elephants in the river to bathe them - and you are welcome to join the fun. Play with the elephants and take a dive in the river while on the back of the elephant. The elephant also splashes you with water from its trunk. Listen to the instructions of the mahout when bathing the elephants.</p>\r\n\r\n<p>Talk a walk on the wild side and go deep in the jungles of Chitwan National Park. The guide will warm you to walk silently to not scare the animals away. Fingers point frantically, eyes widen and necks crane to get a better view of the animals. The presence of over 50 mammal species in the park make the jungle walks an exciting and exhilarating experience.</p>\r\n\r\n<p>Take a well deserved rest and enjoy lunch at the hotel, and get ready for an elephant safari.</p>\r\n\r\n<p>Riding an elephant provides a lofty perch from which to cover the rivers, grasslands and Sal forests of Chitwan. With the help of an experienced mahout, the elephant is carefully guided through the dense forest. You&rsquo;ll get to see mammals like the endangered one horned rhinoceros, hear birds chirping in the distance and if you&rsquo;re lucky enough, even Royal Bengal Tigers.</p>\r\n\r\n<p>Rest at the hotel and enjoy dinner.</p>\r\n\r\n<p><strong>Day 4: Fly to Kathmandu and enjoy sightseeing of Kathmandu Durbar Square and Swayambhunath Stupa. </strong></p>\r\n\r\n<p>Have an early morning breakfast at the hotel and you&rsquo;ll be transferred to Bharatpur Airport to take a flight back to Kathmandu. After you land, check in at the hotel for lunch.</p>\r\n\r\n<p>Get ready for a sightseeing tour of Kathmandu Durbar Square and Swayambhunath Stupa.</p>\r\n\r\n<p>A living goddess, known as a Kumari resides at Kathmandu Durbar Square. Here, you&rsquo;ll experience wonders, eccentricities and diversity of Nepali temples. Take a trip back in time when you enter Hanuman Dhoka Palace. Inside, there are residential quarters of kings of the Malla Dynasty (1200 - 1769 A.D). When Nepal was a kingdom, kings were crowned at Hanuman Dhoka.</p>\r\n\r\n<p>In the evening, you&rsquo;ll visit Swayambhunath. The white domed stupa with its all-seeing eyes of Lord Buddha beckon you. From the top of Swayambhunath Stupa, you get to see panoramic views of Kathmandu Valley. Both Hindus and Buddhists visit Swayambhunath and is one of the best places to observe religious harmony.</p>\r\n\r\n<p>Enjoy an authentic and organic dinner at <strong>Bhojan Griha.</strong> Along with dinner, there&rsquo;ll be Nepali folk music and dances.</p>\r\n\r\n<p><strong>Day 5: Pashupatinath and Guheshwori Darshan </strong></p>\r\n\r\n<p>Breakfast at Hotel, and visit Guheshwori and Pashupatinath for Darshan.</p>\r\n\r\n<p>Regarded as a Shakti Peetha, Guheshwori Temple was built by King Pratap Malla in the 17th century. The temple is dedicated to Goddess Parvati (wife of Lord Shiva). It is considered an important Hindu pilgrimage destination. After Guheshwori Temple, you will make your way to Pashupatinath Temple. Pashupatinath is one of Nepal&rsquo;s important Hindu Temple. The present pagoda style temple was constructed in 1696 A.D. The Pashupatinath Temple complex resembles a life-size collage of life: faith, generosity, poverty, life, death mingle here in unceasing flow.</p>\r\n\r\n<p>Enjoy a light lunch at the hotel and get ready for departure.</p>",
+          "inclusions": "<title></title>\r\n<ul>\r\n\t<li>2 nights accommodation in Athens hotel on BB basis. Package rates are based in STANDARD ROOM TYPE</li>\r\n\t<li>Half day City tour of Athens with new Acropolis Museum SIC, with English speaking guide, entrance fees and the transportation from/to hotel.</li>\r\n\t<li>Private round trip transfers in Athens from airport-hotel-port-with private air onditioned taxi</li>\r\n</ul>",
+          "exclusions": "<title></title>\r\n<ul>\r\n\t<li>Return Airfare</li>\r\n\t<li>Items of personal nature viz , drinks, laundry, calls, etc.</li>\r\n\t<li>Anything not mentioned in inclusions</li>\r\n\t<li>Meals other than specified in the itinerary</li>\r\n\t<li>5% GST</li>\r\n</ul>",
+          "payment_policy": "<title></title>\r\n<p>Standard check in time is at 1500 hours &amp; check out time is 1200 hours. In case a new local city tax is introduced by the Greek Government in 2018, guests will have to pay this directly at the hotel and this tax is NOT included in the package rates (tax rates may vary from 0,50 to 4 Euros on a night basis depending on hotel category).</p>",
+          "cancellation_policy": "<title></title>\r\n<p>Standard check in time is at 1500 hours &amp; check out time is 1200 hours. In case a new local city tax is introduced by the Greek Government in 2018, guests will have to pay this directly at the hotel and this tax is NOT included in the package rates (tax rates may vary from 0,50 to 4 Euros on a night basis depending on hotel category).</p>",
+          "duration_day": 4,
+          "duration_night": 3,
+          "sector_from": 6,
+          "sector_to": 2,
+          "meta_keyword": null,
+          "meta_description": null,
+          "meta_title": null,
+          "has_flight": 0,
+          "is_published": 1,
+          "created_at": "2019-06-04 05:40:32",
+          "updated_at": "2019-08-27 05:00:32",
+          "display_homepage": 1,
+          "pivot": {
+            "package_type_id": 3,
+            "package_id": 4
+          },
+          "galleries": [
+            {
+              "id": 1,
+              "package_id": 4,
+              "title": "test",
+              "image": "1560681463-687043.jpg",
+              "type": "null",
+              "is_active": 1,
+              "caption": "test caption",
+              "created_at": "2019-06-16 16:22:15",
+              "updated_at": "2019-06-17 09:37:45"
+            },
+            {
+              "id": 2,
+              "package_id": 4,
+              "title": "Another test",
+              "image": "1560682150-456349.jpg",
+              "type": "null",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-06-16 16:34:10",
+              "updated_at": "2019-06-17 09:57:17"
+            },
+            {
+              "id": 3,
+              "package_id": 4,
+              "title": "test",
+              "image": "1563273824-519359.jpg",
+              "type": "null",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-07-16 16:28:43",
+              "updated_at": "2019-07-16 16:28:43"
+            },
+            {
+              "id": 4,
+              "package_id": 4,
+              "title": "test 2",
+              "image": "1563273879-796854.jpg",
+              "type": "null",
+              "is_active": 1,
+              "caption": "test 3",
+              "created_at": "2019-07-16 16:29:39",
+              "updated_at": "2019-07-16 16:29:39"
+            }
+          ],
+          "destination_from": {
+            "id": 6,
+            "name": "Nepalgunj",
+            "code": "NPG",
+            "status": 1,
+            "created_at": "2019-07-16 06:18:22",
+            "updated_at": "2019-07-16 06:18:22"
+          },
+          "destination_to": {
+            "id": 2,
+            "name": "Kathmandu",
+            "code": "KTM",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:37",
+            "updated_at": "2019-07-16 06:17:37"
+          }
+        }
+      ]
+    },
+    "trekking_holiday": {
+      "id": 4,
+      "title": "TREKKING PACKAGE",
+      "slug": "trekking-package",
+      "description": "TREKKING PACKAGE Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet sem ac lectus semper lacinia. Aliquam tincidunt tellus vel diam feugiat, ac tincidunt sem tincidunt. Fusce scelerisque ac tortor dictum tincidunt. Ut ac tristique nulla. Maecenas pellentesque tortor lorem, id venenatis purus elementum quis. Aliquam dictum, augue eu pellentesque ultrices, velit leo bibendum elit, ac accumsan purus purus a massa. Mauris quis nunc purus.",
+      "discount": 0,
+      "is_published": 1,
+      "created_at": "2019-08-07 14:26:46",
+      "updated_at": "2019-08-18 08:53:49",
+      "packages": [
+        {
+          "id": 10,
+          "title": "Provident dolor nih",
+          "slug": "provident-dolor-nih",
+          "overview": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "inclusions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "exclusions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "payment_policy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "cancellation_policy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "duration_day": 2,
+          "duration_night": 1,
+          "sector_from": 2,
+          "sector_to": 5,
+          "meta_keyword": "Qui inventore ea aut",
+          "meta_description": "Eum et voluptatum do",
+          "meta_title": "Et dolorem iste nobi",
+          "has_flight": 0,
+          "is_published": 1,
+          "created_at": "2019-08-16 09:31:38",
+          "updated_at": "2019-08-27 04:54:23",
+          "display_homepage": 1,
+          "pivot": {
+            "package_type_id": 4,
+            "package_id": 10
+          },
+          "galleries": [
+            {
+              "id": 12,
+              "package_id": 10,
+              "title": "test",
+              "image": "1566368074-161288.jpg",
+              "type": "wide",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-08-07 14:26:46",
+              "updated_at": "2019-08-07 14:26:46"
+            },
+            {
+              "id": 13,
+              "package_id": 10,
+              "title": "test 2",
+              "image": "1566368096-233396.jpg",
+              "type": "square",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-08-07 14:26:46",
+              "updated_at": "2019-08-07 14:26:46"
+            }
+          ],
+          "destination_from": {
+            "id": 2,
+            "name": "Kathmandu",
+            "code": "KTM",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:37",
+            "updated_at": "2019-07-16 06:17:37"
+          },
+          "destination_to": {
+            "id": 5,
+            "name": "Lumbini",
+            "code": "LUM",
+            "status": 1,
+            "created_at": "2019-07-16 06:18:09",
+            "updated_at": "2019-07-16 06:18:09"
+          }
+        },
+        {
+          "id": 9,
+          "title": "Et voluptas voluptat",
+          "slug": "et-voluptas-voluptat",
+          "overview": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "inclusions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "exclusions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "payment_policy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "cancellation_policy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "duration_day": 5,
+          "duration_night": 4,
+          "sector_from": 5,
+          "sector_to": 2,
+          "meta_keyword": "Eaque nihil sapiente",
+          "meta_description": "Labore omnis omnis m",
+          "meta_title": "Voluptatem maiores",
+          "has_flight": 0,
+          "is_published": 1,
+          "created_at": "2019-08-16 09:31:05",
+          "updated_at": "2019-08-27 04:58:55",
+          "display_homepage": 1,
+          "pivot": {
+            "package_type_id": 4,
+            "package_id": 9
+          },
+          "galleries": [],
+          "destination_from": {
+            "id": 5,
+            "name": "Lumbini",
+            "code": "LUM",
+            "status": 1,
+            "created_at": "2019-07-16 06:18:09",
+            "updated_at": "2019-07-16 06:18:09"
+          },
+          "destination_to": {
+            "id": 2,
+            "name": "Kathmandu",
+            "code": "KTM",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:37",
+            "updated_at": "2019-07-16 06:17:37"
+          }
+        },
+        {
+          "id": 8,
+          "title": "Rerum qui sit veniam",
+          "slug": "rerum-qui-sit-veniam",
+          "overview": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "inclusions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "exclusions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "payment_policy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "cancellation_policy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "duration_day": 4,
+          "duration_night": 3,
+          "sector_from": 6,
+          "sector_to": 3,
+          "meta_keyword": "A et illum veritati",
+          "meta_description": "Autem enim officia f",
+          "meta_title": "Non maiores eu amet",
+          "has_flight": 0,
+          "is_published": 1,
+          "created_at": "2019-08-16 09:30:35",
+          "updated_at": "2019-08-27 05:00:25",
+          "display_homepage": 1,
+          "pivot": {
+            "package_type_id": 4,
+            "package_id": 8
+          },
+          "galleries": [],
+          "destination_from": {
+            "id": 6,
+            "name": "Nepalgunj",
+            "code": "NPG",
+            "status": 1,
+            "created_at": "2019-07-16 06:18:22",
+            "updated_at": "2019-07-16 06:18:22"
+          },
+          "destination_to": {
+            "id": 3,
+            "name": "Pokhara",
+            "code": "PKR",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:49",
+            "updated_at": "2019-07-16 06:17:49"
+          }
+        },
+        {
+          "id": 7,
+          "title": "Tempor distinctio I",
+          "slug": "tempor-distinctio-i",
+          "overview": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit, nisl vitae dictum bibendum, justo velit porttitor libero, non ultricies odio quam ac velit. Donec sit amet bibendum mi, at tempor tellus. Phasellus a condimentum mi. Donec diam enim, tincidunt at sagittis vitae, cursus vitae sapien. Maecenas ante ante, mattis sed libero at, ullamcorper facilisis orci. Quisque in lectus at sem sollicitudin auctor ac at libero. Praesent venenatis justo ex, quis rhoncus enim consequat hendrerit. Fusce cursus nisl nec lobortis dignissim. Nam cursus fringilla eros a sollicitudin. Curabitur arcu dui, imperdiet vel facilisis a, convallis a lectus.</p>\r\n\r\n<p>Nullam pretium vehicula mollis. Duis tincidunt mi ac lectus hendrerit sodales. Pellentesque viverra, leo quis tempus semper, erat risus lacinia augue, ut ornare mauris arcu ut risus. Etiam dapibus venenatis quam, et venenatis nulla lacinia in. Ut porta sapien justo, nec fermentum velit commodo quis. Maecenas ut lectus id metus posuere aliquam id eu ligula. In ultricies luctus eros vehicula tristique. Fusce faucibus blandit nulla, a laoreet arcu rhoncus ut. Suspendisse vehicula orci non eleifend aliquam. Quisque et venenatis est. Nullam purus lectus, vestibulum vel semper non, iaculis et ligula. Quisque fermentum nunc in magna malesuada aliquam. Etiam in diam porttitor, malesuada tortor vel, tempor dui. Proin scelerisque lectus a metus maximus accumsan. Quisque non tempus elit, sit amet faucibus orci.</p>",
+          "inclusions": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "exclusions": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "payment_policy": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "cancellation_policy": "<title></title>\r\n<p>ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit, nisl vitae dictum bibendum, justo velit porttitor libero, non ultricies odio quam ac velit. Donec sit amet bibendum mi, at tempor tellus. Phasellus a condimentum mi. Donec diam enim, tincidunt at sagittis vitae, cursus vitae sapien. Maecenas ante ante, mattis sed libero at, ullamcorper facilisis orci. Quisque in lectus at sem sollicitudin auctor ac at libero. Praesent venenatis justo ex, quis rhoncus enim consequat hendrerit. Fusce cursus nisl nec lobortis dignissim. Nam cursus fringilla eros a sollicitudin. Curabitur arcu dui, imperdiet vel facilisis a, convallis a lectus. Nullam pretium vehicul</p>",
+          "duration_day": 22,
+          "duration_night": 21,
+          "sector_from": 2,
+          "sector_to": 4,
+          "meta_keyword": "Sed ea amet quasi s",
+          "meta_description": "In est excepteur nis",
+          "meta_title": "Ut molestiae amet r",
+          "has_flight": 1,
+          "is_published": 1,
+          "created_at": "2019-07-23 04:28:43",
+          "updated_at": "2019-08-18 06:17:28",
+          "display_homepage": 0,
+          "pivot": {
+            "package_type_id": 4,
+            "package_id": 7
+          },
+          "galleries": [
+            {
+              "id": 15,
+              "package_id": 7,
+              "title": "test",
+              "image": "1566370247-179557.jpg",
+              "type": "wide",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-08-07 14:26:46",
+              "updated_at": "2019-08-07 14:26:46"
+            },
+            {
+              "id": 16,
+              "package_id": 7,
+              "title": "test",
+              "image": "1566370275-862120.jpg",
+              "type": "square",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-08-07 14:26:46",
+              "updated_at": "2019-08-07 14:26:46"
+            }
+          ],
+          "destination_from": {
+            "id": 2,
+            "name": "Kathmandu",
+            "code": "KTM",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:37",
+            "updated_at": "2019-07-16 06:17:37"
+          },
+          "destination_to": {
+            "id": 4,
+            "name": "Chitwan",
+            "code": "CHI",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:57",
+            "updated_at": "2019-07-16 06:17:57"
+          }
+        },
+        {
+          "id": 6,
+          "title": "Aliquip ratione pers",
+          "slug": "aliquip-ratione-pers",
+          "overview": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus sollicitudin eros, sit amet iaculis ligula hendrerit et. Donec mollis nibh vel mi vestibulum imperdiet. Nam fermentum, enim at dictum posuere, orci mauris lacinia nunc, sit amet fringilla enim urna in erat. Nulla nulla nisl, bibendum nec ex ornare, pulvinar pharetra velit. Donec at nibh augue. Quisque gravida, eros in maximus porttitor, odio urna viverra arcu, ut vehicula dui ex vitae erat. Morbi pretium eget nibh ut vestibulum. Donec sit amet enim vitae erat luctus pellentesque. Nullam gravida nisi id leo tempor, vitae vestibulum velit maximus. Aenean eget venenatis ligula. Nunc semper tempor justo, quis condimentum urna interdum non. Nunc venenatis volutpat sem, eget condimentum quam blandit quis. Pellentesque sed enim efficitur, efficitur dolor vel, dignissim enim. Sed congue sem mauris.</p>\r\n\r\n<p>Quisque tincidunt quam quis dolor sagittis pharetra sed vel tortor. Sed lorem erat, vehicula sed sagittis quis, congue eget mi. Sed non lectus sagittis, ultricies sapien a, sagittis nunc. Integer at laoreet lorem. In pretium ex at mi gravida placerat. In non consequat nisl. Fusce vehicula augue eu justo convallis maximus. Duis laoreet ligula augue, ac laoreet enim convallis ultrices.</p>",
+          "inclusions": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "exclusions": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "payment_policy": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "cancellation_policy": "<title></title>\r\n<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "duration_day": 1,
+          "duration_night": 2,
+          "sector_from": 2,
+          "sector_to": 3,
+          "meta_keyword": "Ullamco ut excepteur",
+          "meta_description": "Nisi nulla at placea",
+          "meta_title": "Sit cum ea quasi com",
+          "has_flight": 1,
+          "is_published": 1,
+          "created_at": "2019-07-23 04:23:36",
+          "updated_at": "2019-08-18 06:17:36",
+          "display_homepage": 0,
+          "pivot": {
+            "package_type_id": 4,
+            "package_id": 6
+          },
+          "galleries": [
+            {
+              "id": 8,
+              "package_id": 6,
+              "title": "test",
+              "image": "1565945760-958696.jpg",
+              "type": "type_1",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-08-07 14:26:46",
+              "updated_at": "2019-08-07 14:26:46"
+            }
+          ],
+          "destination_from": {
+            "id": 2,
+            "name": "Kathmandu",
+            "code": "KTM",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:37",
+            "updated_at": "2019-07-16 06:17:37"
+          },
+          "destination_to": {
+            "id": 3,
+            "name": "Pokhara",
+            "code": "PKR",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:49",
+            "updated_at": "2019-07-16 06:17:49"
+          }
+        },
+        {
+          "id": 4,
+          "title": "Temple and Tigers sdfasdfasdf",
+          "slug": "temple-and-tigers",
+          "overview": "<title></title>\r\n<p><strong>Kathmandu Valley and Chitwan National Park Tour 4 nights, 5 days<br />\r\nTemples &amp; Tigers</strong></p>\r\n\r\n<p>A visit to Chitwan reveals an unexpected side to Nepal yet an attractive proposition for nature lovers. Located on the terai at the fringe of the Indian plains, the national park boasts diverse forest with magnificent wildlife experiences. The Royal Bengal Tiger, Asian Rhinoceros, Gharial, Langur, Rhesus, Macaque Monkey are some of them.</p>\r\n\r\n<p><strong>Day 1: Arrival in Kathmandu </strong></p>\r\n\r\n<p>Assistance at the airport upon arrival and transfer to hotel</p>\r\n\r\n<p><strong>Day 2: Fly to Bharatpur<br />\r\nEnjoy a Tharu Village Tour and the sunset view from the Rapti River.</strong></p>\r\n\r\n<p>***(Optional Everest Experience Mountain Flight - Fly with us to the top of the world, and indulge in the majestic views of Himalayas of Nepal, including Mt. Everest.)***</p>\r\n\r\n<p>After breakfast at the hotel, you&rsquo;ll depart for Tribhuvan International Airport (Domestic terminal) for an early morning flight with Buddha Air to Bharatpur - the gateway to Chitwan.</p>\r\n\r\n<p>Once you land at Bharatpur, you&rsquo;ll transfer to the hotel for check-in and have lunch at the hotel.</p>\r\n\r\n<p>You can rest and have some time to yourselves. Later in the afternoon, you&rsquo;ll get a guided tour of an authentic Tharu Village. The Tharus are an ethnic indigenous to the southern foothills of the Himalayas. They pride themselves as people of the forest, and build their communities around forest. Tharus believe in animism and celebrate Hindu festivals. While in the village, you get to observe the lives of the Tharus, how their homes are built, what they cook and wear, etc. Then you&rsquo;ll make your way to the Rapti River to view the sun illuminating the waters orange as it sets.</p>\r\n\r\n<p>Make your way back to the hotel for a Tharu cultural dance presentation. This cultural show involves traditional Tharu songs and dances, including the stick dance. Try to learn the steps of the dances and move along with the beat. After the fantastic presentation, enjoy your dinner and rest for the night.</p>\r\n\r\n<p><strong>Day 3: Canoe ride on the Rapti River, Bird watching, Elephant bathing, jungle walk and elephant safari. </strong></p>\r\n\r\n<p>Rise up early for a good breakfast and get ready for a canoe ride on the Rapti River.</p>\r\n\r\n<p>A canoe ride at Chitwan&rsquo;s Rapti River is the best way to view the aquatic wildlife of the river. Wisps of mist rise from the water surface, creating a dramatic effect, as your canoe glides deeper into the wilderness. A log on the river bank moves. You peek through your binoculars and realize it&rsquo;s a mugger crocodile or a <em>gharial</em>, warming its body in the sun.</p>\r\n\r\n<p>In Chitwan, a bird watching tour guide moves his hands as if he were shooting at a circle of enemies. Eyes and hands need to move fast in a place that has 450 species of birds. Aerial duels between birds of prey, serpent eagles with a snake in its talons, Ruddy Shelducks gliding on the water surface like two ice skaters in love, kingfishers plunging into the water and emerging with a glistening fish in its beak.</p>\r\n\r\n<p>Cool off the summer heat by taking a dip in the river with an elephant. Usually done in the morning, mahouts lead their elephants in the river to bathe them - and you are welcome to join the fun. Play with the elephants and take a dive in the river while on the back of the elephant. The elephant also splashes you with water from its trunk. Listen to the instructions of the mahout when bathing the elephants.</p>\r\n\r\n<p>Talk a walk on the wild side and go deep in the jungles of Chitwan National Park. The guide will warm you to walk silently to not scare the animals away. Fingers point frantically, eyes widen and necks crane to get a better view of the animals. The presence of over 50 mammal species in the park make the jungle walks an exciting and exhilarating experience.</p>\r\n\r\n<p>Take a well deserved rest and enjoy lunch at the hotel, and get ready for an elephant safari.</p>\r\n\r\n<p>Riding an elephant provides a lofty perch from which to cover the rivers, grasslands and Sal forests of Chitwan. With the help of an experienced mahout, the elephant is carefully guided through the dense forest. You&rsquo;ll get to see mammals like the endangered one horned rhinoceros, hear birds chirping in the distance and if you&rsquo;re lucky enough, even Royal Bengal Tigers.</p>\r\n\r\n<p>Rest at the hotel and enjoy dinner.</p>\r\n\r\n<p><strong>Day 4: Fly to Kathmandu and enjoy sightseeing of Kathmandu Durbar Square and Swayambhunath Stupa. </strong></p>\r\n\r\n<p>Have an early morning breakfast at the hotel and you&rsquo;ll be transferred to Bharatpur Airport to take a flight back to Kathmandu. After you land, check in at the hotel for lunch.</p>\r\n\r\n<p>Get ready for a sightseeing tour of Kathmandu Durbar Square and Swayambhunath Stupa.</p>\r\n\r\n<p>A living goddess, known as a Kumari resides at Kathmandu Durbar Square. Here, you&rsquo;ll experience wonders, eccentricities and diversity of Nepali temples. Take a trip back in time when you enter Hanuman Dhoka Palace. Inside, there are residential quarters of kings of the Malla Dynasty (1200 - 1769 A.D). When Nepal was a kingdom, kings were crowned at Hanuman Dhoka.</p>\r\n\r\n<p>In the evening, you&rsquo;ll visit Swayambhunath. The white domed stupa with its all-seeing eyes of Lord Buddha beckon you. From the top of Swayambhunath Stupa, you get to see panoramic views of Kathmandu Valley. Both Hindus and Buddhists visit Swayambhunath and is one of the best places to observe religious harmony.</p>\r\n\r\n<p>Enjoy an authentic and organic dinner at <strong>Bhojan Griha.</strong> Along with dinner, there&rsquo;ll be Nepali folk music and dances.</p>\r\n\r\n<p><strong>Day 5: Pashupatinath and Guheshwori Darshan </strong></p>\r\n\r\n<p>Breakfast at Hotel, and visit Guheshwori and Pashupatinath for Darshan.</p>\r\n\r\n<p>Regarded as a Shakti Peetha, Guheshwori Temple was built by King Pratap Malla in the 17th century. The temple is dedicated to Goddess Parvati (wife of Lord Shiva). It is considered an important Hindu pilgrimage destination. After Guheshwori Temple, you will make your way to Pashupatinath Temple. Pashupatinath is one of Nepal&rsquo;s important Hindu Temple. The present pagoda style temple was constructed in 1696 A.D. The Pashupatinath Temple complex resembles a life-size collage of life: faith, generosity, poverty, life, death mingle here in unceasing flow.</p>\r\n\r\n<p>Enjoy a light lunch at the hotel and get ready for departure.</p>",
+          "inclusions": "<title></title>\r\n<ul>\r\n\t<li>2 nights accommodation in Athens hotel on BB basis. Package rates are based in STANDARD ROOM TYPE</li>\r\n\t<li>Half day City tour of Athens with new Acropolis Museum SIC, with English speaking guide, entrance fees and the transportation from/to hotel.</li>\r\n\t<li>Private round trip transfers in Athens from airport-hotel-port-with private air onditioned taxi</li>\r\n</ul>",
+          "exclusions": "<title></title>\r\n<ul>\r\n\t<li>Return Airfare</li>\r\n\t<li>Items of personal nature viz , drinks, laundry, calls, etc.</li>\r\n\t<li>Anything not mentioned in inclusions</li>\r\n\t<li>Meals other than specified in the itinerary</li>\r\n\t<li>5% GST</li>\r\n</ul>",
+          "payment_policy": "<title></title>\r\n<p>Standard check in time is at 1500 hours &amp; check out time is 1200 hours. In case a new local city tax is introduced by the Greek Government in 2018, guests will have to pay this directly at the hotel and this tax is NOT included in the package rates (tax rates may vary from 0,50 to 4 Euros on a night basis depending on hotel category).</p>",
+          "cancellation_policy": "<title></title>\r\n<p>Standard check in time is at 1500 hours &amp; check out time is 1200 hours. In case a new local city tax is introduced by the Greek Government in 2018, guests will have to pay this directly at the hotel and this tax is NOT included in the package rates (tax rates may vary from 0,50 to 4 Euros on a night basis depending on hotel category).</p>",
+          "duration_day": 4,
+          "duration_night": 3,
+          "sector_from": 6,
+          "sector_to": 2,
+          "meta_keyword": null,
+          "meta_description": null,
+          "meta_title": null,
+          "has_flight": 0,
+          "is_published": 1,
+          "created_at": "2019-06-04 05:40:32",
+          "updated_at": "2019-08-27 05:00:32",
+          "display_homepage": 1,
+          "pivot": {
+            "package_type_id": 4,
+            "package_id": 4
+          },
+          "galleries": [
+            {
+              "id": 1,
+              "package_id": 4,
+              "title": "test",
+              "image": "1560681463-687043.jpg",
+              "type": "null",
+              "is_active": 1,
+              "caption": "test caption",
+              "created_at": "2019-06-16 16:22:15",
+              "updated_at": "2019-06-17 09:37:45"
+            },
+            {
+              "id": 2,
+              "package_id": 4,
+              "title": "Another test",
+              "image": "1560682150-456349.jpg",
+              "type": "null",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-06-16 16:34:10",
+              "updated_at": "2019-06-17 09:57:17"
+            },
+            {
+              "id": 3,
+              "package_id": 4,
+              "title": "test",
+              "image": "1563273824-519359.jpg",
+              "type": "null",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-07-16 16:28:43",
+              "updated_at": "2019-07-16 16:28:43"
+            },
+            {
+              "id": 4,
+              "package_id": 4,
+              "title": "test 2",
+              "image": "1563273879-796854.jpg",
+              "type": "null",
+              "is_active": 1,
+              "caption": "test 3",
+              "created_at": "2019-07-16 16:29:39",
+              "updated_at": "2019-07-16 16:29:39"
+            }
+          ],
+          "destination_from": {
+            "id": 6,
+            "name": "Nepalgunj",
+            "code": "NPG",
+            "status": 1,
+            "created_at": "2019-07-16 06:18:22",
+            "updated_at": "2019-07-16 06:18:22"
+          },
+          "destination_to": {
+            "id": 2,
+            "name": "Kathmandu",
+            "code": "KTM",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:37",
+            "updated_at": "2019-07-16 06:17:37"
+          }
+        }
+      ]
+    },
+    "pilgrimage_holiday": {
+      "id": 5,
+      "title": "PILGRIMAGE PACKAGE",
+      "slug": "pilgrimage-package",
+      "description": "PILGRIMAGE PACKAGE Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet sem ac lectus semper lacinia. Aliquam tincidunt tellus vel diam feugiat, ac tincidunt sem tincidunt. Fusce scelerisque ac tortor dictum tincidunt. Ut ac tristique nulla. Maecenas pellentesque tortor lorem, id venenatis purus elementum quis. Aliquam dictum, augue eu pellentesque ultrices, velit leo bibendum elit, ac accumsan purus purus a massa. Mauris quis nunc purus.",
+      "discount": 0,
+      "is_published": 1,
+      "created_at": "2019-08-07 14:26:46",
+      "updated_at": "2019-08-18 08:53:37",
+      "packages": [
+        {
+          "id": 10,
+          "title": "Provident dolor nih",
+          "slug": "provident-dolor-nih",
+          "overview": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "inclusions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "exclusions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "payment_policy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "cancellation_policy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "duration_day": 2,
+          "duration_night": 1,
+          "sector_from": 2,
+          "sector_to": 5,
+          "meta_keyword": "Qui inventore ea aut",
+          "meta_description": "Eum et voluptatum do",
+          "meta_title": "Et dolorem iste nobi",
+          "has_flight": 0,
+          "is_published": 1,
+          "created_at": "2019-08-16 09:31:38",
+          "updated_at": "2019-08-27 04:54:23",
+          "display_homepage": 1,
+          "pivot": {
+            "package_type_id": 5,
+            "package_id": 10
+          },
+          "galleries": [
+            {
+              "id": 12,
+              "package_id": 10,
+              "title": "test",
+              "image": "1566368074-161288.jpg",
+              "type": "wide",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-08-07 14:26:46",
+              "updated_at": "2019-08-07 14:26:46"
+            },
+            {
+              "id": 13,
+              "package_id": 10,
+              "title": "test 2",
+              "image": "1566368096-233396.jpg",
+              "type": "square",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-08-07 14:26:46",
+              "updated_at": "2019-08-07 14:26:46"
+            }
+          ],
+          "destination_from": {
+            "id": 2,
+            "name": "Kathmandu",
+            "code": "KTM",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:37",
+            "updated_at": "2019-07-16 06:17:37"
+          },
+          "destination_to": {
+            "id": 5,
+            "name": "Lumbini",
+            "code": "LUM",
+            "status": 1,
+            "created_at": "2019-07-16 06:18:09",
+            "updated_at": "2019-07-16 06:18:09"
+          }
+        },
+        {
+          "id": 9,
+          "title": "Et voluptas voluptat",
+          "slug": "et-voluptas-voluptat",
+          "overview": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "inclusions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "exclusions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "payment_policy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "cancellation_policy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+          "duration_day": 5,
+          "duration_night": 4,
+          "sector_from": 5,
+          "sector_to": 2,
+          "meta_keyword": "Eaque nihil sapiente",
+          "meta_description": "Labore omnis omnis m",
+          "meta_title": "Voluptatem maiores",
+          "has_flight": 0,
+          "is_published": 1,
+          "created_at": "2019-08-16 09:31:05",
+          "updated_at": "2019-08-27 04:58:55",
+          "display_homepage": 1,
+          "pivot": {
+            "package_type_id": 5,
+            "package_id": 9
+          },
+          "galleries": [],
+          "destination_from": {
+            "id": 5,
+            "name": "Lumbini",
+            "code": "LUM",
+            "status": 1,
+            "created_at": "2019-07-16 06:18:09",
+            "updated_at": "2019-07-16 06:18:09"
+          },
+          "destination_to": {
+            "id": 2,
+            "name": "Kathmandu",
+            "code": "KTM",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:37",
+            "updated_at": "2019-07-16 06:17:37"
+          }
+        },
+        {
+          "id": 7,
+          "title": "Tempor distinctio I",
+          "slug": "tempor-distinctio-i",
+          "overview": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit, nisl vitae dictum bibendum, justo velit porttitor libero, non ultricies odio quam ac velit. Donec sit amet bibendum mi, at tempor tellus. Phasellus a condimentum mi. Donec diam enim, tincidunt at sagittis vitae, cursus vitae sapien. Maecenas ante ante, mattis sed libero at, ullamcorper facilisis orci. Quisque in lectus at sem sollicitudin auctor ac at libero. Praesent venenatis justo ex, quis rhoncus enim consequat hendrerit. Fusce cursus nisl nec lobortis dignissim. Nam cursus fringilla eros a sollicitudin. Curabitur arcu dui, imperdiet vel facilisis a, convallis a lectus.</p>\r\n\r\n<p>Nullam pretium vehicula mollis. Duis tincidunt mi ac lectus hendrerit sodales. Pellentesque viverra, leo quis tempus semper, erat risus lacinia augue, ut ornare mauris arcu ut risus. Etiam dapibus venenatis quam, et venenatis nulla lacinia in. Ut porta sapien justo, nec fermentum velit commodo quis. Maecenas ut lectus id metus posuere aliquam id eu ligula. In ultricies luctus eros vehicula tristique. Fusce faucibus blandit nulla, a laoreet arcu rhoncus ut. Suspendisse vehicula orci non eleifend aliquam. Quisque et venenatis est. Nullam purus lectus, vestibulum vel semper non, iaculis et ligula. Quisque fermentum nunc in magna malesuada aliquam. Etiam in diam porttitor, malesuada tortor vel, tempor dui. Proin scelerisque lectus a metus maximus accumsan. Quisque non tempus elit, sit amet faucibus orci.</p>",
+          "inclusions": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "exclusions": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "payment_policy": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "cancellation_policy": "<title></title>\r\n<p>ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit, nisl vitae dictum bibendum, justo velit porttitor libero, non ultricies odio quam ac velit. Donec sit amet bibendum mi, at tempor tellus. Phasellus a condimentum mi. Donec diam enim, tincidunt at sagittis vitae, cursus vitae sapien. Maecenas ante ante, mattis sed libero at, ullamcorper facilisis orci. Quisque in lectus at sem sollicitudin auctor ac at libero. Praesent venenatis justo ex, quis rhoncus enim consequat hendrerit. Fusce cursus nisl nec lobortis dignissim. Nam cursus fringilla eros a sollicitudin. Curabitur arcu dui, imperdiet vel facilisis a, convallis a lectus. Nullam pretium vehicul</p>",
+          "duration_day": 22,
+          "duration_night": 21,
+          "sector_from": 2,
+          "sector_to": 4,
+          "meta_keyword": "Sed ea amet quasi s",
+          "meta_description": "In est excepteur nis",
+          "meta_title": "Ut molestiae amet r",
+          "has_flight": 1,
+          "is_published": 1,
+          "created_at": "2019-07-23 04:28:43",
+          "updated_at": "2019-08-18 06:17:28",
+          "display_homepage": 0,
+          "pivot": {
+            "package_type_id": 5,
+            "package_id": 7
+          },
+          "galleries": [
+            {
+              "id": 15,
+              "package_id": 7,
+              "title": "test",
+              "image": "1566370247-179557.jpg",
+              "type": "wide",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-08-07 14:26:46",
+              "updated_at": "2019-08-07 14:26:46"
+            },
+            {
+              "id": 16,
+              "package_id": 7,
+              "title": "test",
+              "image": "1566370275-862120.jpg",
+              "type": "square",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-08-07 14:26:46",
+              "updated_at": "2019-08-07 14:26:46"
+            }
+          ],
+          "destination_from": {
+            "id": 2,
+            "name": "Kathmandu",
+            "code": "KTM",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:37",
+            "updated_at": "2019-07-16 06:17:37"
+          },
+          "destination_to": {
+            "id": 4,
+            "name": "Chitwan",
+            "code": "CHI",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:57",
+            "updated_at": "2019-07-16 06:17:57"
+          }
+        },
+        {
+          "id": 6,
+          "title": "Aliquip ratione pers",
+          "slug": "aliquip-ratione-pers",
+          "overview": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus sollicitudin eros, sit amet iaculis ligula hendrerit et. Donec mollis nibh vel mi vestibulum imperdiet. Nam fermentum, enim at dictum posuere, orci mauris lacinia nunc, sit amet fringilla enim urna in erat. Nulla nulla nisl, bibendum nec ex ornare, pulvinar pharetra velit. Donec at nibh augue. Quisque gravida, eros in maximus porttitor, odio urna viverra arcu, ut vehicula dui ex vitae erat. Morbi pretium eget nibh ut vestibulum. Donec sit amet enim vitae erat luctus pellentesque. Nullam gravida nisi id leo tempor, vitae vestibulum velit maximus. Aenean eget venenatis ligula. Nunc semper tempor justo, quis condimentum urna interdum non. Nunc venenatis volutpat sem, eget condimentum quam blandit quis. Pellentesque sed enim efficitur, efficitur dolor vel, dignissim enim. Sed congue sem mauris.</p>\r\n\r\n<p>Quisque tincidunt quam quis dolor sagittis pharetra sed vel tortor. Sed lorem erat, vehicula sed sagittis quis, congue eget mi. Sed non lectus sagittis, ultricies sapien a, sagittis nunc. Integer at laoreet lorem. In pretium ex at mi gravida placerat. In non consequat nisl. Fusce vehicula augue eu justo convallis maximus. Duis laoreet ligula augue, ac laoreet enim convallis ultrices.</p>",
+          "inclusions": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "exclusions": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "payment_policy": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "cancellation_policy": "<title></title>\r\n<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+          "duration_day": 1,
+          "duration_night": 2,
+          "sector_from": 2,
+          "sector_to": 3,
+          "meta_keyword": "Ullamco ut excepteur",
+          "meta_description": "Nisi nulla at placea",
+          "meta_title": "Sit cum ea quasi com",
+          "has_flight": 1,
+          "is_published": 1,
+          "created_at": "2019-07-23 04:23:36",
+          "updated_at": "2019-08-18 06:17:36",
+          "display_homepage": 0,
+          "pivot": {
+            "package_type_id": 5,
+            "package_id": 6
+          },
+          "galleries": [
+            {
+              "id": 8,
+              "package_id": 6,
+              "title": "test",
+              "image": "1565945760-958696.jpg",
+              "type": "type_1",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-08-07 14:26:46",
+              "updated_at": "2019-08-07 14:26:46"
+            }
+          ],
+          "destination_from": {
+            "id": 2,
+            "name": "Kathmandu",
+            "code": "KTM",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:37",
+            "updated_at": "2019-07-16 06:17:37"
+          },
+          "destination_to": {
+            "id": 3,
+            "name": "Pokhara",
+            "code": "PKR",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:49",
+            "updated_at": "2019-07-16 06:17:49"
+          }
+        },
+        {
+          "id": 4,
+          "title": "Temple and Tigers sdfasdfasdf",
+          "slug": "temple-and-tigers",
+          "overview": "<title></title>\r\n<p><strong>Kathmandu Valley and Chitwan National Park Tour 4 nights, 5 days<br />\r\nTemples &amp; Tigers</strong></p>\r\n\r\n<p>A visit to Chitwan reveals an unexpected side to Nepal yet an attractive proposition for nature lovers. Located on the terai at the fringe of the Indian plains, the national park boasts diverse forest with magnificent wildlife experiences. The Royal Bengal Tiger, Asian Rhinoceros, Gharial, Langur, Rhesus, Macaque Monkey are some of them.</p>\r\n\r\n<p><strong>Day 1: Arrival in Kathmandu </strong></p>\r\n\r\n<p>Assistance at the airport upon arrival and transfer to hotel</p>\r\n\r\n<p><strong>Day 2: Fly to Bharatpur<br />\r\nEnjoy a Tharu Village Tour and the sunset view from the Rapti River.</strong></p>\r\n\r\n<p>***(Optional Everest Experience Mountain Flight - Fly with us to the top of the world, and indulge in the majestic views of Himalayas of Nepal, including Mt. Everest.)***</p>\r\n\r\n<p>After breakfast at the hotel, you&rsquo;ll depart for Tribhuvan International Airport (Domestic terminal) for an early morning flight with Buddha Air to Bharatpur - the gateway to Chitwan.</p>\r\n\r\n<p>Once you land at Bharatpur, you&rsquo;ll transfer to the hotel for check-in and have lunch at the hotel.</p>\r\n\r\n<p>You can rest and have some time to yourselves. Later in the afternoon, you&rsquo;ll get a guided tour of an authentic Tharu Village. The Tharus are an ethnic indigenous to the southern foothills of the Himalayas. They pride themselves as people of the forest, and build their communities around forest. Tharus believe in animism and celebrate Hindu festivals. While in the village, you get to observe the lives of the Tharus, how their homes are built, what they cook and wear, etc. Then you&rsquo;ll make your way to the Rapti River to view the sun illuminating the waters orange as it sets.</p>\r\n\r\n<p>Make your way back to the hotel for a Tharu cultural dance presentation. This cultural show involves traditional Tharu songs and dances, including the stick dance. Try to learn the steps of the dances and move along with the beat. After the fantastic presentation, enjoy your dinner and rest for the night.</p>\r\n\r\n<p><strong>Day 3: Canoe ride on the Rapti River, Bird watching, Elephant bathing, jungle walk and elephant safari. </strong></p>\r\n\r\n<p>Rise up early for a good breakfast and get ready for a canoe ride on the Rapti River.</p>\r\n\r\n<p>A canoe ride at Chitwan&rsquo;s Rapti River is the best way to view the aquatic wildlife of the river. Wisps of mist rise from the water surface, creating a dramatic effect, as your canoe glides deeper into the wilderness. A log on the river bank moves. You peek through your binoculars and realize it&rsquo;s a mugger crocodile or a <em>gharial</em>, warming its body in the sun.</p>\r\n\r\n<p>In Chitwan, a bird watching tour guide moves his hands as if he were shooting at a circle of enemies. Eyes and hands need to move fast in a place that has 450 species of birds. Aerial duels between birds of prey, serpent eagles with a snake in its talons, Ruddy Shelducks gliding on the water surface like two ice skaters in love, kingfishers plunging into the water and emerging with a glistening fish in its beak.</p>\r\n\r\n<p>Cool off the summer heat by taking a dip in the river with an elephant. Usually done in the morning, mahouts lead their elephants in the river to bathe them - and you are welcome to join the fun. Play with the elephants and take a dive in the river while on the back of the elephant. The elephant also splashes you with water from its trunk. Listen to the instructions of the mahout when bathing the elephants.</p>\r\n\r\n<p>Talk a walk on the wild side and go deep in the jungles of Chitwan National Park. The guide will warm you to walk silently to not scare the animals away. Fingers point frantically, eyes widen and necks crane to get a better view of the animals. The presence of over 50 mammal species in the park make the jungle walks an exciting and exhilarating experience.</p>\r\n\r\n<p>Take a well deserved rest and enjoy lunch at the hotel, and get ready for an elephant safari.</p>\r\n\r\n<p>Riding an elephant provides a lofty perch from which to cover the rivers, grasslands and Sal forests of Chitwan. With the help of an experienced mahout, the elephant is carefully guided through the dense forest. You&rsquo;ll get to see mammals like the endangered one horned rhinoceros, hear birds chirping in the distance and if you&rsquo;re lucky enough, even Royal Bengal Tigers.</p>\r\n\r\n<p>Rest at the hotel and enjoy dinner.</p>\r\n\r\n<p><strong>Day 4: Fly to Kathmandu and enjoy sightseeing of Kathmandu Durbar Square and Swayambhunath Stupa. </strong></p>\r\n\r\n<p>Have an early morning breakfast at the hotel and you&rsquo;ll be transferred to Bharatpur Airport to take a flight back to Kathmandu. After you land, check in at the hotel for lunch.</p>\r\n\r\n<p>Get ready for a sightseeing tour of Kathmandu Durbar Square and Swayambhunath Stupa.</p>\r\n\r\n<p>A living goddess, known as a Kumari resides at Kathmandu Durbar Square. Here, you&rsquo;ll experience wonders, eccentricities and diversity of Nepali temples. Take a trip back in time when you enter Hanuman Dhoka Palace. Inside, there are residential quarters of kings of the Malla Dynasty (1200 - 1769 A.D). When Nepal was a kingdom, kings were crowned at Hanuman Dhoka.</p>\r\n\r\n<p>In the evening, you&rsquo;ll visit Swayambhunath. The white domed stupa with its all-seeing eyes of Lord Buddha beckon you. From the top of Swayambhunath Stupa, you get to see panoramic views of Kathmandu Valley. Both Hindus and Buddhists visit Swayambhunath and is one of the best places to observe religious harmony.</p>\r\n\r\n<p>Enjoy an authentic and organic dinner at <strong>Bhojan Griha.</strong> Along with dinner, there&rsquo;ll be Nepali folk music and dances.</p>\r\n\r\n<p><strong>Day 5: Pashupatinath and Guheshwori Darshan </strong></p>\r\n\r\n<p>Breakfast at Hotel, and visit Guheshwori and Pashupatinath for Darshan.</p>\r\n\r\n<p>Regarded as a Shakti Peetha, Guheshwori Temple was built by King Pratap Malla in the 17th century. The temple is dedicated to Goddess Parvati (wife of Lord Shiva). It is considered an important Hindu pilgrimage destination. After Guheshwori Temple, you will make your way to Pashupatinath Temple. Pashupatinath is one of Nepal&rsquo;s important Hindu Temple. The present pagoda style temple was constructed in 1696 A.D. The Pashupatinath Temple complex resembles a life-size collage of life: faith, generosity, poverty, life, death mingle here in unceasing flow.</p>\r\n\r\n<p>Enjoy a light lunch at the hotel and get ready for departure.</p>",
+          "inclusions": "<title></title>\r\n<ul>\r\n\t<li>2 nights accommodation in Athens hotel on BB basis. Package rates are based in STANDARD ROOM TYPE</li>\r\n\t<li>Half day City tour of Athens with new Acropolis Museum SIC, with English speaking guide, entrance fees and the transportation from/to hotel.</li>\r\n\t<li>Private round trip transfers in Athens from airport-hotel-port-with private air onditioned taxi</li>\r\n</ul>",
+          "exclusions": "<title></title>\r\n<ul>\r\n\t<li>Return Airfare</li>\r\n\t<li>Items of personal nature viz , drinks, laundry, calls, etc.</li>\r\n\t<li>Anything not mentioned in inclusions</li>\r\n\t<li>Meals other than specified in the itinerary</li>\r\n\t<li>5% GST</li>\r\n</ul>",
+          "payment_policy": "<title></title>\r\n<p>Standard check in time is at 1500 hours &amp; check out time is 1200 hours. In case a new local city tax is introduced by the Greek Government in 2018, guests will have to pay this directly at the hotel and this tax is NOT included in the package rates (tax rates may vary from 0,50 to 4 Euros on a night basis depending on hotel category).</p>",
+          "cancellation_policy": "<title></title>\r\n<p>Standard check in time is at 1500 hours &amp; check out time is 1200 hours. In case a new local city tax is introduced by the Greek Government in 2018, guests will have to pay this directly at the hotel and this tax is NOT included in the package rates (tax rates may vary from 0,50 to 4 Euros on a night basis depending on hotel category).</p>",
+          "duration_day": 4,
+          "duration_night": 3,
+          "sector_from": 6,
+          "sector_to": 2,
+          "meta_keyword": null,
+          "meta_description": null,
+          "meta_title": null,
+          "has_flight": 0,
+          "is_published": 1,
+          "created_at": "2019-06-04 05:40:32",
+          "updated_at": "2019-08-27 05:00:32",
+          "display_homepage": 1,
+          "pivot": {
+            "package_type_id": 5,
+            "package_id": 4
+          },
+          "galleries": [
+            {
+              "id": 1,
+              "package_id": 4,
+              "title": "test",
+              "image": "1560681463-687043.jpg",
+              "type": "null",
+              "is_active": 1,
+              "caption": "test caption",
+              "created_at": "2019-06-16 16:22:15",
+              "updated_at": "2019-06-17 09:37:45"
+            },
+            {
+              "id": 2,
+              "package_id": 4,
+              "title": "Another test",
+              "image": "1560682150-456349.jpg",
+              "type": "null",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-06-16 16:34:10",
+              "updated_at": "2019-06-17 09:57:17"
+            },
+            {
+              "id": 3,
+              "package_id": 4,
+              "title": "test",
+              "image": "1563273824-519359.jpg",
+              "type": "null",
+              "is_active": 1,
+              "caption": "test",
+              "created_at": "2019-07-16 16:28:43",
+              "updated_at": "2019-07-16 16:28:43"
+            },
+            {
+              "id": 4,
+              "package_id": 4,
+              "title": "test 2",
+              "image": "1563273879-796854.jpg",
+              "type": "null",
+              "is_active": 1,
+              "caption": "test 3",
+              "created_at": "2019-07-16 16:29:39",
+              "updated_at": "2019-07-16 16:29:39"
+            }
+          ],
+          "destination_from": {
+            "id": 6,
+            "name": "Nepalgunj",
+            "code": "NPG",
+            "status": 1,
+            "created_at": "2019-07-16 06:18:22",
+            "updated_at": "2019-07-16 06:18:22"
+          },
+          "destination_to": {
+            "id": 2,
+            "name": "Kathmandu",
+            "code": "KTM",
+            "status": 1,
+            "created_at": "2019-07-16 06:17:37",
+            "updated_at": "2019-07-16 06:17:37"
+          }
+        }
+      ]
+    }
+  }
+}

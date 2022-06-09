@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/hmismapping",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\HMISMapping\\Providers\\HMISMappingServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\HMISMapping\\": ""
+        }
+    }
+}

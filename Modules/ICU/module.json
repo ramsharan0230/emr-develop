@@ -1,0 +1,13 @@
+{
+    "name": "ICU",
+    "alias": "icu",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\ICU\\Providers\\ICUServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

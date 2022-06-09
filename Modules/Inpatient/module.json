@@ -1,0 +1,13 @@
+{
+    "name": "Inpatient",
+    "alias": "inpatient",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Inpatient\\Providers\\InpatientServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

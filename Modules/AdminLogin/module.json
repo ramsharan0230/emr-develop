@@ -1,0 +1,13 @@
+{
+    "name": "AdminLogin",
+    "alias": "adminlogin",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\AdminLogin\\Providers\\AdminLoginServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

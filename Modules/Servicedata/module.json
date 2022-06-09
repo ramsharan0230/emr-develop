@@ -1,0 +1,13 @@
+{
+    "name": "Servicedata",
+    "alias": "servicedata",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Servicedata\\Providers\\ServicedataServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

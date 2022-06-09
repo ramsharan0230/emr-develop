@@ -1,0 +1,13 @@
+{
+    "name": "Finding",
+    "alias": "finding",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Finding\\Providers\\FindingServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

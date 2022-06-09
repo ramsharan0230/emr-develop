@@ -1,0 +1,13 @@
+{
+    "name": "PatientHistory",
+    "alias": "patienthistory",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\PatientHistory\\Providers\\PatientHistoryServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

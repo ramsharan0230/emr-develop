@@ -1,0 +1,13 @@
+{
+    "name": "Diagnosis",
+    "alias": "diagnosis",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Diagnosis\\Providers\\DiagnosisServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

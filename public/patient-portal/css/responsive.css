@@ -1,0 +1,550 @@
+@media only screen and (max-width: 1200px) {
+    .message-left .nav-pills .nav-link {
+        padding: 16px 8px;
+    }
+    .message-user-img img {
+        margin-right: 8px;
+    }
+
+    .message-user-detail p {
+        font-size: 14px;
+    }
+
+    .message-user-detail span {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 1366px) and (max-height: 1024px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .prescription-work-content {
+        min-height: 290px;
+    }
+}
+
+@media only screen and (max-width: 1117px) {
+    .hospital-about {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .message-user-img img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .message-user-detail span {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+@media only screen and (max-width: 991px) {
+    .paddingnonert {
+        padding: 0 15px;
+    }
+
+    .menu {
+        display: inline-block;
+    }
+
+    .logo_sidebar {
+        display: none;
+    }
+
+    .logo_menu {
+        display: block;
+    }
+
+    .top-header {
+        margin-top: 15px;
+        box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.08);
+        border: 1px solid #f6f9fa;
+        padding: 10px 15px;
+        transition: 0.3s all ease-in-out;
+        margin: 20px;
+    }
+
+    .sidebar {
+        top: 0;
+        left: -250px;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .sidebar.menu-open {
+        left: 0;
+        width: 240px;
+        box-shadow: 5px 0 10px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    .sidebar.menu-open .menu-link {
+        display: block;
+    }
+
+    .sidebar.menu-open .left_menu_list li {
+        width: auto;
+        border-radius: 0 25px 25px 0;
+        margin-left: 0;
+    }
+
+    .sidebar.menu-open .left_menu_list li {
+        border-radius: 0 25px 25px 0;
+        margin: 10px 0;
+        width: auto;
+        height: 40px;
+        transition: 0.3s all ease-in-out;
+        line-height: inherit;
+    }
+
+    .sidebar.menu-open .left_menu_list .menu-content {
+        padding: 4px 15px;
+        justify-content: normal;
+    }
+
+    .sidebar.menu-open .menu-content .menu-icon {
+        margin-right: 10px;
+    }
+
+    .main-content.menu-active {
+        margin-left: 0;
+    }
+
+    .menu-overlay {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        display: none;
+    }
+
+    .prescription-work-content {
+        margin-bottom: 30px;
+    }
+
+    .patient-chat .pr-0 {
+        padding-right: 15px !important;
+    }
+
+    .patient-chat .pl-0 {
+        padding-left: 15px;
+    }
+    .doctor-img {
+        flex: 0 0 150px;
+        width: unset;
+        display: block;
+    }
+
+    .clinic-services span + span {
+        margin-left: 5px;
+        margin-top: 0;
+    }
+
+    .doctor_list_wrapper .col-md-3 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .iq-card-body {
+        text-align: unset;
+    }
+    .doc-profile {
+        display: inline-block;
+        float: left;
+        margin-right: 16px;
+    }
+    .iq-doc-info {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .doctor-img {
+        flex: unset;
+        width: unset;
+        display: block;
+    }
+
+    .clinic-services span + span {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .doctor-img {
+        flex: unset;
+        width: unset;
+        display: block;
+    }
+
+    .clinic-services span + span {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .doctor-img {
+        flex: 0 0 150px;
+        width: unset;
+        display: block;
+    }
+
+    .clinic-services span + span {
+        margin-left: 5px;
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width: 616px) {
+    .img_holder img {
+        width: 100%;
+        max-width: 65px;
+        height: auto;
+    }
+    .mobile_details {
+        display: block !important;
+    }
+    .mobile_details {
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .hide_details {
+        display: none;
+    }
+    .iq-doc-info h4 {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 559px) {
+    .depart_icon_wrapper img {
+        width: 50px;
+        padding-bottom: 12px;
+    }
+    .title_desp h3 {
+        font-size: 10px !important;
+    }
+    .spacetop {
+        margin-top: unset;
+    }
+    .underline_title:after {
+        -webkit-box-shadow: unset;
+        box-shadow: unset;
+    }
+    .depart_box {
+        padding-bottom: 12px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .my-video ul li img {
+        width: 80px;
+    }
+    .my-video ul li {
+        width: unset;
+    }
+    .my-video {
+        bottom: 5px;
+        right: 0;
+    }
+}
+@media only screen and (max-width: 493px) {
+    .doctor-img {
+        flex: unset;
+        width: unset;
+        display: block;
+    }
+
+    .clinic-services span + span {
+        margin-left: 5px;
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width: 460px) {
+    .call-icons .call-items .call-item a,
+    .call-duration {
+        font-size: 15px;
+    }
+    .call-icons .call-items .call-item a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .end-call .call-end img {
+        height: 22px;
+    }
+    .end-call a {
+        padding: 4px 10px;
+    }
+}
+@media only screen and (max-width: 447px) {
+    .doctor-img {
+        flex: unset;
+        width: unset;
+        display: block;
+    }
+
+    .clinic-services span + span {
+        margin-left: 3px;
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width: 444px) {
+    .doctor-img {
+        flex: unset;
+        width: unset;
+        display: block;
+    }
+
+    .clinic-services span + span {
+        margin-left: 0px;
+        margin-top: 5px;
+    }
+    .clinic-services span {
+        padding: 3px 15px;
+    }
+}
+@media only screen and (max-width: 435px) {
+    .title_sec_card h4 {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .title_sec_card {
+        padding: 10px 20px;
+    }
+    .hosp-name {
+        font-size: 16px;
+    }
+    .doc-profile .iq-doc-info h4 {
+        font-size: 14px;
+    }
+    .doc-profile p {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 401px) {
+    .doc-profile {
+        display: block;
+        float: unset;
+    }
+    .iq-card {
+        text-align: center;
+    }
+    .hide_mb {
+        display: none;
+    }
+    .show_md {
+        display: block !important;
+    }
+    .contact_hospital {
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .img_holder {
+        margin-right: 10px;
+    }
+}
+@media only screen and (max-width: 355px) {
+    .title_sec_card {
+        padding: 10px 8px;
+    }
+}
+@media only screen and (max-width: 331px) {
+    .title_sec_card {
+        padding: 10px 2px;
+    }
+}
+@media only screen and (max-width: 347px) {
+    .call-icons .call-items .call-item a {
+        width: 36px;
+        height: 36px;
+        line-height: 35px;
+    }
+    .call-icons .call-items .call-item a,
+    .call-duration {
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 398px) {
+    .subtabs .nav-link {
+        padding: 8px 18px;
+    }
+    .subtabs svg {
+        height: 26px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+@media only screen and (max-width: 767px) {
+    .login_container {
+        width: 100%;
+    }
+
+    .hide_mv {
+        display: none;
+    }
+    .b-r {
+        border: unset;
+    }
+
+    .prescription-upload-block {
+        margin-top: 20px;
+    }
+
+    .medical-timeline {
+        margin-left: 0;
+        padding-left: 0;
+        border-left: none;
+    }
+
+    .medical-timeline .medical-history {
+        margin: 80px 0;
+    }
+
+    .m-history-content h4 {
+        width: 85%;
+        font-size: 1.1em;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+    }
+
+    .m-history-content .history-circle {
+        display: none;
+    }
+
+    .m-history-block {
+        padding-top: 45px;
+    }
+
+    .m-history-block::before,
+    .m-history-block::after {
+        border: solid transparent;
+        bottom: 100%;
+    }
+
+    .m-history-block::before {
+        border-bottom-color: inherit;
+        border-width: 17px;
+        top: -16px;
+        left: 50px;
+        margin-left: -17px;
+    }
+
+    .m-history-block::after {
+        border-bottom-color: #d5f9fd;
+        border-width: 20px;
+        top: -20px;
+        left: 50px;
+        margin-left: -20px;
+    }
+
+    .m-history-content .history-date {
+        top: -30px;
+        left: 25px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .lab-tab-sec .custom-select-sm {
+        max-width: unset;
+        margin-bottom: 8px;
+    }
+
+    #date-range {
+        max-width: unset;
+    }
+
+    .consult-note-head h4 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .consult-note-head span {
+        font-size: 12px;
+    }
+
+    .consult-note-block {
+        max-height: 260px;
+    }
+
+    .hospital-about {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .export_btn {
+        margin-top: 5px;
+        display: inline-block;
+    }
+    .title_desp h3 {
+        font-size: 16px;
+    }
+    .btRightBorder {
+        border: unset;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .patient_information {
+        overflow: hidden;
+    }
+
+    .patient_information .nav {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
+
+    .patient_information .nav-item {
+        flex: none;
+    }
+
+    .services_box {
+        min-height: 150px;
+    }
+
+    .icon_wrapper img {
+        width: 60px;
+    }
+
+    .title_desp h3 {
+        font: 14px;
+    }
+
+    .main-container .nav-link {
+        padding: 8px 20px;
+    }
+
+    .main-container .nav-item {
+        margin: 0 5px;
+    }
+
+    .login-box {
+        width: 400px;
+    }
+
+    .consulation-notes [class*="col-"] {
+        padding: 0 5px;
+    }
+
+    .consult-note-block {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .login_container {
+        border-width: 15px;
+    }
+
+    .left_side_bg {
+        padding: 20px;
+    }
+}

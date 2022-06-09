@@ -1,0 +1,13 @@
+{
+    "name": "PatBillingShare",
+    "alias": "patbillingshare",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\PatBillingShare\\Providers\\PatBillingShareServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

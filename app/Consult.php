@@ -1,0 +1,46 @@
+<?php
+
+namespace App;
+
+// use App\Utils\Helpers;
+
+use Illuminate\Database\Eloquent\Model;
+// use Illuminate\Database\Eloquent\Builder;
+use Spatie\Activitylog\Traits\LogsActivity;
+
+class Consult extends Model
+{
+    use LogsActivity;
+    public $timestamps = false;
+    protected $table = 'tblconsult';
+    protected $primaryKey = 'fldid';
+    protected $guarded = [];
+    protected static $logUnguarded = true;
+
+    public function user()
+    {
+        return $this->belongsTo('App\CogentUsers', 'flduserid', 'flduserid');
+    }
+
+    public function userRefer()
+    {
+        return $this->belongsTo('App\CogentUsers', 'fldorduserid', 'flduserid');
+    }
+
+    public function encounter()
+    {
+        return $this->belongsTo(Encounter::class, 'fldencounterval', 'fldencounterval');
+    }
+
+    // protected static function boot()
+    // {
+    //     parent::boot();
+    //     static::addGlobalScope('hospital_department_id', function (Builder $builder) {
+    //        if(count(\Auth::guard('admin_frontend')->user()->user_is_superadmin) > 0){
+    //           //do nothing
+    //        }else{
+    //         $builder->where('hospital_department_id',Helpers::getUserSelectedHospitalDepartmentIdSession());
+    //        }
+    //     });
+    // }
+}

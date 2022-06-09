@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/ageingreport",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\AgeingReport\\Providers\\AgeingReportServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\AgeingReport\\": ""
+        }
+    }
+}

@@ -1,0 +1,131 @@
+guid=Test1&username=recase.mhrzn%40gmail.com&password=123456&countryCode=np&mobileNumber=%2B9779847265644&message=Dear+UMA++PARAJULI%0D%0A%0D%0ATest+message%0D%0A%0D%0ARegards%2C%0D%0ATesting+the+application
+Response: 
+=============================================
+
+guid=Test1&username=recase.mhrzn%40gmail.com&password=123456&countryCode=np&mobileNumber=%2B9779823165927&message=Dear+BINDU++TAMANG%0D%0A%0D%0ATest+message%0D%0A%0D%0ARegards%2C%0D%0ATesting+the+application
+Response: 
+=============================================
+
+guid=Test1&username=recase.mhrzn%40gmail.com&password=123456&countryCode=np&mobileNumber=%2B9779841071235&message=Dear+DRISTI++KHADKA%0D%0A%0D%0ATest+message%0D%0A%0D%0ARegards%2C%0D%0ATesting+the+application
+Response: 
+=============================================
+
+guid=Test1&username=recase.mhrzn%40gmail.com&password=123456&countryCode=np&mobileNumber=%2B9779851275534&message=Dear+MUNA++MAGAR%0D%0A%0D%0ATest+message%0D%0A%0D%0ARegards%2C%0D%0ATesting+the+application
+Response: 
+=============================================
+
+guid=Test1&username=recase.mhrzn%40gmail.com&password=123456&countryCode=np&mobileNumber=%2B9779847265644&message=Dear+UMA++PARAJULI%0D%0A%0D%0ATest+message%0D%0A%0D%0ARegards%2C%0D%0ATesting+the+application
+Response: 
+=============================================
+
+guid=Test1&username=recase.mhrzn%40gmail.com&password=123456&countryCode=np&mobileNumber=%2B9779823165927&message=Dear+BINDU++TAMANG%0D%0A%0D%0ATest+message%0D%0A%0D%0ARegards%2C%0D%0ATesting+the+application
+Response: 
+=============================================
+
+guid=Test1&username=recase.mhrzn%40gmail.com&password=123456&countryCode=np&mobileNumber=%2B9779841071235&message=Dear+DRISTI++KHADKA%0D%0A%0D%0ATest+message%0D%0A%0D%0ARegards%2C%0D%0ATesting+the+application
+Response: 
+=============================================
+
+guid=Test1&username=recase.mhrzn%40gmail.com&password=123456&countryCode=np&mobileNumber=%2B9779851275534&message=Dear+MUNA++MAGAR%0D%0A%0D%0ATest+message%0D%0A%0D%0ARegards%2C%0D%0ATesting+the+application
+Response: 
+=============================================
+
+guid=0bff388d-7963-49ad-86ff-3e9dcc610da2&username=cogent%40sms123go.com&password=%7ENepal%40123&countryCode=np&mobileNumber=%2B9779843690374&message=Dear+AJAY++MAHARJAN+Testing+Regards%2CTesting+the+application
+Response: SMS queued for delivery for : +9779843690374
+{Automessage : 
+NTC |+OK Message received for 9843690374
+}
+=============================================
+
+guid=0bff388d-7963-49ad-86ff-3e9dcc610da2&username=cogent%40sms123go.com&password=%7ENepal%40123&countryCode=np&mobileNumber=%2B9779843690374&message=Dear+AJAY++MAHARJAN+Testing+Regards%2CTesting+the+application
+Response: SMS queued for delivery for : +9779843690374
+{Automessage : 
+NTC |+OK Message received for 9843690374
+}
+=============================================
+
+guid=0bff388d-7963-49ad-86ff-3e9dcc610da2&username=cogent%40sms123go.com&password=%7ENepal%40123&countryCode=np&mobileNumber=%2B9779860112811&message=Dear+REEKESH++MAHARJAN+Testing+Regards%2CTesting+the+application
+Response: SMS queued for delivery for : +9779860112811
+{Automessage : 
+NTC |+OK Message received for 9860112811
+}
+=============================================
+
+guid=0bff388d-7963-49ad-86ff-3e9dcc610da2&username=cogent%40sms123go.com&password=%7ENepal%40123&countryCode=np&mobileNumber=%2B9779843690374&message=Dear+AJAY++MAHARJAN+Testing+Regards%2CTesting+the+application
+Response: SMS queued for delivery for : +9779843690374
+{Automessage : 
+NTC |+OK Message received for 9843690374
+}
+=============================================
+
+guid=0bff388d-7963-49ad-86ff-3e9dcc610da2&username=cogent%40sms123go.com&password=%7ENepal%40123&countryCode=np&mobileNumber=%2B9779860112811&message=Dear+REEKESH++MAHARJAN+Testing+Regards%2CTesting+the+application
+Response: SMS queued for delivery for : +9779860112811
+{Automessage : 
+NTC |+OK Message received for 9860112811
+}
+=============================================
+
+guid=0bff388d-7963-49ad-86ff-3e9dcc610da2&username=cogent%40sms123go.com&password=%7ENepal%40123&countryCode=np&mobileNumber=%2B9779843690374&message=Dear+AJAY++MAHARJAN+Testing+Regards%2CTesting+the+application
+Response: SMS queued for delivery for : +9779843690374
+{Automessage : 
+NTC |+OK Message received for 9843690374
+}
+=============================================
+
+guid=0bff388d-7963-49ad-86ff-3e9dcc610da2&username=cogent%40sms123go.com&password=%7ENepal%40123&countryCode=np&mobileNumber=%2B9779860112811&message=Dear+REEKESH++MAHARJAN+Testing+Regards%2CTesting+the+application
+Response: SMS queued for delivery for : +9779860112811
+{Automessage : 
+NTC |+OK Message received for 9860112811
+}
+=============================================
+
+guid=0bff388d-7963-49ad-86ff-3e9dcc610da2&username=cogent%40sms123go.com&password=%7ENepal%40123&countryCode=np&mobileNumber=%2B9779843690374&message=Dear+AJAY++MAHARJAN+Testing+Regards%2CTesting+the+application
+Response: SMS queued for delivery for : +9779843690374
+{Automessage : 
+NTC |+OK Message received for 9843690374
+}
+=============================================
+
+guid=0bff388d-7963-49ad-86ff-3e9dcc610da2&username=cogent%40sms123go.com&password=%7ENepal%40123&countryCode=np&mobileNumber=%2B9771234567890&message=Dear+KIRAN++KC+Testing+Regards%2CTesting+the+application
+Response: SMS queued for delivery for : +9771234567890
+{Automessage : Message sending to this mobile number is not allowed.}
+=============================================
+
+guid=0bff388d-7963-49ad-86ff-3e9dcc610da2&username=cogent%40sms123go.com&password=%7ENepal%40123&countryCode=np&mobileNumber=%2B9779851275534&message=Dear+MUNA++MAGAR+Testing+Regards%2CTesting+the+application
+Response: SMS queued for delivery for : +9779851275534
+{Automessage : 
+NTC |+OK Message received for 9851275534
+}
+=============================================
+
+guid=0bff388d-7963-49ad-86ff-3e9dcc610da2&username=cogent%40sms123go.com&password=%7ENepal%40123&countryCode=np&mobileNumber=%2B9779845269851&message=Dear+ABHISEK++RANA+Testing+Regards%2CTesting+the+application
+Response: SMS queued for delivery for : +9779845269851
+{Automessage : 
+NTC |+OK Message received for 9845269851
+}
+=============================================
+
+guid=0bff388d-7963-49ad-86ff-3e9dcc610da2&username=cogent%40sms123go.com&password=%7ENepal%40123&countryCode=np&mobileNumber=%2B9771111111111&message=Dear+HELLO+TESTE+TEST+Testing+Regards%2CTesting+the+application
+Response: SMS queued for delivery for : +9771111111111
+{Automessage : Message sending to this mobile number is not allowed.}
+=============================================
+
+guid=0bff388d-7963-49ad-86ff-3e9dcc610da2&username=cogent%40sms123go.com&password=%7ENepal%40123&countryCode=np&mobileNumber=%2B9779860112811&message=Dear+REEKESH++MAHARJAN+Testing+Regards%2CTesting+the+application
+Response: SMS queued for delivery for : +9779860112811
+{Automessage : 
+NTC |+OK Message received for 9860112811
+}
+=============================================
+
+guid=0bff388d-7963-49ad-86ff-3e9dcc610da2&username=cogent%40sms123go.com&password=%7ENepal%40123&countryCode=np&mobileNumber=%2B9771111111111&message=Dear+RAM++SAP+Testing+Regards%2CTesting+the+application
+Response: SMS queued for delivery for : +9771111111111
+{Automessage : Message sending to this mobile number is not allowed.}
+=============================================
+
+guid=0bff388d-7963-49ad-86ff-3e9dcc610da2&username=cogent%40sms123go.com&password=%7ENepal%40123&countryCode=np&mobileNumber=%2B9779843690374&message=Dear+AJAY++MAHARJAN+Testing+Regards%2CTesting+the+application
+Response: SMS queued for delivery for : +9779843690374
+{Automessage : 
+NTC |+OK Message received for 9843690374
+}
+=============================================
+

@@ -1,0 +1,13 @@
+{
+    "name": "MajorProcedure",
+    "alias": "majorprocedure",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\MajorProcedure\\Providers\\MajorProcedureServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

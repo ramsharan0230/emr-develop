@@ -1,0 +1,13 @@
+{
+    "name": "ENT",
+    "alias": "ent",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\ENT\\Providers\\ENTServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

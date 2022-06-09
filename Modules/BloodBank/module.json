@@ -1,0 +1,13 @@
+{
+    "name": "BloodBank",
+    "alias": "bloodbank",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\BloodBank\\Providers\\BloodBankServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,10 @@
+@media only screen and (max-width: 1200px) {
+    .dental-click span {
+        width: 24px;
+    }
+
+    .dental-click span::after {
+        width: 24px;
+        height: 24px;
+    }
+}

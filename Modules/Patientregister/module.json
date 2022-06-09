@@ -1,0 +1,13 @@
+{
+    "name": "Patientregister",
+    "alias": "patientregister",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Patientregister\\Providers\\PatientregisterServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

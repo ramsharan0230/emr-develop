@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/bulksms",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\BulkSms\\Providers\\BulkSmsServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\BulkSms\\": ""
+        }
+    }
+}

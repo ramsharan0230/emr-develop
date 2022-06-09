@@ -1,0 +1,13 @@
+{
+    "name": "Dynamicreports",
+    "alias": "dynamicreports",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Dynamicreports\\Providers\\DynamicreportsServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

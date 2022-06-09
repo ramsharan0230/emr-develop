@@ -1,0 +1,13 @@
+{
+    "name": "FrontendDashboard",
+    "alias": "frontenddashboard",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\FrontendDashboard\\Providers\\FrontendDashboardServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

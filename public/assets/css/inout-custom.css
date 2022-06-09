@@ -1,0 +1,430 @@
+/*action btn*/
+.f-btn-icon-b > i{
+    color: #64b5f6;
+}
+.f-btn-icon-r > i{
+    color: #e57373;
+}
+.f-btn-icon-bl > i{
+    color: #666;
+}
+.f-btn-icon-o > i{
+    color: #ff8a65;
+}
+.f-btn-icon-g > i{
+    color: #a5d6a7;
+}
+.action-fluids{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+.f-btn-md{
+    padding: 5px 12px;
+}
+.f-btn-sm{
+    padding: 5px 6px;
+}
+.f-btn{
+    -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf));
+    background: -moz-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+    background: -webkit-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+    background: -o-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+    background: -ms-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+    background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+    background-color: #ededed;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 3px;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    cursor: pointer;
+    color: #777777;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+    outline: none!important;
+    text-transform: capitalize;
+}
+.f-btn:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed));
+    background:-moz-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+    background:-webkit-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+    background:-o-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+    background:-ms-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+    background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+    background-color:#dfdfdf;
+}
+.f-btn:active {
+    position:relative;
+    top:1px;
+}
+input[type="date"] {
+    position: relative;
+}
+    /* create a new arrow, because we are going to mess up the native one
+    see "List of symbols" below if you want another, you could also try to add a font-awesome icon.. */
+    input[type="date"]:after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f073";
+        color: #939393;
+        padding: 0 5px;
+        font-size: 15px;
+    }
+    /* change color of symbol on hover */
+    input[type="date"]:hover:after {
+        color: #bf1400;
+    }
+    /* make the native arrow invisible and stretch it over the whole field so you can click anywhere in the input field to trigger the native datepicker*/
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: auto;
+        height: auto;
+        color: transparent;
+        background: transparent;
+    }
+    /* adjust increase/decrease button */
+    input[type="date"]::-webkit-inner-spin-button {
+        z-index: 1;
+    }
+    /* adjust clear button */
+    input[type="date"]::-webkit-clear-button {
+        z-index: 1;
+    }
+    .f-input-date{
+        outline: none!important;
+        border-radius: 3px;
+        width: 100%; ;
+        height: 30px;
+        padding: 6px;
+        font-size: 12px;
+        border: 1px solid #939393;
+        color: #666;
+    }
+    .select2-selection__rendered{
+        width: 100%;
+    }
+
+    /*Collapse*/
+    .form-group1 {
+        margin-bottom: 5px !important;
+        display: flex;
+        line-height: 19px;
+        border: 1px solid #a7a5a3;
+        border-radius: 3px;
+    }
+
+    .form-group {
+        margin-bottom: 0 !important;
+        display: flex;
+    }
+
+    .form-group label {
+        border: 1px solid #a7a5a3;
+        padding: 3px;
+        margin-right: 10px;
+        margin-bottom: 0;
+        border-radius: 3px;
+    }
+
+    .form-group input {
+        border: 1px solid #a7a5a3;
+        border-radius: 3px;
+        line-height: 26px;
+    }
+
+    .formlabel {
+        width: 100%;
+    }
+
+    table {
+        border: 1px solid #ccc;
+        width: 100%;
+    }
+
+    .table-quantative {
+        width: 100%;
+        display: block;
+        overflow-y: scroll;
+        border: 1px solid #ccc;
+        height: 250px;
+    }
+
+    p {
+        margin-top: 4px;
+        margin-bottom: 4px;
+        line-height: 19px;
+    }
+
+    td {
+        text-align: left;
+        padding-top: 12px;
+    }
+
+    .form-input-medium {
+        width: 90%;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+    }
+
+    .form-input-small {
+        width: 81%;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+    }
+
+    .title {
+        width: 50%;
+        font-size: 14px;
+        font-family: arial;
+    }
+
+    .title-input {
+        width: 40%;
+        position: relative;
+    }
+
+    .save-btn {
+        color: #fff;
+        background-color: #e06b3e;
+        border-color: #ec774a;
+        margin-right: 18px;
+    }
+
+
+    .modal-label {
+        border: none;
+        padding: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+
+    th {
+        border: 1px solid #ccc;
+    }
+
+    .leftright-container {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        width: 100%;
+    }
+
+    #inputclock {
+        background-image: url(images/clock.png);
+        background-position: right;
+        padding-right: 5px;
+        background-size: 15px;
+        background-repeat: no-repeat;
+    }
+    .btn-deafult {
+        border: 1px solid #b9b9b9;
+        background-color: #efeeee;
+    }
+
+    .leftright-label {
+        margin-right: 78%;
+    }
+
+    .checkbox-container {
+        float: right;
+        margin-top: -26%;
+    }
+
+    /* .container {
+        padding-right: 0;
+        padding-left: 0;
+        min-height: 500px;
+        } */
+
+        .editor {
+            width: 100%;
+        }
+
+        .container .ck.ck-content {
+            padding: 20%;
+        }
+        .ck.ck-content {
+            width: 100%:
+            }    }
+            .action-btn {
+                margin-left: 44%;
+            }
+
+            .digits {
+                color: #181818;
+                text-shadow: 1px 1px 0px #FFF;
+                background-color: #EBEBEB;
+                border-top: 2px solid #FFF;
+                border-right: 2px solid #FFF;
+                border-bottom: 2px solid #C1C1C1;
+                border-left: 2px solid #C1C1C1;
+                border-radius: 4px;
+                box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #DCDCDC;
+            }
+
+            .button {
+                display: inline-block;
+                margin: 2px;
+                width: 37px;
+                height: 30px;
+                font-size: 14px;
+                font-weight: bold;
+                border-radius: 4px;
+            }
+
+            .btn-minimize {
+                background-color: transparent;
+                border: none;
+                font-size: 12px;
+                color: #a1b9d2;
+            }
+
+            .calculator {
+                padding-left: 27px;
+            }
+
+            .entry-label {
+                width: 20%;
+            }
+
+            .width_big {
+                width: 73%;
+            }
+
+            .intake-label {
+                width: 30%;
+            }
+
+            button {
+                border: 1px solid #ccc;
+                border-radius: 3px;
+            }
+
+            .intake-table {
+                height: 406px;
+                min-height: 406px;
+                background-color: white;
+                font-size: 14px;
+                color: #777373;
+                border: 1px solid #ccc;
+            }
+
+            .title-intake {
+                width: 50%;
+                padding: 4px;
+            }
+
+            .intake-form {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .intaketable {
+                padding-right: 0 !important;
+            }
+
+            .newdiet-table {
+                height: 243px;
+                background-color: white;
+                font-size: 14px;
+                color: #777373;
+                margin-top: 2%;
+            }
+
+            .title-diet {
+                width: 50%;
+                padding: 4px;
+                background-color: #eceaea;
+            }
+
+            .newdiettable {
+                padding-right: 0 !important;
+                padding-left: 0;
+            }
+
+            .savediet-table {
+                height: 300px;
+                min-height: 300px;
+                background-color: white;
+                font-size: 14px;
+                color: #777373;
+                border: 1px solid #ccc;
+                overflow-y: scroll;
+            }
+
+            .savediettable {
+                padding-right: 0 !important;
+                padding-left: 0;
+            }
+
+            .form-radio {
+                margin: 8px 20px -9px;
+                width: 100%;
+            }
+
+            .intake-input {
+                width: 62%;
+            }
+
+            .input-small {
+                width: 40%;
+            }
+
+            .Diet-tab {
+                width: 100%;
+            }
+
+            .diet-label {
+                width: 20% !important;
+            }
+
+            .form-group-inner.custom-4 label {
+                width: 70px;
+            }
+
+            .width_small {
+                width: 45%;
+            }
+
+            .custom-diet {
+                margin-top: 14%;
+            }
+
+            .th-diet {
+                background-color: #eceaea;
+                width: 9%;
+            }
+
+            .input-diet {
+                width: 59%;
+            }
+
+            .form-diet {
+                margin-left: 2%;
+            }
+
+            .number-input {
+                width: 65% ! important;
+            }
+
+            .priscribed-btn {
+                margin-left: 16%;
+            }
+            .tabplandiv{
+                height:642px;
+                overflow:scroll;
+            }
+
+
+

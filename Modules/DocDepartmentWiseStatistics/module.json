@@ -1,0 +1,13 @@
+{
+    "name": "DocDepartmentWiseStatistics",
+    "alias": "docdepartmentwisestatistics",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\DocDepartmentWiseStatistics\\Providers\\DocDepartmentWiseStatisticsServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

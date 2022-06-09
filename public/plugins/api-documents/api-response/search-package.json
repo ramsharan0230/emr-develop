@@ -1,0 +1,112 @@
+{
+  "success": true,
+  "message": "Search list of packages.",
+  "data": {
+    "searchResult": [
+      {
+        "id": 6,
+        "title": "Aliquip ratione pers",
+        "slug": "aliquip-ratione-pers",
+        "overview": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus sollicitudin eros, sit amet iaculis ligula hendrerit et. Donec mollis nibh vel mi vestibulum imperdiet. Nam fermentum, enim at dictum posuere, orci mauris lacinia nunc, sit amet fringilla enim urna in erat. Nulla nulla nisl, bibendum nec ex ornare, pulvinar pharetra velit. Donec at nibh augue. Quisque gravida, eros in maximus porttitor, odio urna viverra arcu, ut vehicula dui ex vitae erat. Morbi pretium eget nibh ut vestibulum. Donec sit amet enim vitae erat luctus pellentesque. Nullam gravida nisi id leo tempor, vitae vestibulum velit maximus. Aenean eget venenatis ligula. Nunc semper tempor justo, quis condimentum urna interdum non. Nunc venenatis volutpat sem, eget condimentum quam blandit quis. Pellentesque sed enim efficitur, efficitur dolor vel, dignissim enim. Sed congue sem mauris.</p>\r\n\r\n<p>Quisque tincidunt quam quis dolor sagittis pharetra sed vel tortor. Sed lorem erat, vehicula sed sagittis quis, congue eget mi. Sed non lectus sagittis, ultricies sapien a, sagittis nunc. Integer at laoreet lorem. In pretium ex at mi gravida placerat. In non consequat nisl. Fusce vehicula augue eu justo convallis maximus. Duis laoreet ligula augue, ac laoreet enim convallis ultrices.</p>",
+        "inclusions": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+        "exclusions": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+        "payment_policy": "<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+        "cancellation_policy": "<title></title>\r\n<ul>\r\n\t<li>Bus ride</li>\r\n\t<li>Sight Seeing</li>\r\n\t<li>Cultural Show</li>\r\n\t<li>Breakfast</li>\r\n\t<li>Free photo and video shoot</li>\r\n\t<li>Dinner and many more</li>\r\n\t<li>Lunch</li>\r\n</ul>",
+        "duration_day": 1,
+        "duration_night": 2,
+        "sector_from": 2,
+        "sector_to": 3,
+        "meta_keyword": "Ullamco ut excepteur",
+        "meta_description": "Nisi nulla at placea",
+        "meta_title": "Sit cum ea quasi com",
+        "has_flight": 1,
+        "is_published": 1,
+        "created_at": "2019-07-23 04:23:36",
+        "updated_at": "2019-09-03 08:57:30",
+        "display_homepage": 1,
+        "galleries": [
+          {
+            "id": 8,
+            "package_id": 6,
+            "title": "test",
+            "image": "1567486466-428779.jpg",
+            "type": "cover",
+            "caption": "test",
+            "image_url": "http://localhost/buddha-holidays/public/uploads/images/gallery/croppedimage/1567486466-428779.jpg"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Rerum qui sit veniam",
+        "slug": "rerum-qui-sit-veniam",
+        "overview": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+        "inclusions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+        "exclusions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+        "payment_policy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+        "cancellation_policy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+        "duration_day": 4,
+        "duration_night": 3,
+        "sector_from": 6,
+        "sector_to": 3,
+        "meta_keyword": "A et illum veritati",
+        "meta_description": "Autem enim officia f",
+        "meta_title": "Non maiores eu amet",
+        "has_flight": 0,
+        "is_published": 1,
+        "created_at": "2019-08-16 09:30:35",
+        "updated_at": "2019-08-27 05:00:25",
+        "display_homepage": 1,
+        "galleries": [
+          {
+            "id": 19,
+            "package_id": 8,
+            "title": "asdfasdf",
+            "image": "1567486428-675522.jpg",
+            "type": "cover",
+            "caption": "asdfasdf",
+            "image_url": "http://localhost/buddha-holidays/public/uploads/images/gallery/croppedimage/1567486428-675522.jpg"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Et voluptas voluptat",
+        "slug": "et-voluptas-voluptat",
+        "overview": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+        "inclusions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+        "exclusions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+        "payment_policy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+        "cancellation_policy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis feugiat mauris, sit amet aliquam est ornare a. Proin non nulla quis nulla porta ullamcorper imperdiet quis quam. Fusce vel imperdiet sapien. Aliquam placerat mauris eget urna interdum, id tempus lectus hendrerit. Pellentesque sem erat, interdum et ex quis, tincidunt laoreet enim. Etiam faucibus leo ac consectetur congue. Morbi ut ultricies erat. Proin ut est diam. Nunc feugiat aliquam ultrices. Sed ultricies leo a augue sagittis volutpat. Aliquam sem velit, feugiat eget ultrices vel, laoreet sit amet ex. Morbi vehicula nulla eget orci consequat scelerisque. Aenean lobortis dui ut commodo cursus. Suspendisse imperdiet orci at massa imperdiet congue.</p>",
+        "duration_day": 5,
+        "duration_night": 4,
+        "sector_from": 5,
+        "sector_to": 2,
+        "meta_keyword": "Eaque nihil sapiente",
+        "meta_description": "Labore omnis omnis m",
+        "meta_title": "Voluptatem maiores",
+        "has_flight": 0,
+        "is_published": 1,
+        "created_at": "2019-08-16 09:31:05",
+        "updated_at": "2019-08-29 09:02:15",
+        "display_homepage": 1,
+        "galleries": [
+          {
+            "id": 18,
+            "package_id": 9,
+            "title": "test",
+            "image": "1567486405-235643.jpg",
+            "type": "cover",
+            "caption": "test",
+            "image_url": "http://localhost/buddha-holidays/public/uploads/images/gallery/croppedimage/1567486405-235643.jpg"
+          }
+        ]
+      }
+    ],
+    "searchKey": "3334d9c0-cec6-11e9-9b19-6d2df34965e9",
+    "destination_from": "1",
+    "destination_to": "3",
+    "package_date": "09/18/2019",
+    "country": "127"
+  }
+}

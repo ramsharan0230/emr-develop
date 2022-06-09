@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/abcanalysis",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\ABCAnalysis\\Providers\\ABCAnalysisServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\ABCAnalysis\\": ""
+        }
+    }
+}

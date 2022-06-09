@@ -1,0 +1,1102 @@
+<?php
+
+namespace Modules\Eappointment\Http\Controllers;
+
+use App\Eappointment;
+use App\Encounter;
+use App\PatientInfo;
+use App\Utils\Helpers as UtilsHelpers;
+use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Http;
+use GuzzleHttp\Client;
+use \DB;
+use GuzzleHttp\Exception\RequestException;
+use App\Utils\Helpers;
+use App\Utils\Options;
+use Session;
+
+use function Safe\json_decode;
+
+class EappointmentController extends Controller
+{
+    public function index(Request $request)
+    {
+        $data['appointments'] = array();
+        $total = 0;
+        $eurl = Options::get('e_appointment_url') ? Options::get('e_appointment_url') : Options::get('e_appointment_url');
+        $emrurl = $eurl . 'appointment/pending-approval';
+        $api_key = Options::get('e_appointment_hmac_key') ? Options::get('e_appointment_hmac_key') : Options::get('e_appointment_hmac_key');
+
+        $size = 15;
+        $today = date('Y-m-d', strtotime("+7 day"));
+        $amonthdate = date('Y-m-d', strtotime("-1 months"));
+        $filter = [
+            "appointmentId" => $request->appointmentId ?? null,
+            "appointmentNumber" => $request->appointmentNumber ?? null,
+            "doctorId" => $request->doctorId ?? null,
+            "fromDate" =>  $request->fromDate ?? $amonthdate,
+            "patientMetaInfoId" =>  $request->patientMetaInfoId ?? null,
+            "patientType" =>  $request->patientType ?? null,
+            "specializationId" =>  $request->specializationId ?? null,
+            "toDate" =>   $request->toDate ?? $today
+        ];
+
+        //dd($filter);
+        if ($request->page) {
+            $page = $request->page;
+            $response = $this->getPendingAppointment($emrurl, $page, $size, $api_key, $filter);
+        } else {
+            $page = 1;
+            $response = $this->getPendingAppointment($emrurl, $page, $size, $api_key, $filter);
+        }
+
+        $partition = 0;
+
+        if ($response) {
+            $data['appointments'] = json_decode($response)->pendingAppointmentApprovals;
+            $total = json_decode($response)->totalItems;
+        }
+
+
+
+        if ($total > $size) {
+            $partition = $total / $size;
+        }
+
+        $DoctorHospitalwise = $this->getDoctorHospitalwise();
+        $data['DoctorHospitalwise'] = json_decode($DoctorHospitalwise);
+        $SpecializationActive = $this->getSpecialization();
+        $data['SpecializationActive'] = json_decode($SpecializationActive);
+        $PatientMetadatainfo = $this->getPatientMetadatainfo();
+        $data['PatientMetadatainfo'] = json_decode($PatientMetadatainfo);
+        //  dd($data);
+
+
+        return view('eappointment::appointment-list', $data);
+    }
+
+    public function revenueReport(Request $request)
+    {
+        $data['appointments'] = array();
+        $total = 0;
+        $eurl = Options::get('e_appointment_url') ? Options::get('e_appointment_url') : Options::get('e_appointment_url');
+        $emrurl = $eurl . 'appointment/log';
+        $api_key = Options::get('e_appointment_hmac_key') ? Options::get('e_appointment_hmac_key') : Options::get('e_appointment_hmac_key');
+
+        $size = 10;
+        $today = date('Y-m-d', strtotime("+7 day"));
+        $amonthdate = date('Y-m-d', strtotime("-1 months"));
+        $filter = [
+            "appointmentCategory" => $request->appointmentCategory ?? "",
+            "appointmentId" => $request->appointmentId ?? null,
+            "appointmentNumber" => $request->appointmentNumber ?? "",
+            "appointmentServiceTypeCode" => $request->appointmentServiceTypeCode ?? "DOC",
+            "doctorId" => $request->doctorId ?? null,
+            "fromDate" => $request->fromDate ??  $amonthdate,
+            "hospitalDepartmentId" => $request->hospitalDepartmentId ?? null,
+            "hospitalDepartmentRoomInfoId" => $request->hospitalDepartmentRoomInfoId ?? null,
+            "patientMetaInfoId" => $request->patientMetaInfoId ?? null,
+            "patientType" => $request->patientType ?? "",
+            "specializationId" => $request->specializationId ?? null,
+            "status" => $request->status ?? "",
+            "toDate" => $request->toDate ?? $today
+        ];
+
+        //  dd($filter);
+        if ($request->page) {
+            $page = $request->page;
+            $response = $this->getLogAppointment($emrurl, $page, $size, $api_key, $filter);
+        } else {
+            $page = 1;
+            $response = $this->getLogAppointment($emrurl, $page, $size, $api_key, $filter);
+        }
+        // echo $response;
+        // die();
+
+        $partition = 0;
+
+        if ($response) {
+            $data['appointments'] = json_decode($response)->appointmentLogs;
+            $data['bookedInfo'] = json_decode($response)->bookedInfo;
+
+            $data['checkedInInfo'] = json_decode($response)->checkedInInfo;
+            $data['cancelledInfo'] = json_decode($response)->cancelledInfo;
+
+            $data['refundInfo'] = json_decode($response)->refundInfo;
+            $data['revenueFromRefundInfo'] = json_decode($response)->revenueFromRefundInfo;
+
+            $total = json_decode($response)->totalItems;
+        }
+
+
+
+        if ($total > $size) {
+            $partition = $total / $size;
+        }
+
+        $DoctorHospitalwise = $this->getDoctorHospitalwise();
+        $data['DoctorHospitalwise'] = json_decode($DoctorHospitalwise);
+        $SpecializationActive = $this->getSpecialization();
+        $data['SpecializationActive'] = json_decode($SpecializationActive);
+        $PatientMetadatainfo = $this->getPatientMetadatainfo();
+        $data['PatientMetadatainfo'] = json_decode($PatientMetadatainfo);
+
+        $HospitalDepartment = ''; //$this->getHospitalDepartment();
+        $data['HospitalDepartment'] = ''; //json_decode($HospitalDepartment);
+        $AppointmentServiceType = ''; //$this->getAppointmentServiceType();
+        $data['AppointmentServiceType'] = ''; //json_decode($AppointmentServiceType);
+
+        return view('eappointment::appointment-log-list', $data);
+    }
+
+
+    public function getLogAppointment($emrurl, $page, $size, $api_key, $filter)
+    {
+
+        try {
+
+            $client =  new Client();
+            $url = $emrurl;
+            $response = $client->request('PUT', $url . '?page=' . $page . '&size=' . $size, [
+                'json' => [
+                    "appointmentCategory" => $filter['appointmentCategory'],
+                    "appointmentId" => $filter['appointmentId'],
+                    "appointmentNumber" => $filter['appointmentNumber'],
+                    "appointmentServiceTypeCode" => $filter['appointmentServiceTypeCode'],
+                    "doctorId" => $filter['doctorId'],
+                    "fromDate" => $filter['fromDate'],
+                    "hospitalDepartmentId" => $filter['hospitalDepartmentId'],
+                    "hospitalDepartmentRoomInfoId" => $filter['hospitalDepartmentRoomInfoId'],
+                    "patientMetaInfoId" => $filter['patientMetaInfoId'],
+                    "patientType" => $filter['patientType'],
+                    "specializationId" => $filter['specializationId'],
+                    "status" => $filter['status'],
+                    "toDate" => $filter['toDate'],
+                ],
+                'headers' => [
+                    'Accept' => 'application/json',
+                    'Content-Type' => 'application/json',
+                    'Authorization' =>  $api_key,
+                ],
+
+
+            ]);
+
+
+
+
+
+            return $response->getBody();
+
+            // Here the code for successful request
+
+        } catch (RequestException $e) {
+            //echo 'error1';
+            // Catch all 4XX errors
+
+            // To catch exactly error 400 use
+            if ($e->hasResponse()) {
+                if ($e->getResponse()->getStatusCode() == '400') {
+                    //echo "Got response 400";
+                    return response()->json([
+                        'responseMessage' => 'Got response 400',
+                        'statusCode' => 400
+                    ], 400);
+                }
+            }
+
+            // You can check for whatever error status code you need
+
+        } catch (\Exception $e) {
+            //  echo 'error 2';
+            // There was another exception. 
+            return response()->json([
+                'responseMessage' => 'Got response 404',
+                'statusCode' => 404
+            ], 404);
+        }
+    }
+
+    public function getPendingAppointment($emrurl, $page, $size, $api_key, $filter)
+    {
+
+        try {
+
+            $client =  new Client();
+            $url = $emrurl;
+            $response = $client->request('PUT', $url . '?page=' . $page . '&size=' . $size, [
+                'json' => [
+                    "appointmentId" => $filter['appointmentId'] ?? null,
+                    "appointmentNumber" => $filter['appointmentNumber'] ?? null,
+                    "doctorId" => $filter['doctorId'] ?? null,
+                    "fromDate" =>  $filter['fromDate'],
+                    "patientMetaInfoId" =>  $filter['patientMetaInfoId'] ?? null,
+                    "patientType" =>  $filter['patientType'] ?? null,
+                    "specializationId" =>  $filter['specializationId'] ?? null,
+                    "toDate" =>   $filter['toDate']
+
+                ],
+                'headers' => [
+                    'Accept' => 'application/json',
+                    'Content-Type' => 'application/json',
+                    'Authorization' =>  $api_key,
+                ],
+
+
+            ]);
+
+
+
+
+
+            return $response->getBody();
+
+            // Here the code for successful request
+
+        } catch (RequestException $e) {
+            //echo 'error1';
+            // Catch all 4XX errors
+
+            // To catch exactly error 400 use
+            if ($e->hasResponse()) {
+                if ($e->getResponse()->getStatusCode() == '400') {
+                    //echo "Got response 400";
+                    return response()->json([
+                        'responseMessage' => 'Got response 400',
+                        'statusCode' => 400
+                    ], 400);
+                }
+            }
+
+            // You can check for whatever error status code you need
+
+        } catch (\Exception $e) {
+            //  echo 'error 2';
+            // There was another exception. 
+            return response()->json([
+                'responseMessage' => 'Got response 404',
+                'statusCode' => 404
+            ], 404);
+        }
+    }
+
+    public function getDoctorHospitalwise()
+    {
+        $eurl = Options::get('e_appointment_url') ? Options::get('e_appointment_url') : Options::get('e_appointment_url');
+
+        $api_key = Options::get('e_appointment_hmac_key') ? Options::get('e_appointment_hmac_key') : Options::get('e_appointment_hmac_key');
+
+        $url = $eurl . 'doctor/hospital-wise';
+
+
+
+        try {
+
+            $client =  new Client();
+
+            $response = $client->request('GET', $url, [
+
+                'headers' => [
+                    'Accept' => 'application/json',
+                    'Content-Type' => 'application/json',
+                    'Authorization' =>  $api_key,
+                ],
+
+
+            ]);
+
+
+            return $response->getBody();
+
+            // Here the code for successful request
+
+        } catch (RequestException $e) {
+            //echo 'error1';
+            // Catch all 4XX errors
+
+            // To catch exactly error 400 use
+            if ($e->hasResponse()) {
+                if ($e->getResponse()->getStatusCode() == '400') {
+                    //echo "Got response 400";
+                    return response()->json([
+                        'responseMessage' => 'Got response 400',
+                        'statusCode' => 400
+                    ], 400);
+                }
+            }
+
+            // You can check for whatever error status code you need
+
+        } catch (\Exception $e) {
+            //  echo 'error 2';
+            // There was another exception. 
+            return response()->json([
+                'responseMessage' => 'Got response 404',
+                'statusCode' => 404
+            ], 404);
+        }
+    }
+
+    public function getSpecialization()
+    {
+        // $url = 'http://uat-clientapi.eappointments.net/api/v1/specialization/active/min';
+
+        // $api_key = "HmacSHA512 97:uat.chirayu@mailinator.com:21:CNHI:07908661-6b7d-4160-91f6-ca479d6b6c0d:756955610703896:h9lnfWX1BVa2V1Hd9Oi+aEluJfrXBcOm64bWkYNW7ffNZkXVs4xwYjggqsjyq1jHYjTt606sD9jBZlYSQPC/XA==";
+        $eurl = Options::get('e_appointment_url') ? Options::get('e_appointment_url') : Options::get('e_appointment_url');
+
+        $api_key = Options::get('e_appointment_hmac_key') ? Options::get('e_appointment_hmac_key') : Options::get('e_appointment_hmac_key');
+
+        $url = $eurl . 'specialization/active/min';
+
+
+        try {
+
+            $client =  new Client();
+            $url = $url;
+            $response = $client->request('GET', $url, [
+
+                'headers' => [
+                    'Accept' => 'application/json',
+                    'Content-Type' => 'application/json',
+                    'Authorization' =>  $api_key,
+                ],
+
+
+            ]);
+
+
+            return $response->getBody();
+
+            // Here the code for successful request
+
+        } catch (RequestException $e) {
+            //echo 'error1';
+            // Catch all 4XX errors
+
+            // To catch exactly error 400 use
+            if ($e->hasResponse()) {
+                if ($e->getResponse()->getStatusCode() == '400') {
+                    //echo "Got response 400";
+                    return response()->json([
+                        'responseMessage' => 'Got response 400',
+                        'statusCode' => 400
+                    ], 400);
+                }
+            }
+
+            // You can check for whatever error status code you need
+
+        } catch (\Exception $e) {
+            //  echo 'error 2';
+            // There was another exception. 
+            return response()->json([
+                'responseMessage' => 'Got response 404',
+                'statusCode' => 404
+            ], 404);
+        }
+    }
+
+    public function getDoctorActive()
+    {
+
+        // $url = 'http://uat-clientapi.eappointments.net/api/v1/doctor/active/min';
+
+        // $api_key = "HmacSHA512 97:uat.chirayu@mailinator.com:21:CNHI:07908661-6b7d-4160-91f6-ca479d6b6c0d:756955610703896:h9lnfWX1BVa2V1Hd9Oi+aEluJfrXBcOm64bWkYNW7ffNZkXVs4xwYjggqsjyq1jHYjTt606sD9jBZlYSQPC/XA==";
+
+        $eurl = Options::get('e_appointment_url') ? Options::get('e_appointment_url') : Options::get('e_appointment_url');
+
+        $api_key = Options::get('e_appointment_hmac_key') ? Options::get('e_appointment_hmac_key') : Options::get('e_appointment_hmac_key');
+
+        $url = $eurl . 'doctor/active/min';
+
+        try {
+
+            $client =  new Client();
+            $url = $url;
+            $response = $client->request('GET', $url, [
+
+                'headers' => [
+                    'Accept' => 'application/json',
+                    'Content-Type' => 'application/json',
+                    'Authorization' =>  $api_key,
+                ],
+
+
+            ]);
+
+
+            return $response->getBody();
+
+            // Here the code for successful request
+
+        } catch (RequestException $e) {
+            //echo 'error1';
+            // Catch all 4XX errors
+
+            // To catch exactly error 400 use
+            if ($e->hasResponse()) {
+                if ($e->getResponse()->getStatusCode() == '400') {
+                    //echo "Got response 400";
+                    return response()->json([
+                        'responseMessage' => 'Got response 400',
+                        'statusCode' => 400
+                    ], 400);
+                }
+            }
+
+            // You can check for whatever error status code you need
+
+        } catch (\Exception $e) {
+            //  echo 'error 2';
+            // There was another exception. 
+            return response()->json([
+                'responseMessage' => 'Got response 404',
+                'statusCode' => 404
+            ], 404);
+        }
+    }
+
+    public function getHospitalDepartment()
+    {
+        // $url = 'http://uat-clientapi.eappointments.net/api/v1/hospitalDepartment/min';
+
+        // $api_key = "HmacSHA512 97:uat.chirayu@mailinator.com:21:CNHI:07908661-6b7d-4160-91f6-ca479d6b6c0d:756955610703896:h9lnfWX1BVa2V1Hd9Oi+aEluJfrXBcOm64bWkYNW7ffNZkXVs4xwYjggqsjyq1jHYjTt606sD9jBZlYSQPC/XA==";
+        $eurl = Options::get('e_appointment_url') ? Options::get('e_appointment_url') : Options::get('e_appointment_url');
+
+        $api_key = Options::get('e_appointment_hmac_key') ? Options::get('e_appointment_hmac_key') : Options::get('e_appointment_hmac_key');
+
+        $url = $eurl . 'hospitalDepartment/min';
+
+
+        try {
+
+            $client =  new Client();
+            $url = $url;
+            $response = $client->request('GET', $url, [
+
+                'headers' => [
+                    'Accept' => 'application/json',
+                    'Content-Type' => 'application/json',
+                    'Authorization' =>  $api_key,
+                ],
+
+
+            ]);
+
+
+            return $response->getBody();
+
+            // Here the code for successful request
+
+        } catch (RequestException $e) {
+            //echo 'error1';
+            // Catch all 4XX errors
+
+            // To catch exactly error 400 use
+            if ($e->hasResponse()) {
+                if ($e->getResponse()->getStatusCode() == '400') {
+                    //echo "Got response 400";
+                    return response()->json([
+                        'responseMessage' => 'Got response 400',
+                        'statusCode' => 400
+                    ], 400);
+                }
+            }
+
+            // You can check for whatever error status code you need
+
+        } catch (\Exception $e) {
+            //  echo 'error 2';
+            // There was another exception. 
+            return response()->json([
+                'responseMessage' => 'Got response 404',
+                'statusCode' => 404
+            ], 404);
+        }
+    }
+
+    public function getAppointmentServiceType()
+    {
+        // $url = 'http://uat-clientapi.eappointments.net/api/v1/hospital/appointmentServiceType';
+
+        // $api_key = "HmacSHA512 97:uat.chirayu@mailinator.com:21:CNHI:07908661-6b7d-4160-91f6-ca479d6b6c0d:756955610703896:h9lnfWX1BVa2V1Hd9Oi+aEluJfrXBcOm64bWkYNW7ffNZkXVs4xwYjggqsjyq1jHYjTt606sD9jBZlYSQPC/XA==";
+
+        $eurl = Options::get('e_appointment_url') ? Options::get('e_appointment_url') : Options::get('e_appointment_url');
+
+        $api_key = Options::get('e_appointment_hmac_key') ? Options::get('e_appointment_hmac_key') : Options::get('e_appointment_hmac_key');
+
+        $url = $eurl . 'hospital/appointmentServiceType';
+
+        try {
+
+            $client =  new Client();
+            $url = $url;
+            $response = $client->request('GET', $url, [
+
+                'headers' => [
+                    'Accept' => 'application/json',
+                    'Content-Type' => 'application/json',
+                    'Authorization' =>  $api_key,
+                ],
+
+
+            ]);
+
+
+            return $response->getBody();
+
+            // Here the code for successful request
+
+        } catch (RequestException $e) {
+            //echo 'error1';
+            // Catch all 4XX errors
+
+            // To catch exactly error 400 use
+            if ($e->hasResponse()) {
+                if ($e->getResponse()->getStatusCode() == '400') {
+                    //echo "Got response 400";
+                    return response()->json([
+                        'responseMessage' => 'Got response 400',
+                        'statusCode' => 400
+                    ], 400);
+                }
+            }
+
+            // You can check for whatever error status code you need
+
+        } catch (\Exception $e) {
+            //  echo 'error 2';
+            // There was another exception. 
+            return response()->json([
+                'responseMessage' => 'Got response 404',
+                'statusCode' => 404
+            ], 404);
+        }
+    }
+
+    public function getPatientMetadatainfo()
+    {
+        // $url = 'http://uat-clientapi.eappointments.net/api/v1/patient/metaInfo/active/min';
+
+        // $api_key = "HmacSHA512 97:uat.chirayu@mailinator.com:21:CNHI:07908661-6b7d-4160-91f6-ca479d6b6c0d:756955610703896:h9lnfWX1BVa2V1Hd9Oi+aEluJfrXBcOm64bWkYNW7ffNZkXVs4xwYjggqsjyq1jHYjTt606sD9jBZlYSQPC/XA==";
+
+        $eurl = Options::get('e_appointment_url') ? Options::get('e_appointment_url') : Options::get('e_appointment_url');
+
+        $api_key = Options::get('e_appointment_hmac_key') ? Options::get('e_appointment_hmac_key') : Options::get('e_appointment_hmac_key');
+
+        $url = $eurl . 'patient/metaInfo/active/min';
+
+
+        try {
+
+            $client =  new Client();
+            $url = $url;
+            $response = $client->request('GET', $url, [
+
+                'headers' => [
+                    'Accept' => 'application/json',
+                    'Content-Type' => 'application/json',
+                    'Authorization' =>  $api_key,
+                ],
+
+
+            ]);
+
+
+            return $response->getBody();
+
+            // Here the code for successful request
+
+        } catch (RequestException $e) {
+            //echo 'error1';
+            // Catch all 4XX errors
+
+            // To catch exactly error 400 use
+            if ($e->hasResponse()) {
+                if ($e->getResponse()->getStatusCode() == '400') {
+                    //echo "Got response 400";
+                    return response()->json([
+                        'responseMessage' => 'Got response 400',
+                        'statusCode' => 400
+                    ], 400);
+                }
+            }
+
+            // You can check for whatever error status code you need
+
+        } catch (\Exception $e) {
+            //  echo 'error 2';
+            // There was another exception. 
+            return response()->json([
+                'responseMessage' => 'Got response 404',
+                'statusCode' => 404
+            ], 404);
+        }
+    }
+
+
+    function checkin(Request $request)
+    {
+        try {
+            $hospitalNumber = null;
+            $appid = $request->appid;
+
+
+            $eurl = Options::get('e_appointment_url') ? Options::get('e_appointment_url') : Options::get('e_appointment_url');
+            $emrurl = $eurl . 'appointment/approve';
+            $api_key = Options::get('e_appointment_hmac_key') ? Options::get('e_appointment_hmac_key') : Options::get('e_appointment_hmac_key');
+
+            if(isset($request->oldpatientid) && !empty($request->oldpatientid)){
+                $hospitalNumber = $request->oldpatientid;
+                $ispatientnew = false;
+            }elseif(isset($request->patient_id) && !empty($request->patient_id)){
+                $hospitalNumber = $request->patient_id;
+                $ispatientnew = false;
+            }else {
+                $ispatientnew = true;
+            }
+            // if (!empty($request->patient_id)) {
+            //     $hospitalNumber = $request->patient_id;
+            //     $ispatientnew = false;
+            // } elseif (!empty($request->oldpatientid)) {
+            //     $hospitalNumber = $request->patient_id;
+            //     $ispatientnew = false;
+            // } else {
+            //     $ispatientnew = true;
+            // }
+
+            $client =  new Client();
+            $url = $emrurl;
+            $response = $client->request('PUT', $url, [
+
+                'json' => [
+                    "appointmentId" => $appid,
+                    "billingStatus" => "BILLING_SUCCESS",
+                    "featureCode" => "DOC_APPCH",
+                    "hospitalNumber" => $hospitalNumber,
+                    "integrationChannelCode" => "BACK",
+                    "isPatientNew" => $ispatientnew
+
+                ],
+                'headers' => [
+                    'Accept' => 'application/json',
+                    'Content-Type' => 'application/json',
+                    'Authorization' =>  $api_key,
+                ],
+
+
+            ]);
+
+
+
+
+            // print_r(json_decode($response->getBody(), true));
+
+            $status = $response->getStatusCode();
+
+            $checkeappointment  = Eappointment::where('appointmentId', $appid)->first();
+            if ($checkeappointment) {
+                $encounterID = $checkeappointment->fldencounterval;
+                $patientId = $checkeappointment->fldpatientval;
+                return response()->json([
+                    'responseMessage' => 'Patient created',
+                    'statusCode' => 200,
+                    'appointment_encounter_id' =>  $encounterID,
+                    'appointment_patient_id' =>   $patientId,
+                    'urlchange' => route('print.ticket', $patientId),
+                    'checkinstatus' => $status
+                ], 200);
+            } else {
+                $encounterID = 0;
+                $patientId = 0;
+                return response()->json([
+                    'responseMessage' => 'Got response 400',
+                    'statusCode' => 400,
+                    'checkinstatus' => $status,
+                    'urlchange' => route('print.ticket', '00'),
+                ], 400);
+            }
+        } catch (\GuzzleHttp\Exception\BadResponseException $e) {
+            $file =  base_path().'\\public\\'.'errpl.txt';
+            // Open the file to get existing content
+            $current = file_get_contents($file);
+            // Append a new person to the file
+           
+            // Write the contents back to the file
+            file_put_contents($file, $e);
+            //dd($e);
+            return $e->getResponse()->getBody()->getContents();
+        }
+    }
+
+   
+
+    function savePatient(Request $request)
+    {
+        try {
+        
+            $file =  base_path().'\\public\\'.'people.txt';
+            // Open the file to get existing content
+            $current = file_get_contents($file);
+            // Append a new person to the file
+           
+            // Write the contents back to the file
+            file_put_contents($file, $request);
+             \DB::beginTransaction();
+
+            $fname = '';
+            $mname = '';
+            $lname = '';
+            $name = $request->name;
+            $age =  $request->age;
+
+            $gender =  $request->gender;
+            $ageMonth = $request->ageMonth;
+            $ageDay = $request->ageDay;
+            $district = $request->district;
+            $vdcOrMunicipality = $request->vdcOrMunicipality;
+            $wardNo = $request->wardNo;
+            $emailAddress =  $request->emailAddress;
+            $appointmentNo = $request->appointmentNo;
+
+            $mobileNo =  $request->mobileNo;
+            $address =  $request->address;
+            $txn_amount =  $request->transactionAmount;
+
+            $product_code =  NULL;
+            $esewa_id =  $request->eSewaId;
+            $is_refund =  $request->isRefund;
+            $hospitalName =  $request->hospitalName;
+            $remarks =  $request->remarks;
+            $appointmentId =  $request->appointmentId;
+            $hospitalNumber = $request->hospitalNumber;
+            $dob = $request->dateOfBirth ?? '1990-02-02';
+            $appointmentDate =$request->appointmentDate;
+            $title =$request->title;
+            $province = $request->province;
+            $consultant =$request->doctorName;
+            $department = $request->consultant;
+            $appointmentMode = $request->appointmentMode;
+            $ageYear = $request->ageYear;
+            $country = $request->country;
+            $txn_id = $request->transactionNumber;
+
+            $refund_amount = $request->refundAmount;
+
+
+
+
+            if ($name) {
+                $names = explode(' ', $name);
+                if (count($names) > 2) {
+                    $fname = $names[0];
+                    $mname = $names[1];
+                    $lname = $names[2];
+                } else {
+                    if(isset($names[0])){
+                        $fname = $names[0]?$names[0] :'';
+                    }else{
+                        $fname = '';
+                    }
+
+                    if(isset($names[1])){
+                        $lname = $names[1]? $names[1]:'';
+                    }else{
+                        $lname = '';
+                    }
+                   
+
+                    
+                }
+            }
+
+
+            $datetime = date('Y-m-d H:i:s');
+            $time = date('H:i:s');
+            $userid = 'chirayu';
+
+            $computer = Helpers::getCompName();
+            $fiscalYear = Helpers::getNepaliFiscalYearRange();
+            $startdate = Helpers::dateNepToEng($fiscalYear['startdate'])->full_date . ' 00:00:00';
+            $enddate = Helpers::dateNepToEng($fiscalYear['enddate'])->full_date . ' 23:59:59';
+
+
+
+
+
+            if (empty($request->hospitalNumber)) {
+                $patientId = Helpers::getNextAutoId('PatientNo', TRUE);
+
+                PatientInfo::insertGetId([
+                    'fldpatientval' => $patientId,
+                    'fldptnamefir' => $fname,
+                    'fldptnamelast' => $lname,
+                    'fldptsex' => $gender,
+                    'fldptaddvill' => $address,
+                    'fldptadddist' => $district,
+                    'fldptcontact' => $mobileNo,
+                    'fldptbirday' => $dob,
+                    'fldptadmindate' => $appointmentDate,
+                    'fldemail' => $emailAddress,
+                    'flddiscount' => '',
+                    'flduserid' => $userid,
+                    'fldtime' => $datetime,
+                    'xyz' => '0',
+                    'fldbookingid' => $appointmentNo,
+                    'fldtitle' => $title,
+                    'fldmidname' => $mname,
+                    'fldcountry' => $country,
+                    'fldprovince' => $province,
+                    'fldmunicipality' => $vdcOrMunicipality, //$request->get('municipality'),
+                    'fldwardno' => $wardNo,
+
+                    //  'hospital_department_id' => Helpers::getUserSelectedHospitalDepartmentIdSession()
+                ]);
+
+
+
+                $username = "{$fname}.{$lname}";
+                $username = strtolower($username);
+                $username = Helpers::getUniquePatientUsetname($username);
+
+                \App\PatientCredential::insert([
+                    'fldpatientval' => $patientId,
+                    'fldusername' => $username,
+                    'fldpassword' => Helpers::encodePassword($username),
+                    'fldstatus' => 'Active',
+                    'fldconsultant' => $consultant,
+                    'flduserid' => $userid,
+                    'fldtime' => $datetime,
+                    'fldcomp' => $computer,
+                    'xyz' => '0',
+                ]);
+
+
+
+
+                //$this->_sendPatientCredential($patientId, $request->get('bill'));
+
+            } else {
+                $patientId = $hospitalNumber;
+                
+            }
+
+            $dob = $request->get('dob');
+            if ($dob)
+                $dob = Helpers::dateNepToEng($request->get('dob'))->full_date . ' ' . $time;
+
+
+            $formatData = \App\Patsubs::first();
+            if (!$formatData)
+                $formatData = new \App\Patsubs();
+
+
+            $encounterID = Helpers::getNextAutoId('EncounterID', TRUE);
+            $today_date = \Carbon\Carbon::now()->format('Y-m-d');
+            $current_fiscalyr = \App\Year::select('fldname')->where([
+                ['fldfirst', '<=', $today_date],
+                ['fldlast', '>=', $today_date],
+            ])->first();
+            $current_fiscalyr = ($current_fiscalyr) ? $current_fiscalyr->fldname : '';
+            if (Options::get('reg_seperate_num') == 'Yes') {
+
+
+                $formatedEncId = 'OP' . $current_fiscalyr . '-' . str_pad($encounterID, $formatData->fldenclen, '0', STR_PAD_LEFT);
+            } else {
+                $formatedEncId = 'OP' . $current_fiscalyr . '-' . str_pad($encounterID, $formatData->fldenclen, '0', STR_PAD_LEFT);
+            }
+
+            $fldvisit = 'New';
+            //fiscal year check garnu parcha la
+            $checkencounter = Encounter::where('fldpatientval', $patientId)->first();
+            if ($checkencounter) {
+                $fldvisit = 'Old';
+            }
+
+            \App\Encounter::insert([
+                'fldencounterval' => $formatedEncId,
+                'fldpatientval' => $patientId,
+                'fldadmitlocat' => '',
+                'fldcurrlocat' => $department,
+                'flddoa' => $datetime,
+                'flddisctype' => 'General',
+                'fldcashcredit' => '0',
+                'fldadmission' => 'Registered',
+                'fldregdate' => $datetime,
+                'fldbillingmode' => 'General',
+                'fldcomp' => $computer,
+                'fldvisit' => $fldvisit,
+                'xyz' => '0',
+                'fldinside' => '0',
+                'flduserid' => $userid,
+                // 'hospital_department_id' => Helpers::getUserSelectedHospitalDepartmentIdSession()
+            ]);
+
+
+
+            $billNumberGeneratedString = "";
+
+            $new_bill_number = Helpers::getNextAutoId('InvoiceNo', TRUE);
+
+            $dateToday = \Carbon\Carbon::now();
+
+            $year = \App\Year::whereRaw('"' . $dateToday . '" between `fldfirst` and `fldlast`')->first();
+
+            $billNumberGeneratedString = "REG-{$year->fldname}-{$new_bill_number}" . Options::get('hospital_code');
+
+
+            $patBillings = [];
+
+            $grandTotal = 0;
+
+            $patBillings[] = [
+                'fldencounterval' => $formatedEncId,
+                'fldbillingmode' => 'General',
+                'flditemtype' => 'Registration',
+                'flditemname' => 'Registration',
+                'flditemrate' => $txn_amount,
+                'flditemqty' => 1,
+                'fldreason' => $remarks,
+                'flddiscper' => 0,
+                'flddiscamt' => 0,
+                'fldditemamt' => $txn_amount,
+                'fldpayto' => '', // yo k huncha
+                'fldorduserid' => $userid,
+                'fldordtime' => $datetime,
+                'fldordcomp' => $computer,
+                'flduserid' => $userid,
+                'fldtime' => $datetime,
+                'fldcomp' => $computer,
+                'fldprint' => '0',
+                'fldtarget' => $computer,
+                'fldsave' => '1',
+                'fldsample' => 'Waiting',
+                'xyz' => '0',
+                'fldbillno' => $billNumberGeneratedString,
+                'fldstatus' => 'Cleared',
+                //'hospital_department_id' => Helpers::getUserSelectedHospitalDepartmentIdSession(),
+            ];
+
+            $grandTotal = $txn_amount;
+            \App\PatBilling::insert($patBillings);
+
+            $patbilldetail = [
+                'fldencounterval' => $formatedEncId,
+                'fldbillno' => $billNumberGeneratedString,
+                'fldprevdeposit' => '0',
+                'flditemamt' => $txn_amount,
+                'fldtaxamt' => 0,
+
+                'flddiscountgroup' => 'General',
+                'fldchargedamt' => $grandTotal,
+                'fldreceivedamt' => $grandTotal,
+                'fldcurdeposit' => '0',
+                'fldbilltype' => $appointmentMode,
+                'flduserid' => $userid,
+                'fldtime' => $datetime,
+                'fldcomp' => $computer,
+                'fldbill' => 'INVOICE',
+                'fldsave' => '1',
+                'xyz' => '0',
+                //'hospital_department_id' => Helpers::getUserSelectedHospitalDepartmentIdSession()
+            ];
+
+            $encounterData = Encounter::select('fldcurrlocat')->where('fldencounterval', $formatedEncId)->first();
+            $patDetailsData = \App\PatBillDetail::create($patbilldetail);
+            $patDetailsData['location'] = $encounterData->fldcurrlocat;
+            \App\Services\DepartmentRevenueService::inserRevenueOrReturn($patDetailsData);
+
+
+            \App\Consult::insert([
+                'fldencounterval' => $formatedEncId,
+                'fldconsultname' => $consultant,
+                'fldconsulttime' => $appointmentDate,
+                'fldcomment' => NULL,
+                'fldstatus' => 'Planned',
+                'flduserid' => $consultant,
+                'fldbillingmode' => 'General',
+                'fldorduserid' => $userid,
+                'fldtime' => $datetime,
+                'fldcomp' => $computer,
+                'fldsave' => '1',
+                'xyz' => '0',
+                'fldcategory' => NULL,
+                'fldbillno' => $billNumberGeneratedString,
+
+                //'hospital_department_id' => Helpers::getUserSelectedHospitalDepartmentIdSession()
+            ]);
+
+            $appointment = [
+                'fldpatientval' => $patientId,
+                'fldencounterval' => $formatedEncId,
+                'product_code' => $product_code,
+                'esewa_id' => $esewa_id,
+                'is_refund' => $is_refund,
+                'hospitalName' => $hospitalName,
+                'appointmentId' => $appointmentId,
+                'appointmentDate' => $appointmentDate,
+                'appointmentMode' => $appointmentMode,
+                'transactionNumber' => $txn_id,
+                'refundAmount' => $refund_amount,
+                'fldregdate' => $datetime,
+                'appointmentNo' => $appointmentNo
+            ];
+
+            Eappointment::insert($appointment);
+            session(['appointment_encounter_id' => $formatedEncId]);
+            session(['appointment_patient_id' => $patientId]);
+
+            \DB::commit();
+
+            return response()->json([
+                'responseMessage' => 'Patient added successfully',
+                'responseData' => $patientId,
+                'statusCode' => 200
+            ], 200);
+        } catch (RequestException $e) {
+           
+            $file =  base_path().'\\public\\'.'errpl.txt';
+            // Open the file to get existing content
+            $current = file_get_contents($file);
+            // Append a new person to the file
+           
+            // Write the contents back to the file
+            file_put_contents($file, $e);
+            \DB::rollBack();
+          
+            // Catch all 4XX errors
+
+            // To catch exactly error 400 use
+            if ($e->hasResponse()) {
+                if ($e->getResponse()->getStatusCode() == '400') {
+
+                    return response()->json([
+                        'responseMessage' => 'Got response 400',
+                        'statusCode' => 400
+                    ], 400);
+                }
+            }
+
+            // You can check for whatever error status code you need
+
+        } catch (\Exception $e) {
+            $file =  base_path().'\\public\\'.'errpl.txt';
+            // Open the file to get existing content
+            $current = file_get_contents($file);
+            // Append a new person to the file
+           
+            // Write the contents back to the file
+            file_put_contents($file, $e);
+           
+            \DB::rollBack();
+           
+            return response()->json([
+                'responseMessage' => 'Got response 404',
+                'statusCode' => 404
+            ], 404);
+        }
+    }
+
+}

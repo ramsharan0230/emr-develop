@@ -1,0 +1,7 @@
+.iq-search-bar .search-input-user {
+    width: 100%;
+    padding: 5px 44px 5px 15px;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid var(--search-bar-color);
+}

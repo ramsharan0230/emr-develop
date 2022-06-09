@@ -1,0 +1,92 @@
+default:
+  
+services:
+- docker:dind
+variables:
+  DOCKER_HOST: tcp://docker:2375/
+  DOCKER_DRIVER: overlay2
+  DOCKER_TLS_CERTDIR: ""
+  DEBIAN_FRONTEND: noninteractive
+  SEMANTIC_RELEASE_PACKAGE: ${project_name}
+  GIT_FETCH_EXTRA_FLAGS: --tags
+  #GSG_INITIAL_DEVELOPMENT: 2.1.19
+  GSG_RELEASE_BRANCHES: master
+  project_name: CogentEMR
+
+stages:
+   - deploy
+   - version
+   - release
+   
+deploy-Cogent-UAT:
+    stage: deploy     
+    variables:
+     ENVIRONMENTNAME: "UAT"
+                   
+    before_script:
+        - apt update
+        - apt install -y git
+        - apt install -y ssh
+        - apt install -y curl
+        - mkdir -p ~/.ssh
+        - echo "$SSH_PRIVATE_KEY" >> ~/.ssh/id_dsa
+        - chmod  700 ~/.ssh/id_dsa
+        - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+        - echo "$COGENTKEY" > "key.pem"
+        - chmod 400 key.pem
+        - echo "$ENV_UAT" >> .env
+       
+        
+    script:
+            - ssh -i "key.pem" centos@104.248.152.97 "
+                cd /data/cogent_new/cogent_uat &&
+                git pull origin UAT &&
+                sudo chmod -R 777 public/uploads &&
+                sudo chmod -R 777 storage/ &&
+                sed -i 's/TRUE/FALSE/g' config/app.php &&
+                sed -i 's/true/FALSE/g' config/app.php &&
+                php artisan migrate &&
+                php artisan config:cache
+             "
+   # after_script:
+    #    - if [ ${CI_JOB_STATUS} == "success" ]; then EXIT_STATUS=0; else  EXIT_STATUS=1; fi
+     #   - source ./teams-script.sh; share_slack_update_deployssss
+
+    rules:
+        - if: '$CI_PIPELINE_SOURCE == "push" && $CI_COMMIT_BRANCH=="UAT"'
+          when: always
+        - when: manual
+           
+check version:
+  stage: version
+  image: registry.gitlab.com/juhani/go-semrel-gitlab:v0.21.1
+  script:
+    
+    #- git fetch --tags
+    - release next-version --allow-current > .next-version
+    #- cat .next-version >> version.txts
+  artifacts:
+    paths:
+    - .next-version
+  except:
+    - tags
+
+releasing tag:
+  image: registry.gitlab.com/juhani/go-semrel-gitlab:v0.21.1
+  stage: release
+  script:
+    - ver=`cat .next-version`
+    - release next-version --allow-current
+    - release changelog 
+    - release commit-and-tag --create-tag-pipeline CHANGELOG.md
+  rules:
+   - if: '$CI_PIPELINE_SOURCE == "push" && $CI_COMMIT_BRANCH=="UAT"'
+   - if: $CI_COMMIT_MESSAGE =~ /^feat.*$/
+   - if: $CI_COMMIT_MESSAGE =~ /^fix.*$/
+   - if: $CI_COMMIT_MESSAGE =~ /^refactor.*$/
+   - if: $CI_COMMIT_MESSAGE =~ /^test.*$/
+   - if: $CI_COMMIT_MESSAGE =~ /^style.*$/
+   - if: $CI_COMMIT_MESSAGE =~ /^BREAKING CHANGE.*$/
+     when: always
+   - when: manual
+

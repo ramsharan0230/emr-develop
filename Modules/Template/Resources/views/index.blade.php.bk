@@ -1,0 +1,226 @@
+@extends('frontend.layouts.master')
+@push('after-styles')
+
+@endpush
+
+@section('content')
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                    <div class="iq-card-header d-flex justify-content-between">
+                        <div class="iq-header-title">
+                            <h4 class="card-title">Complete Report</h4>
+                        </div>
+                    </div>
+                    <div class="iq-card-body">
+                        <ul class="nav nav-tabs justify-content-center" id="myTab-2" role="tablist">
+
+{{--                            <li class="nav-item">--}}
+{{--                                <a class="nav-link active" data-toggle="tab" href="#completeReport" role="tab"--}}
+{{--                                   aria-controls="profile" aria-selected="false">Complete Report</a>--}}
+{{--                            </li>--}}
+{{--                            <li class="nav-item">--}}
+{{--                                <a class="nav-link " data-toggle="tab" href="#opd" role="tab" aria-controls="home"--}}
+{{--                                   aria-selected="true">OPD</a>--}}
+{{--                            </li>--}}
+{{--                            <li class="nav-item">--}}
+{{--                                <a class="nav-link" data-toggle="tab" href="#ipd" role="tab" aria-controls="contact"--}}
+{{--                                   aria-selected="false">IPD</a>--}}
+{{--                            </li>--}}
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#birth_certificate" role="tab" aria-controls="contact"
+                                   aria-selected="false">Birth Certificate</a>
+                            </li>
+
+{{--                            <li class="nav-item">--}}
+{{--                                <a class="nav-link" data-toggle="tab" href="#discharge_form" role="tab" aria-controls="contact"--}}
+{{--                                   aria-selected="false">Discharge Form</a>--}}
+{{--                            </li>--}}
+
+{{--                            <li class="nav-item">--}}
+{{--                                <a class="nav-link" data-toggle="tab" href="#procedure_report" role="tab" aria-controls="contact"--}}
+{{--                                   aria-selected="false">Procedure Report</a>--}}
+{{--                            </li>--}}
+
+                        </ul>
+                        <div class="tab-content" id="myTabContent-3">
+
+                            <div class="tab-pane fade show active" id="completeReport" role="tabpanel"
+                                 aria-labelledby="completeReport">
+                                <div class="iq-card-header d-flex justify-content-between">
+                                    <div class="iq-header-title">
+                                        <h4 class="card-title">Complete Report</h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-8 col-md-12">
+                                        <div class="form-group form-row">
+                                            <textarea class="form-control">[[CONTENT]]</textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-12">
+                                        <h4>List of variables</h4>
+                                        <ul>
+                                            <li>{$name}</li>
+                                            <li>{$age}</li>
+                                            <li>{$etc}</li>
+                                            <li>{$etc}</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-primary">Update</button>
+
+                            </div>
+                            <div class="tab-pane fade " id="opd" role="tabpanel" aria-labelledby="opd">
+                                <div class="iq-card-header d-flex justify-content-between">
+                                    <div class="iq-header-title">
+                                        <h4 class="card-title">OPD</h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-8 col-md-12">
+                                        <div class="form-group form-row">
+                                            <textarea class="form-control">[[CONTENT]]</textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-12">
+                                        <h4>List of variables</h4>
+                                        <ul>
+                                            <li>{$name}</li>
+                                            <li>{$age}</li>
+                                            <li>{$etc}</li>
+                                            <li>{$etc}</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-primary">Update</button>
+
+                            </div>
+                            <div class="tab-pane fade" id="ipd" role="tabpanel" aria-labelledby="ipd">
+                                <div class="iq-card-header d-flex justify-content-between">
+                                    <div class="iq-header-title">
+                                        <h4 class="card-title">IPD</h4>
+                                    </div>
+                                </div>
+                                <form method="POST" action="#">
+                                    @csrf
+                                    <div class="row">
+                                        <div class="col-lg-8 col-md-12">
+                                            <div class="form-group form-row">
+                                                <textarea class="form-control">[[CONTENT]]</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-12">
+                                            <h4>List of variables</h4>
+                                            <ul>
+                                                <li>{$name}</li>
+                                                <li>{$age}</li>
+                                                <li>{$etc}</li>
+                                                <li>{$etc}</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary">Update</button>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="birth_certificate" role="tabpanel" aria-labelledby="birth_certificate">
+                                <div class="iq-card-header d-flex justify-content-between">
+                                    <div class="iq-header-title">
+                                        <h4 class="card-title">Birth Certificate</h4>
+                                    </div>
+                                </div>
+                                <form method="POST" action="#">
+                                    @csrf
+                                    <div class="row">
+                                        <div class="col-lg-8 col-md-12">
+                                            <div class="form-group form-row">
+                                                <textarea class="form-control">[[CONTENT]]</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-12">
+                                            <h4>List of variables</h4>
+                                            <ul>
+                                                <li>{$name}</li>
+                                                <li>{$age}</li>
+                                                <li>{$etc}</li>
+                                                <li>{$etc}</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary">Update</button>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="discharge_form" role="tabpanel" aria-labelledby="discharge_form">
+                                <div class="iq-card-header d-flex justify-content-between">
+                                    <div class="iq-header-title">
+                                        <h4 class="card-title">Discharge Form</h4>
+                                    </div>
+                                </div>
+                                <form method="POST" action="#">
+                                    @csrf
+                                    <div class="row">
+                                        <div class="col-lg-8 col-md-12">
+                                            <div class="form-group form-row">
+                                                <textarea class="form-control">[[CONTENT]]</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-12">
+                                            <h4>List of variables</h4>
+                                            <ul>
+                                                <li>{$name}</li>
+                                                <li>{$age}</li>
+                                                <li>{$etc}</li>
+                                                <li>{$etc}</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary">Update</button>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="procedure_report" role="tabpanel" aria-labelledby="procedure_report">
+                                <div class="iq-card-header d-flex justify-content-between">
+                                    <div class="iq-header-title">
+                                        <h4 class="card-title">Procedure Report</h4>
+                                    </div>
+                                </div>
+                                <form method="POST" action="#">
+                                    @csrf
+                                    <div class="row">
+                                        <div class="col-lg-8 col-md-12">
+                                            <div class="form-group form-row">
+                                                <textarea class="form-control">[[CONTENT]]</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-12">
+                                            <h4>List of variables</h4>
+                                            <ul>
+                                                <li>{$name}</li>
+                                                <li>{$age}</li>
+                                                <li>{$etc}</li>
+                                                <li>{$etc}</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary">Update</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    </script>
+
+@stop
+
+@push('after-script')
+    <script>
+
+    </script>
+@endpush
+

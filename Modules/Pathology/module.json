@@ -1,0 +1,13 @@
+{
+    "name": "Pathology",
+    "alias": "pathology",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Pathology\\Providers\\PathologyServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,307 @@
+{
+  "success": true,
+  "message": "Package Details.",
+  "data": {
+    "id": 6,
+    "title": "Aliquip ratione pers",
+    "slug": "aliquip-ratione-pers",
+    "sector_from": 2,
+    "sector_to": 3,
+    "overview": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus sollicitudin eros, sit amet iaculis ligula hendrerit et. Donec mollis nibh vel mi vestibulum imperdiet. Nam fermentum, enim at dictum posuere, orci mauris lacinia nunc, sit amet fringilla enim urna in erat. Nulla nulla nisl, bibendum nec ex ornare, pulvinar pharetra velit. Donec at nibh augue. Quisque gravida, eros in maximus porttitor, odio urna viverra arcu, ut vehicula dui ex vitae erat. Morbi pretium eget nibh ut vestibulum. Donec sit amet enim vitae erat luctus pellentesque. Nullam gravida nisi id leo tempor, vitae vestibulum velit maximus. Aenean eget venenatis ligula. Nunc semper tempor justo, quis condimentum urna interdum non. Nunc venenatis volutpat sem, eget condimentum quam blandit quis. Pellentesque sed enim efficitur, efficitur dolor vel, dignissim enim. Sed congue sem mauris.</p>\r\n\r\n<p>Quisque tincidunt quam quis dolor sagittis pharetra sed vel tortor. Sed lorem erat, vehicula sed sagittis quis, congue eget mi. Sed non lectus sagittis, ultricies sapien a, sagittis nunc. Integer at laoreet lorem. In pretium ex at mi gravida placerat. In non consequat nisl. Fusce vehicula augue eu justo convallis maximus. Duis laoreet ligula augue, ac laoreet enim convallis ultrices.</p>",
+    "duration_day": 1,
+    "duration_night": 2,
+    "bookingKey": "923cd3e0-ce3b-11e9-8890-0fc8258031c6",
+    "galleries": [
+      {
+        "id": 8,
+        "package_id": 6,
+        "title": "test",
+        "image": "1567486466-428779.jpg",
+        "type": "cover",
+        "caption": "test",
+        "image_url": "http://localhost/buddha-holidays/public/uploads/images/gallery/croppedimage/1567486466-428779.jpg"
+      }
+    ],
+    "types": [
+      {
+        "id": 1,
+        "slug": "buddha-holidays-special",
+        "description": "",
+        "discount": 0,
+        "pivot": {
+          "package_id": 6,
+          "package_type_id": 1
+        }
+      },
+      {
+        "id": 2,
+        "slug": "popular-package",
+        "description": "POPULAR PACKAGE",
+        "discount": 0,
+        "pivot": {
+          "package_id": 6,
+          "package_type_id": 2
+        }
+      },
+      {
+        "id": 3,
+        "slug": "tour-package",
+        "description": "TOUR PACKAGE",
+        "discount": 0,
+        "pivot": {
+          "package_id": 6,
+          "package_type_id": 3
+        }
+      },
+      {
+        "id": 4,
+        "slug": "trekking-package",
+        "description": "TREKKING PACKAGE",
+        "discount": 0,
+        "pivot": {
+          "package_id": 6,
+          "package_type_id": 4
+        }
+      }
+    ],
+    "themes": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "description": "TEST",
+        "icon": "fa-align-justify",
+        "pivot": {
+          "package_id": 6,
+          "package_themes_id": 3
+        }
+      },
+      {
+        "id": 4,
+        "name": "sight seeing",
+        "description": "TEST",
+        "icon": "fa-address-book",
+        "pivot": {
+          "package_id": 6,
+          "package_themes_id": 4
+        }
+      },
+      {
+        "id": 5,
+        "name": "honeymoon",
+        "description": "TEST",
+        "icon": "fa-arrow-circle-right",
+        "pivot": {
+          "package_id": 6,
+          "package_themes_id": 5
+        }
+      }
+    ],
+    "flight": [
+      {
+        "id": 21,
+        "package_id": 6,
+        "from": "Kathmandu",
+        "to": "Flight to Annapurna Base Camp(ABC)",
+        "number": "WWX735, Buddha Air",
+        "departure": "2019-07-26 07:00:00",
+        "arrival": "2019-07-26 12:00:00"
+      },
+      {
+        "id": 22,
+        "package_id": 6,
+        "from": "Pokhara",
+        "to": "Kathmandu",
+        "number": null,
+        "departure": "2019-07-28 08:12:00",
+        "arrival": "2019-07-29 13:16:00"
+      }
+    ],
+    "itinerary": [
+      {
+        "id": 67,
+        "package_id": 6,
+        "day": 1,
+        "title": "test",
+        "summary": null,
+        "day_title": 1,
+        "itinerary_detail": [
+          {
+            "id": 87,
+            "package_id": 6,
+            "itineraries_id": 67,
+            "day": 1,
+            "title": null,
+            "itinerary_type": "hotel",
+            "itinerary_type_id": 2,
+            "destination": "Pokhara",
+            "summary": "asdfasdfasdf",
+            "hotel": {
+              "id": 2,
+              "accommodation_type_id": 2,
+              "title": "Hotel 2",
+              "address": "Sleshmantak Street, Kathmandu 44600, Nepal",
+              "latitude": "27.6998370",
+              "longitude": "85.3513663",
+              "contact_name": "Tarik Hubbard",
+              "phone": "+1 (866) 585-5345",
+              "email": "Carter Levy",
+              "amenities": [
+                {
+                  "id": 1,
+                  "title": "Wifi",
+                  "icon": "fa-wifi",
+                  "pivot": {
+                    "accommodations_id": 2,
+                    "amenities_id": 1
+                  }
+                }
+              ],
+              "accommodation_type": {
+                "id": 2,
+                "title": "2 Star"
+              }
+            }
+          },
+          {
+            "id": 88,
+            "package_id": 6,
+            "itineraries_id": 67,
+            "day": 1,
+            "title": null,
+            "itinerary_type": "activity",
+            "itinerary_type_id": 1,
+            "destination": "Lumbini",
+            "summary": "asdfasdfasdf",
+            "activity": {
+              "id": 1,
+              "activity_type_id": 1,
+              "title": "durbar square",
+              "no_of_days": 1,
+              "description": "test desc"
+            }
+          },
+          {
+            "id": 89,
+            "package_id": 6,
+            "itineraries_id": 67,
+            "day": 1,
+            "title": null,
+            "itinerary_type": "hotel",
+            "itinerary_type_id": 1,
+            "destination": "Nepalgunj",
+            "summary": "asdfasdfasdf",
+            "hotel": {
+              "id": 1,
+              "accommodation_type_id": 1,
+              "title": "Hotel 1",
+              "address": "Chunikhel Marg, Budhanilkantha 44600, Nepal",
+              "latitude": "27.7426892",
+              "longitude": "85.3608077",
+              "contact_name": "Imogene Schmidt",
+              "phone": "+1 (407) 813-7969",
+              "email": "Quail Booker",
+              "amenities": [
+                {
+                  "id": 1,
+                  "title": "Wifi",
+                  "icon": "fa-wifi",
+                  "pivot": {
+                    "accommodations_id": 1,
+                    "amenities_id": 1
+                  }
+                },
+                {
+                  "id": 2,
+                  "title": "Swimming",
+                  "icon": "fa-database",
+                  "pivot": {
+                    "accommodations_id": 1,
+                    "amenities_id": 2
+                  }
+                }
+              ],
+              "accommodation_type": {
+                "id": 1,
+                "title": "1 Star"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": 68,
+        "package_id": 6,
+        "day": 2,
+        "title": "test activity",
+        "summary": null,
+        "day_title": 1,
+        "itinerary_detail": [
+          {
+            "id": 90,
+            "package_id": 6,
+            "itineraries_id": 68,
+            "day": 2,
+            "title": null,
+            "itinerary_type": "activity",
+            "itinerary_type_id": 2,
+            "destination": "Pokhara",
+            "summary": "asdfasdfasdf",
+            "activity": {
+              "id": 2,
+              "activity_type_id": 2,
+              "title": "pokhari",
+              "no_of_days": 1,
+              "description": "test desc"
+            }
+          },
+          {
+            "id": 91,
+            "package_id": 6,
+            "itineraries_id": 68,
+            "day": 2,
+            "title": null,
+            "itinerary_type": "hotel",
+            "itinerary_type_id": 3,
+            "destination": "Chitwan",
+            "summary": "test",
+            "hotel": {
+              "id": 3,
+              "accommodation_type_id": 3,
+              "title": "Hotel 3",
+              "address": "Araniko Highway, Madhyapur Thimi 44800, Nepal",
+              "latitude": "27.6734950",
+              "longitude": "85.3863300",
+              "contact_name": "Unity Lee",
+              "phone": "+1 (403) 492-2654",
+              "email": "raworamev@mailinator.net",
+              "amenities": [
+                {
+                  "id": 1,
+                  "title": "Wifi",
+                  "icon": "fa-wifi",
+                  "pivot": {
+                    "accommodations_id": 3,
+                    "amenities_id": 1
+                  }
+                },
+                {
+                  "id": 2,
+                  "title": "Swimming",
+                  "icon": "fa-database",
+                  "pivot": {
+                    "accommodations_id": 3,
+                    "amenities_id": 2
+                  }
+                }
+              ],
+              "accommodation_type": {
+                "id": 3,
+                "title": "3 Stars"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

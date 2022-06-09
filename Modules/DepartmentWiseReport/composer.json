@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/departmentwisereport",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\DepartmentWiseReport\\Providers\\DepartmentWiseReportServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\DepartmentWiseReport\\": ""
+        }
+    }
+}

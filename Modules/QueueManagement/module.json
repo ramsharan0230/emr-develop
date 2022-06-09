@@ -1,0 +1,13 @@
+{
+    "name": "QueueManagement",
+    "alias": "queuemanagement",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\QueueManagement\\Providers\\QueueManagementServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

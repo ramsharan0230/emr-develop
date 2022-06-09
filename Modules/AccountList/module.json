@@ -1,0 +1,13 @@
+{
+    "name": "AccountList",
+    "alias": "accountlist",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\AccountList\\Providers\\AccountListServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

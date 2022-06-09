@@ -1,0 +1,13 @@
+{
+    "name": "Hmisreport",
+    "alias": "hmisreport",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Hmisreport\\Providers\\HmisreportServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Elekha",
+    "alias": "elekha",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Elekha\\Providers\\ElekhaServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

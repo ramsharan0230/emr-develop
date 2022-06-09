@@ -1,0 +1,13 @@
+{
+    "name": "BillingMaster",
+    "alias": "billingmaster",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\BillingMaster\\Providers\\BillingMasterServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

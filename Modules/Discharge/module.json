@@ -1,0 +1,13 @@
+{
+    "name": "Discharge",
+    "alias": "discharge",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Discharge\\Providers\\DischargeServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,13 @@
+{
+    "name": "MachineInterfacing",
+    "alias": "machineinterfacing",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\MachineInterfacing\\Providers\\MachineInterfacingServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

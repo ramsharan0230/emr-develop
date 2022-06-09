@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/technologistlab",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Technologistlab\\Providers\\TechnologistlabServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Technologistlab\\": ""
+        }
+    }
+}

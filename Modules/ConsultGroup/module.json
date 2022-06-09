@@ -1,0 +1,13 @@
+{
+    "name": "ConsultGroup",
+    "alias": "consultgroup",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\ConsultGroup\\Providers\\ConsultGroupServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

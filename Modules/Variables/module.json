@@ -1,0 +1,13 @@
+{
+    "name": "Variables",
+    "alias": "variables",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Variables\\Providers\\VariablesServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

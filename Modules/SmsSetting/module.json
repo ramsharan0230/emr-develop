@@ -1,0 +1,13 @@
+{
+    "name": "SmsSetting",
+    "alias": "smssetting",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\SmsSetting\\Providers\\SmsSettingServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/consultantlist",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\ConsultantList\\Providers\\ConsultantListServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\ConsultantList\\": ""
+        }
+    }
+}

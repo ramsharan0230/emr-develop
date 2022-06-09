@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/patienthistory",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\PatientHistory\\Providers\\PatientHistoryServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\PatientHistory\\": ""
+        }
+    }
+}

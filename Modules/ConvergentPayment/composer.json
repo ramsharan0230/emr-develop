@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/convergentpayment",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\ConvergentPayment\\Providers\\ConvergentPaymentServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\ConvergentPayment\\": ""
+        }
+    }
+}

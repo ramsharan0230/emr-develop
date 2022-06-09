@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/pharmacist",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Pharmacist\\Providers\\PharmacistServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Pharmacist\\": ""
+        }
+    }
+}

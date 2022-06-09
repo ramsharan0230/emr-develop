@@ -1,0 +1,13 @@
+{
+    "name": "PatientDashboard",
+    "alias": "patientdashboard",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\PatientDashboard\\Providers\\PatientDashboardServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

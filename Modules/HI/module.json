@@ -1,0 +1,13 @@
+{
+    "name": "HI",
+    "alias": "hi",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\HI\\Providers\\HIServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

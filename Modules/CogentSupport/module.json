@@ -1,0 +1,13 @@
+{
+    "name": "CogentSupport",
+    "alias": "cogentsupport",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\CogentSupport\\Providers\\CogentSupportServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

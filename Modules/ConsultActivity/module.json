@@ -1,0 +1,13 @@
+{
+    "name": "ConsultActivity",
+    "alias": "consultactivity",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\ConsultActivity\\Providers\\ConsultActivityServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

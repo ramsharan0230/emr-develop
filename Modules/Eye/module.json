@@ -1,0 +1,13 @@
+{
+    "name": "Eye",
+    "alias": "eye",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Eye\\Providers\\EyeServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

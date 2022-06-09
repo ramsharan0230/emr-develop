@@ -1,0 +1,13 @@
+{
+    "name": "Eappointment",
+    "alias": "eappointment",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Eappointment\\Providers\\EappointmentServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,13 @@
+{
+    "name": "ConsultPatientData",
+    "alias": "consultpatientdata",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\ConsultPatientData\\Providers\\ConsultPatientDataServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

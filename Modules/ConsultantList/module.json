@@ -1,0 +1,13 @@
+{
+    "name": "ConsultantList",
+    "alias": "consultantlist",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\ConsultantList\\Providers\\ConsultantListServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

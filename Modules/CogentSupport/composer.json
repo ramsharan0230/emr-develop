@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/cogentsupport",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\CogentSupport\\Providers\\CogentSupportServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\CogentSupport\\": ""
+        }
+    }
+}

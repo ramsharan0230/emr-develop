@@ -1,0 +1,454 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #181818;
+}
+
+a:hover {
+    color: #181818;
+}
+
+.dental-img img {
+    width: 100%;
+}
+
+.dental-body {
+    position: relative;
+}
+
+.dental-click span {
+    display: inline-block;
+    width: 25px;
+    height: 45px;
+    position: absolute;
+}
+
+.dental-click span::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #175ca1;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s all ease-in-out;
+}
+
+.dental-click span::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #0080ff;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s all ease-in-out;
+}
+
+.dental-click span.active::after,
+.dental-click span.active::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dental-click span:nth-child(1) {
+    top: 9%;
+    left: 0.7%;
+    height: 36px;
+
+}
+
+.dental-click span:nth-child(2) {
+    top: 9%;
+    left: 7.3%;
+    height: 35px
+
+}
+
+.dental-click span:nth-child(3) {
+    top: 8%;
+    left: 13.4%;
+    height: 41px;
+
+}
+
+.dental-click span:nth-child(4) {
+    top: 8%;
+    left: 19.5%;
+    height: 48px;
+
+}
+
+.dental-click span:nth-child(5) {
+    top: 8%;
+    left: 25.7%;
+    height: 39px;
+
+}
+
+.dental-click span:nth-child(6) {
+    top: 3%;
+    left: 31.8%;
+}
+
+.dental-click span:nth-child(7) {
+    top: 7%;
+    left: 38%;
+    height: 44px;
+
+}
+
+.dental-click span:nth-child(8) {
+    top: 4%;
+    left: 44.2%;
+}
+
+.dental-click span:nth-child(9) {
+    top: 3%;
+    left: 50.4%;
+}
+
+.dental-click span:nth-child(10) {
+    top: 7%;
+    left: 56.5%;
+    height: 44px;
+
+}
+
+.dental-click span:nth-child(11) {
+    top: 4%;
+    left: 62.6%;
+}
+
+.dental-click span:nth-child(12) {
+    top: 5%;
+    left: 68.8%;
+    height: 45px;
+
+}
+
+.dental-click span:nth-child(13) {
+    top: 8%;
+    left: 75%;
+    height: 41px;
+
+}
+
+.dental-click span:nth-child(14) {
+    top: 8%;
+    left: 81%;
+    height: 40px;
+}
+
+.dental-click span:nth-child(15) {
+    top: 9%;
+    left: 87.2%;
+    height: 36px;
+}
+
+.dental-click span:nth-child(16) {
+    top: 9%;
+    left: 93.4%;
+    height: 35px;
+}
+
+.dental-click span:nth-child(17) {
+    bottom: 8%;
+    left: 1%;
+    height: 31px;
+}
+
+.dental-click span:nth-child(18) {
+    bottom: 8%;
+    left: 7.2%;
+    height: 31px;
+    
+}
+
+.dental-click span:nth-child(19) {
+    bottom: 8%;
+    left: 13.3%;
+    height: 33px;
+}
+
+.dental-click span:nth-child(20) {
+    bottom: 8%;
+    left: 19.5%;
+    height: 41px;
+}
+
+.dental-click span:nth-child(21) {
+    bottom: 8%;
+    left: 25.7%;
+     height: 40px;
+}
+
+.dental-click span:nth-child(22) {
+    bottom: 4%;
+    left: 31.8%;
+    height: 47px;
+}
+
+.dental-click span:nth-child(23) {
+    bottom: 7%;
+    left: 38%;
+    height: 43px;
+}
+
+.dental-click span:nth-child(24) {
+    bottom: 7%;
+    left: 44%;
+    height: 43px;
+}
+
+.dental-click span:nth-child(25) {
+    bottom: 6%;
+    left: 50.3%;
+    height: 45px;
+}
+
+.dental-click span:nth-child(26) {
+    bottom: 7%;
+    left: 56.5%;
+    height: 42px;
+}
+
+.dental-click span:nth-child(27) {
+    bottom: 6%;
+    left: 62.6%;
+    height: 46px;
+   
+}
+
+.dental-click span:nth-child(28) {
+    bottom: 7%;
+    left: 68.7%;
+    height: 42px;
+}
+
+.dental-click span:nth-child(29) {
+    bottom: 8%;
+    left: 75%;
+    height: 41px;
+}
+
+.dental-click span:nth-child(30) {
+    bottom: 7%;
+    left: 81%;
+    height: 45px;
+}
+
+.dental-click span:nth-child(31) {
+    bottom: 8%;
+    left: 87.2%;
+    height: 33px;
+}
+
+.dental-click span:nth-child(32) {
+    bottom: 7%;
+    left: 93.4%;
+    height: 31px;
+}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 38%;
+    /*height: 595px;*/
+}
+
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 15px 7px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tab button:hover {
+    background-color: #d8d6d6;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 62%;
+    border-left: none;
+    height: 100%;
+    min-height: 100%;
+    overflow-y: scroll;
+}
+
+.table .tittle-th {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.table-dental {
+    background-color: #fff;
+    border: 1px solid #888;
+}
+
+.table-dental td {
+    height: 183px;
+}
+
+.dental-tab {
+    border: 1px solid #9a9292;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.content-form-eye {
+    border: 1px solid #a9a1a1;
+}
+
+.row-dental-btn .dental-btn {
+    width: 13%;
+    margin-bottom: 4px;
+}
+
+.box__collipsble img {
+    width: 23px;
+}
+
+.box__collipsble1 img {
+    width: 23px;
+}
+
+.box__collipsble {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 15%;
+    flex: 0 0 15%;
+}
+
+.box__collipsble1 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+}
+
+.fontcepal {
+    font-size: 14px;
+}
+
+
+/* responsive */
+
+/* @media only screen and (max-width: 1200px) {
+    .dental-click span {
+        width: 24px;
+    }
+
+    .dental-click span::after {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .dental-click span {
+        width: 22px;
+    }
+
+    .dental-click span::before {
+        width: 12px;
+        height: 12px;
+    }
+
+
+    .dental-click span.active::after,
+    .dental-click span.active::before {
+
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+    .dental-click span::after {
+
+        width: 20px;
+        height: 20px;
+
+    }
+}
+
+*/
+/*=======*/
+
+/* responsive */
+
+@media only screen and (max-width: 1200px) {
+    .dental-click span {
+        width: 24px;
+    }
+
+    .dental-click span::after {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .dental-click span {
+        width: 22px;
+    }
+
+    .dental-click span::before {
+        width: 12px;
+        height: 12px;
+    }
+
+
+    .dental-click span.active::after,
+    .dental-click span.active::before {
+
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+    .dental-click span::after {
+
+        width: 20px;
+        height: 20px;
+
+    }
+}
+

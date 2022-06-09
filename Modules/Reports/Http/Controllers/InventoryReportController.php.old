@@ -1,0 +1,893 @@
+<?php
+
+namespace Modules\Reports\Http\Controllers;
+
+use App\Department;
+use App\Exports\InventoryTransactionReportExport;
+use App\ExtraBrand;
+use App\HospitalDepartmentUsers;
+use App\MedicineBrand;
+use App\Supplier;
+use App\SurgBrand;
+use App\Utils\Helpers;
+use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use Illuminate\Routing\Controller;
+use Auth;
+use DB;
+use Illuminate\Support\Facades\Session;
+
+class InventoryReportController extends Controller
+{
+    public $is_suuplier = false;
+    /**
+     * Display a listing of the resource.
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|Response|\Illuminate\View\View
+     */
+    public function index()
+    {
+        $datevalue = Helpers::dateEngToNepdash(date('Y-m-d'));
+        $data['date'] = $datevalue->year . '-' . $datevalue->month . '-' . $datevalue->date;
+        $data['departments'] = Department::all();
+
+        $user = Auth::guard('admin_frontend')->user();
+        $data['hospital_department'] = Helpers::getDepartmentAndComp();
+        // if (count(Auth::guard('admin_frontend')->user()->user_is_superadmin) == 0) {
+        //     $data['hospital_department'] = HospitalDepartmentUsers::select('hospital_department_id')->where('user_id', $user->id)->distinct('hospital_department_id')->with(['departmentData', 'departmentData.branchData'])->get();
+        // } else {
+        //     $data['hospital_department'] = HospitalDepartmentUsers::select('hospital_department_id')->distinct('hospital_department_id')->with(['departmentData', 'departmentData.branchData'])->get();
+        // }
+
+        $data['supplierName'] = Supplier::where('fldactive', 'like', '%')->get();
+        $data['medicines'] = \DB::table('tblcode')->where(\DB::raw("fldcodename in(select fldcodename from tbldrug where flddrug in(select flddrug from tblmedbrand where fldbrandid in(select fldstockid from tblentry))) ORDER BY fldcodename "))->paginate(100)->onEachSide(1);
+
+        return view('reports::inventory.index', $data);
+    }
+
+    /**
+     * @param Request $request
+     * @return array|string
+     * @throws \Throwable
+     */
+    public function getInventoryData(Request $request)
+    {
+//        dd($request->all());
+        $data['request'] = $request->all();
+        if($request->hidden_supplier && $request->hidden_supplier=='%'){
+           $this->is_suuplier = true;
+        }
+        $data['is_supplier'] = $this->is_suuplier;
+        if ($request->buyType === "purchase") {
+            $data['medicines'] = $this->getPurchasePaginate($request);
+            return view('reports::inventory.inventory-list', $data)->render();
+        }
+        if ($request->buyType === "dispensing") {
+            $data['medicines'] = $this->getDispensingData($request);
+            return view('reports::inventory.inventory-list-dispensing', $data)->render();
+        }
+        if ($request->buyType === "used") {
+            $data['medicines'] = $this->getUsedData($request);
+            return view('reports::inventory.inventory-list-used', $data)->render();
+        }
+    }
+
+    /**
+     * @param Request $request
+     * @return array|string
+     * @throws \Throwable
+     */
+    public function generateInventoryReport(Request $request)
+    {
+        $data['request'] = $request->all();
+        if($request->hidden_supplier && $request->hidden_supplier=='%'){
+            $this->is_suuplier = true;
+        }
+        $data['is_supplier'] = $this->is_suuplier;
+        if ($request->buyType === "purchase") {
+            $data['medicines'] = $this->getPurchaseReportData($request);
+            return view('reports::inventory.inventory-report', $data)->render();
+        }
+        if ($request->buyType === "dispensing") {
+            $data['medicines'] = $this->getDispensingDataReport($request);
+            return view('reports::inventory.inventory-list-dispensing-report', $data)->render();
+        }
+        if ($request->buyType === "used") {
+            $data['medicines'] = $this->getUsedDataReport($request);
+            return view('reports::inventory.inventory-list-used-report', $data)->render();
+        }
+    }
+
+    /**
+     * @param $request
+     * @return mixed
+     */
+    public function getPurchasePaginate($request)
+    {
+//        dd($request->all());
+        if ($request->medType === "med") {
+            $data['medicines'] = DB::table('tblpurchase')
+                ->selectRaw('fldtime,fldbillno,fldreference,fldvolunit,flddrug as generic,fldbrand,fldsuppname,fldstockno,(tblpurchase.fldtotalqty - tblpurchase.fldreturnqty) as qty,flsuppcost,fldsellprice,(tblpurchase.fldtotalqty - tblpurchase.fldreturnqty) * fldsellprice as tot,flddosageform')
+                ->join('tblmedbrand', 'tblmedbrand.fldbrandid', '=', 'tblpurchase.fldstockid')
+                ->where(function ($query) use ($request) {
+                    if ($request->hidden_supplier) {
+                        $query->where('fldsuppname', 'LIKE', $request->hidden_supplier);
+                    }
+                })
+
+//                ->where(function ($query) use ($request) {
+//                    if ($request->supplier) {
+//                        $query->where('fldsuppname', 'LIKE', $request->supplier);
+//                    }
+//                })
+                ->where(function ($query) use ($request) {
+                    if ($request->comp) {
+                        $query->where('fldcomp', 'LIKE', $request->comp);
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_from_date) {
+                        $query->where('fldtime', '>=', $request->eng_from_date . " 00:00:00");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_to_date) {
+                        $query->where('fldtime', '<=', $request->eng_to_date . " 23:59:59.999");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->itemRadio === 'all_items') {
+                        $query->where('fldstockid', "LIKE", "%");
+                    } elseif ($request->itemRadio === 'select_item') {
+                        $query->where('fldstockid', "LIKE", $request->item_name);
+                    }
+                })
+                ->where('fldcategory', 'LIKE', "Medicines")
+                ->where('fldsav', 0)
+                ->paginate(10);
+
+        } elseif ($request->medType === "surg") {
+            $data['medicines'] = DB::table('tblpurchase')
+                ->selectRaw('fldtime,fldbillno,fldreference,fldvolunit,tblsurgbrand.fldsurgid as generic,fldbrand,fldsuppname,fldstockno,fldstockno,(fldtotalqty-fldreturnqty) as qty,flsuppcost,fldsellprice,(fldtotalqty-fldreturnqty)*fldsellprice as tot,tblsurgicals.fldsurgcateg')
+                ->join('tblsurgbrand', 'tblsurgbrand.fldbrandid', '=', 'tblpurchase.fldstockid')
+                ->join('tblsurgicals', 'tblsurgicals.fldsurgid', '=', 'tblsurgbrand.fldsurgid')
+                ->where(function ($query) use ($request) {
+                    if ($request->hidden_supplier) {
+                        $query->where('fldsuppname', 'LIKE', $request->hidden_supplier);
+                    }
+                })
+//                ->where(function ($query) use ($request) {
+//                    if ($request->supplier) {
+//                        $query->where('fldsuppname', 'LIKE', $request->supplier);
+//                    }
+//                })
+                ->where(function ($query) use ($request) {
+                    if ($request->comp) {
+                        $query->where('fldcomp', 'LIKE', $request->comp);
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_from_date) {
+                        $query->where('fldtime', '>=', $request->eng_from_date . " 00:00:00");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_to_date) {
+                        $query->where('fldtime', '<=', $request->eng_to_date . " 23:59:59.999");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->itemRadio === 'all_items') {
+                        $query->where('fldstockid', "LIKE", "%");
+                    } elseif ($request->itemRadio === 'select_item') {
+                        $query->where('fldstockid', "LIKE", $request->item_name);
+                    }
+                })
+                ->where('fldcategory', 'LIKE', "Surgicals")
+                ->where('fldsav', 0)
+                ->paginate(10);
+        } elseif ($request->medType === "extra") {
+            $data['medicines'] = DB::table('tblpurchase')
+                ->selectRaw('fldtime,fldbillno,fldreference,fldvolunit,fldextraid as generic,fldbrand,fldsuppname,fldstockno,fldstockno,(fldtotalqty-fldreturnqty) as qty,flsuppcost,fldsellprice,(fldtotalqty-fldreturnqty)*fldsellprice as tot,flddepart')
+                ->join('tblextrabrand', 'tblextrabrand.fldbrandid', '=', 'tblpurchase.fldstockid')
+                ->where(function ($query) use ($request) {
+                    if ($request->hidden_supplier) {
+                        $query->where('fldsuppname', 'LIKE', $request->hidden_supplier);
+                    }
+                })
+
+//                ->where(function ($query) use ($request) {
+//                    if ($request->supplier) {
+//                        $query->where('fldsuppname', 'LIKE', $request->supplier);
+//                    }
+//                })
+                ->where(function ($query) use ($request) {
+                    if ($request->comp) {
+                        $query->where('fldcomp', 'LIKE', $request->comp);
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_from_date) {
+                        $query->where('fldtime', '>=', $request->eng_from_date . " 00:00:00");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_to_date) {
+                        $query->where('fldtime', '<=', $request->eng_to_date . " 23:59:59.999");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->itemRadio === 'all_items') {
+                        $query->where('fldstockid', "LIKE", "%");
+                    } elseif ($request->itemRadio === 'select_item') {
+                        $query->where('fldstockid', "LIKE", $request->item_name);
+                    }
+                })
+                ->where('fldcategory', 'LIKE', "Extra Items")
+                ->where('fldsav', 0)
+                ->paginate(10);
+        }
+
+        return $data['medicines'];
+    }
+
+    /**
+     * @param $request
+     * @return mixed
+     */
+    public function getPurchaseReportData($request)
+    {
+        if ($request->medType === "med") {
+            $data['medicines'] = DB::table('tblpurchase')
+                ->selectRaw('fldtime,fldbillno,fldreference,fldvolunit,flddrug as generic,fldbrand,fldsuppname,fldstockno,(tblpurchase.fldtotalqty - tblpurchase.fldreturnqty) as qty,flsuppcost,fldsellprice,(tblpurchase.fldtotalqty - tblpurchase.fldreturnqty) * fldsellprice as tot,flddosageform')
+                ->join('tblmedbrand', 'tblmedbrand.fldbrandid', '=', 'tblpurchase.fldstockid')
+                ->where(function ($query) use ($request) {
+                    if ($request->hidden_supplier) {
+                        $query->where('fldsuppname', 'LIKE', $request->hidden_supplier);
+                    }
+                })
+
+//                ->where(function ($query) use ($request) {
+//                    if ($request->supplier) {
+//                        $query->where('fldsuppname', 'LIKE', $request->supplier);
+//                    }
+//                })
+                ->where(function ($query) use ($request) {
+                    if ($request->comp) {
+                        $query->where('fldcomp', 'LIKE', $request->comp);
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_from_date) {
+                        $query->where('fldtime', '>=', $request->eng_from_date . " 00:00:00");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_to_date) {
+                        $query->where('fldtime', '<=', $request->eng_to_date . " 23:59:59.999");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->itemRadio === 'all_items') {
+                        $query->where('fldstockid', "LIKE", "%");
+                    } elseif ($request->itemRadio === 'select_item') {
+                        $query->where('fldstockid', "LIKE", $request->item_name);
+                    }
+                })
+                ->where('fldcategory', 'LIKE', "Medicines")
+                ->where('fldsav', 0)
+                ->get();
+
+
+        } elseif ($request->medType === "surg") {
+            $data['medicines'] = DB::table('tblpurchase')
+                ->selectRaw('fldtime,fldbillno,fldreference,fldvolunit,tblsurgbrand.fldsurgid as generic,fldbrand,fldsuppname,fldstockno,fldstockno,(fldtotalqty-fldreturnqty) as qty,flsuppcost,fldsellprice,(fldtotalqty-fldreturnqty)*fldsellprice as tot,tblsurgicals.fldsurgcateg')
+                ->join('tblsurgbrand', 'tblsurgbrand.fldbrandid', '=', 'tblpurchase.fldstockid')
+                ->join('tblsurgicals', 'tblsurgicals.fldsurgid', '=', 'tblsurgbrand.fldsurgid')
+                ->where(function ($query) use ($request) {
+                    if ($request->hidden_supplier) {
+                        $query->where('fldsuppname', 'LIKE', $request->hidden_supplier);
+                    }
+                })
+//                ->where(function ($query) use ($request) {
+//                    if ($request->supplier) {
+//                        $query->where('fldsuppname', 'LIKE', $request->supplier);
+//                    }
+//                })
+                ->where(function ($query) use ($request) {
+                    if ($request->comp) {
+                        $query->where('fldcomp', 'LIKE', $request->comp);
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_from_date) {
+                        $query->where('fldtime', '>=', $request->eng_from_date . " 00:00:00");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_to_date) {
+                        $query->where('fldtime', '<=', $request->eng_to_date . " 23:59:59.999");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->itemRadio === 'all_items') {
+                        $query->where('fldstockid', "LIKE", "%");
+                    } elseif ($request->itemRadio === 'select_item') {
+                        $query->where('fldstockid', "LIKE", $request->item_name);
+                    }
+                })
+                ->where('fldcategory', 'LIKE', "Surgicals")
+                ->where('fldsav', 0)
+                ->get();
+
+
+        } elseif ($request->medType === "extra") {
+            $data['medicines'] = DB::table('tblpurchase')
+                ->selectRaw('fldtime,fldbillno,fldreference,fldvolunit,fldextraid as generic,fldbrand,fldsuppname,fldstockno,fldstockno,(fldtotalqty-fldreturnqty) as qty,flsuppcost,fldsellprice,(fldtotalqty-fldreturnqty)*fldsellprice as tot,flddepart')
+                ->join('tblextrabrand', 'tblextrabrand.fldbrandid', '=', 'tblpurchase.fldstockid')
+                ->where(function ($query) use ($request) {
+                    if ($request->hidden_supplier) {
+                        $query->where('fldsuppname', 'LIKE', $request->hidden_supplier);
+                    }
+                })
+//                ->where(function ($query) use ($request) {
+//                    if ($request->supplier) {
+//                        $query->where('fldsuppname', 'LIKE', $request->supplier);
+//                    }
+//                })
+                ->where(function ($query) use ($request) {
+                    if ($request->comp) {
+                        $query->where('fldcomp', 'LIKE', $request->comp);
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_from_date) {
+                        $query->where('fldtime', '>=', $request->eng_from_date . " 00:00:00");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_to_date) {
+                        $query->where('fldtime', '<=', $request->eng_to_date . " 23:59:59.999");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->itemRadio === 'all_items') {
+                        $query->where('fldstockid', "LIKE", "%");
+                    } elseif ($request->itemRadio === 'select_item') {
+                        $query->where('fldstockid', "LIKE", $request->item_name);
+                    }
+                })
+                ->where('fldcategory', 'LIKE', "Extra Items")
+                ->where('fldsav', 0)
+                ->get();
+        }
+
+        return $data['medicines'];
+    }
+
+    /**
+     * @param $request
+     * @return mixed
+     */
+    public function getDispensingData($request)
+    {
+        if ($request->medType === "med") {
+            $data['medicines'] = DB::table('tblpatbilling')
+                ->selectRaw('fldencounterval,tblmedbrand.flddrug as generic,fldbrand,fldvolunit,flditemrate,flditemqty as qty,flddiscper,fldtaxper,fldditemamt as tot,fldtime,fldbillno,fldid')
+                ->join('tblmedbrand', 'tblmedbrand.fldbrandid', '=', 'tblpatbilling.flditemname')
+                /*->where(function ($query) use ($request) {
+                    if ($request->supplier) {
+                        $query->where('fldsuppname', 'LIKE', $request->supplier);
+                    }
+                })*/
+                ->where(function ($query) use ($request) {
+                    if ($request->comp) {
+                        $query->where('fldcomp', 'LIKE', $request->comp);
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_from_date) {
+                        $query->where('fldtime', '>=', $request->eng_from_date . " 00:00:00");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_to_date) {
+                        $query->where('fldtime', '<=', $request->eng_to_date . " 23:59:59.999");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->itemRadio === 'all_items') {
+                        $query->where('flditemname', "LIKE", "%");
+                    } elseif ($request->itemRadio === 'select_item') {
+                        $query->where('flditemname', "LIKE", $request->item_name);
+                    }
+                })
+                ->where('flditemtype', 'LIKE', "Medicines")
+                ->where('fldsave', 1)
+                ->paginate(10);
+
+        } elseif ($request->medType === "surg") {
+            $data['medicines'] = DB::table('tblpatbilling')
+                ->selectRaw('fldencounterval,tblsurgbrand.fldsurgid as generic,fldbrand,fldvolunit,flditemrate,flditemqty as qty,flddiscper,fldtaxper,fldditemamt as tot,fldtime,fldbillno,fldid')
+                ->join('tblsurgbrand', 'tblsurgbrand.fldbrandid', '=', 'tblpatbilling.flditemname')
+                /*->where(function ($query) use ($request) {
+                    if ($request->supplier) {
+                        $query->where('fldsuppname', 'LIKE', $request->supplier);
+                    }
+                })*/
+                ->where(function ($query) use ($request) {
+                    if ($request->comp) {
+                        $query->where('fldcomp', 'LIKE', $request->comp);
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_from_date) {
+                        $query->where('fldtime', '>=', $request->eng_from_date . " 00:00:00");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_to_date) {
+                        $query->where('fldtime', '<=', $request->eng_to_date . " 23:59:59.999");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->itemRadio === 'all_items') {
+                        $query->where('flditemname', "LIKE", "%");
+                    } elseif ($request->itemRadio === 'select_item') {
+                        $query->where('flditemname', "LIKE", $request->item_name);
+                    }
+                })
+                ->where('flditemtype', 'LIKE', "Surgicals")
+                ->where('fldsave', 1)
+                ->paginate(10);
+        } elseif ($request->medType === "extra") {
+            $data['medicines'] = DB::table('tblpatbilling')
+                ->selectRaw('fldencounterval,tblextrabrand.fldextraid as generic,fldbrand,fldvolunit,flditemrate,flditemqty as qty,flddiscper,fldtaxper,fldditemamt as tot,fldtime,fldbillno,fldid')
+                ->join('tblextrabrand', 'tblextrabrand.fldbrandid', '=', 'tblpatbilling.flditemname')
+                /*->where(function ($query) use ($request) {
+                    if ($request->supplier) {
+                        $query->where('fldsuppname', 'LIKE', $request->supplier);
+                    }
+                })*/
+                ->where(function ($query) use ($request) {
+                    if ($request->comp) {
+                        $query->where('fldcomp', 'LIKE', $request->comp);
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_from_date) {
+                        $query->where('fldtime', '>=', $request->eng_from_date . " 00:00:00");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_to_date) {
+                        $query->where('fldtime', '<=', $request->eng_to_date . " 23:59:59.999");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->itemRadio === 'all_items') {
+                        $query->where('flditemname', "LIKE", "%");
+                    } elseif ($request->itemRadio === 'select_item') {
+                        $query->where('flditemname', "LIKE", $request->item_name);
+                    }
+                })
+                ->where('flditemtype', 'LIKE', "Extra Items")
+                ->where('fldsave', 1)
+                ->paginate(10);
+        }
+        return $data['medicines'];
+    }
+
+    /**
+     * @param $request
+     * @return mixed
+     */
+    public function getDispensingDataReport($request)
+    {
+        if ($request->medType === "med") {
+            $data['medicines'] = DB::table('tblpatbilling')
+                ->selectRaw('fldencounterval,tblmedbrand.flddrug as generic,fldbrand,fldvolunit,flditemrate,flditemqty as qty,flddiscper,fldtaxper,fldditemamt as tot,fldtime,fldbillno,fldid')
+                ->join('tblmedbrand', 'tblmedbrand.fldbrandid', '=', 'tblpatbilling.flditemname')
+                /*->where(function ($query) use ($request) {
+                    if ($request->supplier) {
+                        $query->where('fldsuppname', 'LIKE', $request->supplier);
+                    }
+                })*/
+                ->where(function ($query) use ($request) {
+                    if ($request->comp) {
+                        $query->where('fldcomp', 'LIKE', $request->comp);
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_from_date) {
+                        $query->where('fldtime', '>=', $request->eng_from_date . " 00:00:00");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_to_date) {
+                        $query->where('fldtime', '<=', $request->eng_to_date . " 23:59:59.999");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->itemRadio === 'all_items') {
+                        $query->where('flditemname', "LIKE", "%");
+                    } elseif ($request->itemRadio === 'select_item') {
+                        $query->where('flditemname', "LIKE", $request->item_name);
+                    }
+                })
+                ->where('flditemtype', 'LIKE', "Medicines")
+                ->where('fldsave', 1)
+                ->get();
+
+        } elseif ($request->medType === "surg") {
+            $data['medicines'] = DB::table('tblpatbilling')
+                ->selectRaw('fldencounterval,tblsurgbrand.fldsurgid as generic,fldbrand,fldvolunit,flditemrate,flditemqty as qty,flddiscper,fldtaxper,fldditemamt as tot,fldtime,fldbillno,fldid')
+                ->join('tblsurgbrand', 'tblsurgbrand.fldbrandid', '=', 'tblpatbilling.flditemname')
+                /*->where(function ($query) use ($request) {
+                    if ($request->supplier) {
+                        $query->where('fldsuppname', 'LIKE', $request->supplier);
+                    }
+                })*/
+                ->where(function ($query) use ($request) {
+                    if ($request->comp) {
+                        $query->where('fldcomp', 'LIKE', $request->comp);
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_from_date) {
+                        $query->where('fldtime', '>=', $request->eng_from_date . " 00:00:00");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_to_date) {
+                        $query->where('fldtime', '<=', $request->eng_to_date . " 23:59:59.999");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->itemRadio === 'all_items') {
+                        $query->where('flditemname', "LIKE", "%");
+                    } elseif ($request->itemRadio === 'select_item') {
+                        $query->where('flditemname', "LIKE", $request->item_name);
+                    }
+                })
+                ->where('flditemtype', 'LIKE', "Surgicals")
+                ->where('fldsave', 1)
+                ->get();
+        } elseif ($request->medType === "extra") {
+            $data['medicines'] = DB::table('tblpatbilling')
+                ->selectRaw('fldencounterval,tblextrabrand.fldextraid as generic,fldbrand,fldvolunit,flditemrate,flditemqty as qty,flddiscper,fldtaxper,fldditemamt as tot,fldtime,fldbillno,fldid')
+                ->join('tblextrabrand', 'tblextrabrand.fldbrandid', '=', 'tblpatbilling.flditemname')
+                /*->where(function ($query) use ($request) {
+                    if ($request->supplier) {
+                        $query->where('fldsuppname', 'LIKE', $request->supplier);
+                    }
+                })*/
+                ->where(function ($query) use ($request) {
+                    if ($request->comp) {
+                        $query->where('fldcomp', 'LIKE', $request->comp);
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_from_date) {
+                        $query->where('fldtime', '>=', $request->eng_from_date . " 00:00:00");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_to_date) {
+                        $query->where('fldtime', '<=', $request->eng_to_date . " 23:59:59.999");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->itemRadio === 'all_items') {
+                        $query->where('flditemname', "LIKE", "%");
+                    } elseif ($request->itemRadio === 'select_item') {
+                        $query->where('flditemname', "LIKE", $request->item_name);
+                    }
+                })
+                ->where('flditemtype', 'LIKE', "Extra Items")
+                ->where('fldsave', 1)
+                ->get();
+        }
+
+        return $data['medicines'];
+    }
+
+    /**
+     * @param $request
+     * @return mixed
+     */
+    public function getUsedData($request)
+    {
+        if ($request->medType === "med") {
+            $data['medicines'] = DB::table('tblbulksale')
+                ->selectRaw('fldtarget,tblbulksale.fldcategory,flddrug as generic,fldbrand,fldvolunit,fldnetcost,(fldqtydisp-fldqtyret) as qty,fldnetcost*(fldqtydisp-fldqtyret) as tot,fldtime,fldreference,fldid ')
+                ->join('tblmedbrand', 'tblmedbrand.fldbrandid', '=', 'tblbulksale.fldstockid')
+                /*->where(function ($query) use ($request) {
+                    if ($request->supplier) {
+                        $query->where('fldsuppname', 'LIKE', $request->supplier);
+                    }
+                })*/
+                ->where(function ($query) use ($request) {
+                    if ($request->comp) {
+                        $query->where('fldcomp', 'LIKE', $request->comp);
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_from_date) {
+                        $query->where('fldtime', '>=', $request->eng_from_date . " 00:00:00");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_to_date) {
+                        $query->where('fldtime', '<=', $request->eng_to_date . " 23:59:59.999");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->itemRadio === 'all_items') {
+                        $query->where('fldstockid', "LIKE", "%");
+                    } elseif ($request->itemRadio === 'select_item') {
+                        $query->where('fldstockid', "LIKE", $request->item_name);
+                    }
+                })
+                ->where('tblbulksale.fldcategory', 'LIKE', "Medicines")
+                ->where('fldsave', 1)
+                ->paginate(10);
+
+        } elseif ($request->medType === "surg") {
+            $data['medicines'] = DB::table('tblbulksale')
+                ->selectRaw('fldtarget,tblbulksale.fldcategory,tblsurgbrand.fldsurgid as generic,fldbrand,fldvolunit,fldnetcost,(fldqtydisp-fldqtyret) as qty,fldnetcost*(fldqtydisp-fldqtyret) as tot,fldtime,fldreference,fldid')
+                ->join('tblsurgbrand', 'tblsurgbrand.fldbrandid', '=', 'tblbulksale.fldstockid')
+                /*->where(function ($query) use ($request) {
+                    if ($request->supplier) {
+                        $query->where('fldsuppname', 'LIKE', $request->supplier);
+                    }
+                })*/
+                ->where(function ($query) use ($request) {
+                    if ($request->comp) {
+                        $query->where('fldcomp', 'LIKE', $request->comp);
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_from_date) {
+                        $query->where('fldtime', '>=', $request->eng_from_date . " 00:00:00");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_to_date) {
+                        $query->where('fldtime', '<=', $request->eng_to_date . " 23:59:59.999");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->itemRadio === 'all_items') {
+                        $query->where('fldstockid', "LIKE", "%");
+                    } elseif ($request->itemRadio === 'select_item') {
+                        $query->where('fldstockid', "LIKE", $request->item_name);
+                    }
+                })
+                ->where('tblbulksale.fldcategory', 'LIKE', "Surgicals")
+                ->where('fldsave', 1)
+                ->paginate(10);
+        } elseif ($request->medType === "extra") {
+            $data['medicines'] = DB::table('tblbulksale')
+                ->selectRaw('fldtarget,tblbulksale.fldcategory,fldextraid as generic,fldbrand,fldvolunit,fldnetcost,(fldqtydisp-fldqtyret) as qty,fldnetcost*(fldqtydisp-fldqtyret) as tot,fldtime,fldreference,fldid')
+                ->join('tblextrabrand', 'tblextrabrand.fldbrandid', '=', 'tblbulksale.fldstockid')
+                /*->where(function ($query) use ($request) {
+                    if ($request->supplier) {
+                        $query->where('fldsuppname', 'LIKE', $request->supplier);
+                    }
+                })*/
+                ->where(function ($query) use ($request) {
+                    if ($request->comp) {
+                        $query->where('fldcomp', 'LIKE', $request->comp);
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_from_date) {
+                        $query->where('fldtime', '>=', $request->eng_from_date . " 00:00:00");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_to_date) {
+                        $query->where('fldtime', '<=', $request->eng_to_date . " 23:59:59.999");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->itemRadio === 'all_items') {
+                        $query->where('fldstockid', "LIKE", "%");
+                    } elseif ($request->itemRadio === 'select_item') {
+                        $query->where('fldstockid', "LIKE", $request->item_name);
+                    }
+                })
+                ->where('tblbulksale.fldcategory', 'LIKE', "Extra Items")
+                ->where('fldsave', 1)
+                ->paginate(10);
+        }
+        return $data['medicines'];
+    }
+
+    /**
+     * @param $request
+     * @return mixed
+     */
+    public function getUsedDataReport($request)
+    {
+        if ($request->medType === "med") {
+            $data['medicines'] = DB::table('tblbulksale')
+                ->selectRaw('fldtarget,tblbulksale.fldcategory,flddrug as generic,fldbrand,fldvolunit,fldnetcost,(fldqtydisp-fldqtyret) as qty,fldnetcost*(fldqtydisp-fldqtyret) as tot,fldtime,fldreference,fldid ')
+                ->join('tblmedbrand', 'tblmedbrand.fldbrandid', '=', 'tblbulksale.fldstockid')
+                /*->where(function ($query) use ($request) {
+                    if ($request->supplier) {
+                        $query->where('fldsuppname', 'LIKE', $request->supplier);
+                    }
+                })*/
+                ->where(function ($query) use ($request) {
+                    if ($request->comp) {
+                        $query->where('fldcomp', 'LIKE', $request->comp);
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_from_date) {
+                        $query->where('fldtime', '>=', $request->eng_from_date . " 00:00:00");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_to_date) {
+                        $query->where('fldtime', '<=', $request->eng_to_date . " 23:59:59.999");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->itemRadio === 'all_items') {
+                        $query->where('fldstockid', "LIKE", "%");
+                    } elseif ($request->itemRadio === 'select_item') {
+                        $query->where('fldstockid', "LIKE", $request->item_name);
+                    }
+                })
+                ->where('tblbulksale.fldcategory', 'LIKE', "Medicines")
+                ->where('fldsave', 1)
+                ->get();
+
+        } elseif ($request->medType === "surg") {
+            $data['medicines'] = DB::table('tblbulksale')
+                ->selectRaw('fldtarget,tblbulksale.fldcategory,tblsurgbrand.fldsurgid as generic,fldbrand,fldvolunit,fldnetcost,(fldqtydisp-fldqtyret) as qty,fldnetcost*(fldqtydisp-fldqtyret) as tot,fldtime,fldreference,fldid')
+                ->join('tblsurgbrand', 'tblsurgbrand.fldbrandid', '=', 'tblbulksale.fldstockid')
+                /*->where(function ($query) use ($request) {
+                    if ($request->supplier) {
+                        $query->where('fldsuppname', 'LIKE', $request->supplier);
+                    }
+                })*/
+                ->where(function ($query) use ($request) {
+                    if ($request->comp) {
+                        $query->where('fldcomp', 'LIKE', $request->comp);
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_from_date) {
+                        $query->where('fldtime', '>=', $request->eng_from_date . " 00:00:00");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_to_date) {
+                        $query->where('fldtime', '<=', $request->eng_to_date . " 23:59:59.999");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->itemRadio === 'all_items') {
+                        $query->where('fldstockid', "LIKE", "%");
+                    } elseif ($request->itemRadio === 'select_item') {
+                        $query->where('fldstockid', "LIKE", $request->item_name);
+                    }
+                })
+                ->where('tblbulksale.fldcategory', 'LIKE', "Surgicals")
+                ->where('fldsave', 1)
+                ->get();
+        } elseif ($request->medType === "extra") {
+            $data['medicines'] = DB::table('tblbulksale')
+                ->selectRaw('fldtarget,tblbulksale.fldcategory,fldextraid as generic,fldbrand,fldvolunit,fldnetcost,(fldqtydisp-fldqtyret) as qty,fldnetcost*(fldqtydisp-fldqtyret) as tot,fldtime,fldreference,fldid')
+                ->join('tblextrabrand', 'tblextrabrand.fldbrandid', '=', 'tblbulksale.fldstockid')
+                /*->where(function ($query) use ($request) {
+                    if ($request->supplier) {
+                        $query->where('fldsuppname', 'LIKE', $request->supplier);
+                    }
+                })*/
+                ->where(function ($query) use ($request) {
+                    if ($request->comp) {
+                        $query->where('fldcomp', 'LIKE', $request->comp);
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_from_date) {
+                        $query->where('fldtime', '>=', $request->eng_from_date . " 00:00:00");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->eng_to_date) {
+                        $query->where('fldtime', '<=', $request->eng_to_date . " 23:59:59.999");
+                    }
+                })
+                ->where(function ($query) use ($request) {
+                    if ($request->itemRadio === 'all_items') {
+                        $query->where('fldstockid', "LIKE", "%");
+                    } elseif ($request->itemRadio === 'select_item') {
+                        $query->where('fldstockid', "LIKE", $request->item_name);
+                    }
+                })
+                ->where('tblbulksale.fldcategory', 'LIKE', "Extra Items")
+                ->where('fldsave', 1)
+                ->get();
+        }
+
+        return $data['medicines'];
+    }
+
+    /**
+     * @param Request $request
+     */
+    public function transaction(Request $request)
+    {
+        $transaction = new InventoryTransactionReportExport($request->all());
+        ob_end_clean();
+        ob_start();
+        return \Excel::download($transaction, 'transaction.xlsx');
+//        return $transaction;
+    }
+
+    public  function filterData(Request $request){
+        if(!$request->type){
+            return \response()->json(['error' =>'Please check type!']);
+        }
+        $html='';
+        $count =1;
+        if($request->type=='med'){
+            $medicines = \DB::table('tblcode')->where(\DB::raw("fldcodename in(select fldcodename from tbldrug where flddrug in(select flddrug from tblmedbrand where fldbrandid in(select fldstockid from tblentry))) ORDER BY fldcodename "))->paginate(100)->onEachSide(1);;
+            if($medicines){
+                foreach ($medicines as $medicine){
+                    $count++;
+                    $html.='<tr>';
+                    $html.='<td class="p-2">';
+                    $html.='<input type="radio" name="item_name" id="'.$count.'-item-id" value="'.$medicine->fldcodename.'"></td>';
+                    $html.='<td class="p-2"><label for="'.$count.'-item-id">'.$medicine->fldcodename.'</label></td>';
+                    $html.='</tr>';
+                }
+
+            }
+            $paginate='<tr><td colspan="10">'.$medicines->appends(request()->all())->links().'</td></tr>';
+            return  \response()->json(['html' => $html,'paginate' =>$paginate]);
+        }
+        if ($request->type=='surg'){
+
+            $medicines = SurgBrand::select('fldsurgid')->paginate(100)->onEachSide(1);
+            if($medicines){
+                foreach ($medicines as $medicine){
+                    $count++;
+                    $html.='<tr>';
+                    $html.='<td class="p-2">';
+                    $html.='<input type="radio" name="item_name" id="'.$count.'-item-id" value="'.$medicine->fldsurgid.'"></td>';
+                    $html.='<td class="p-2"><label for="'.$count.'-item-id">'.$medicine->fldsurgid.'</label></td>';
+                    $html.='</tr>';
+                }
+
+            }
+            $paginate='<tr><td colspan="10">'.$medicines->appends(request()->all())->links().'</td></tr>';
+            return  \response()->json(['html' => $html,'paginate' =>$paginate]);
+
+        }
+        if ($request->type=='extra'){
+
+            $medicines = ExtraBrand::select('fldextraid')->paginate(100)->onEachSide(1);
+//                \DB::table('tblcode')->where(\DB::raw("fldcodename in(select fldcodename from tbldrug where flddrug in(select fldextraid from tblextrabrand where fldbrandid in(select fldstockid from tblentry))) ORDER BY fldcodename "))->paginate(100)->onEachSide(1);;
+            if($medicines){
+                foreach ($medicines as $medicine){
+                    $count++;
+                    $html.='<tr>';
+                    $html.='<td class="p-2">';
+                    $html.='<input type="radio" name="item_name" id="'.$count.'-item-id" value="'.$medicine->fldextraid.'"></td>';
+                    $html.='<td class="p-2"><label for="'.$count.'-item-id">'.$medicine->fldextraid.'</label></td>';
+                    $html.='</tr>';
+                }
+
+            }
+        }
+        $paginate='<tr><td colspan="10">'.$medicines->appends(request()->all())->links().'</td></tr>';
+        return  \response()->json(['html' => $html,'paginate' =>$paginate]);
+
+    }
+}

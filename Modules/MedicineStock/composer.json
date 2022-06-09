@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/medicinestock",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\MedicineStock\\Providers\\MedicineStockServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\MedicineStock\\": ""
+        }
+    }
+}

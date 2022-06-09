@@ -1,0 +1,13 @@
+{
+    "name": "Bedoccupancy",
+    "alias": "bedoccupancy",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Bedoccupancy\\Providers\\BedoccupancyServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

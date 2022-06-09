@@ -1,0 +1,13 @@
+{
+    "name": "FollowUp",
+    "alias": "followup",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\FollowUp\\Providers\\FollowUpServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/bloodbank",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\BloodBank\\Providers\\BloodBankServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\BloodBank\\": ""
+        }
+    }
+}

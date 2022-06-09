@@ -1,0 +1,13 @@
+{
+    "name": "ItemMaster",
+    "alias": "itemmaster",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\ItemMaster\\Providers\\ItemMasterServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

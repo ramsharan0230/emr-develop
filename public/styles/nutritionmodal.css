@@ -1,0 +1,670 @@
+.padding-none {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.f-btn {
+    background: linear-gradient(to bottom, #fbfbfb 5%, #f3f1f1 100%) ! important;
+}
+
+.box__input > input,
+.box__input > select {
+    width: 99%;
+    border: 1px solid #a9a8a8;
+    outline: none;
+    border-radius: 3px;
+    color: #000;
+    font-size: 15px;
+    padding: 4px;
+}
+
+.box__label > label {
+    padding: 3px 11px;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #000;
+    font-size: 15px;
+    border: 1px solid #a9a8a8;
+    font-weight: 400;
+}
+
+.btn {
+    border: 1px solid #c1c1c1 !important;
+}
+
+/*.modal .form-group label {
+    margin-right: 5px;
+}*/
+
+/*patient__detail_box*/
+
+.group__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.group__box > .box__label {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 21%;
+    flex: 0 0 21%;
+}
+
+.group__box > .box__input {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 69%;
+    flex: 0 0 69%;
+}
+
+.group__box > .box__icon {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 10%;
+    flex: 0 0 10%;
+}
+
+.group__box.half_box > .box__label {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 37%;
+    flex: 0 0 37%;
+}
+
+.group__box.half_box > .box__input {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 63%;
+    flex: 0 0 63%;
+}
+
+.group__box.half_box2 > .box__label {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 37%;
+    flex: 0 0 37%;
+}
+
+.group__box.half_box2 > .box__input {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 53%;
+    flex: 0 0 53%;
+}
+
+.group__box.half_box2 > .box__icon {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 10%;
+    flex: 0 0 10%;
+}
+
+.group__box.half_box3 > .box__label {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 37%;
+    flex: 0 0 37%;
+}
+
+.group__box.half_box3 > .box__input {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 28%;
+    flex: 0 0 28%;
+}
+
+.group__box.half_box3 > .box__input:nth-child(2) {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+}
+
+.group__box.half_box3 > .box__icon {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 10%;
+    flex: 0 0 10%;
+}
+
+.group__box.single_box > .box__input {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+}
+
+.box__input > select {
+    height: 26px;
+}
+
+.box__icon > a > img,
+.box__icon > img,
+.box__icon_append > a > img,
+.box__icon > a > i {
+    width: 18px;
+    height: 18px;
+    margin-left: 3px;
+}
+
+.box__input_for_append {
+    position: relative;
+}
+
+.box__input_for_append > .box__icon_append {
+    position: absolute;
+    top: 0;
+    right: 6px;
+}
+
+/*select.form-input {
+    padding: 0px;
+    width: 88% ;
+}*/
+
+.box__input > select {
+    height: 30px ! important;
+}
+
+.inpatient__profile_heading > h3.inpatient__profile_title {
+    margin: 5;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 11%;
+    flex: 0 0 11%;
+}
+
+form {
+    margin-block-end: 0;
+}
+
+table {
+    width: 100%;
+}
+
+input[type="date"] {
+    position: relative;
+}
+/* create a new arrow, because we are going to mess up the native one
+see "List of symbols" below if you want another, you could also try to add a font-awesome icon.. */
+
+input[type="date"]:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f073";
+    color: #939393;
+    padding: 0 5px;
+    font-size: 15px;
+}
+/* change color of symbol on hover */
+
+input[type="date"]:hover:after {
+    color: #bf1400;
+}
+/* make the native arrow invisible and stretch it over the whole field so you can click anywhere in the input field to trigger the native datepicker*/
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    color: transparent;
+    background: transparent;
+}
+/* adjust increase/decrease button */
+
+input[type="date"]::-webkit-inner-spin-button {
+    z-index: 1;
+}
+/* adjust clear button */
+
+input[type="date"]::-webkit-clear-button {
+    z-index: 1;
+}
+
+.content-border {
+    border-left: 1px solid #a7a5a3;
+    border-right: 1px solid #a7a5a3;
+    border-bottom: 1px solid #a7a5a3;
+    border-top: none;
+    min-height: 260px
+}
+
+.padding-right {
+    padding-right: 0 ! important;
+}
+
+.label-width {
+    width: 106px;
+}
+
+.label-width-second {
+    width: 88px;
+}
+
+.label-width-third {
+    width: 69px;
+}
+
+.label-width-fourth {
+    width: 92px;
+}
+
+.select-year {
+    width: 76px !important;
+}
+/*modal css*/
+/*
+.modal-content {
+    background-color: #eceaea;
+}
+
+.modal-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0px !important;
+    background-color: #333232;
+    color: #fff;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: calc(.3rem - 1px);
+    border-top-right-radius: calc(.3rem - 1px);
+}
+
+p {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    line-height: 19px;
+}
+
+.modal-header .close {
+    padding: 0rem 0rem;
+    color: #f33737;
+    margin: 0rem -1rem -1rem auto;
+}
+
+.modal-title {
+    margin-right: 70%;
+    padding: 4px;
+    font-size: 15px;
+}
+
+.modal-label {
+    border: none;
+    padding: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.modal-footer {
+    margin-top: -2%;
+}*/
+/*modal body*/
+
+/*form group*/
+
+.form-group {
+    margin-bottom: 5px !important;
+    display: flex;
+}
+
+.form-group label {
+    border: 1px solid #a7a5a3;
+    padding: 0;
+    margin-right: 10px;
+    margin-bottom: 0;
+    border-radius: 3px;
+}
+
+.form-group input {
+    border: 1px solid #a7a5a3;
+    border-radius: 3px;
+    line-height: 26px;
+}
+
+.form-group img {
+    margin-left: 7%;
+}
+
+.form label {
+    border: 1px solid #a7a5a3;
+    padding: 0;
+    margin-right: 10px;
+    margin-bottom: 0;
+    border-radius: 3px;
+}
+
+.form input {
+    border: 1px solid #a7a5a3;
+    border-radius: 3px;
+    line-height: 26px;
+}
+
+.form {
+    width: 100%;
+}
+/*form group ends*/
+/*buttons*/
+
+button {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.button {
+    display: inline-block;
+    margin: 2px;
+    width: 37px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.btn-deafult {
+    border: 1px solid #b9b9b9;
+    background-color: #efeeee;
+}
+/*button ends*/
+/*table start*/
+
+table {
+    width: 100%;
+}
+
+td {
+    text-align: left;
+    padding-top: 12px;
+}
+/*modal css*/
+
+/*.modal-body {
+    background-color: #efebe7;
+}*/
+/*user profile css*/
+
+.user-input-width {
+    width: 100% !important;
+}
+
+.tableuserprofile {
+    border: 1px solid #c1c1c1;
+    height: 452px;
+    width: 250px;
+    max-width: 500px;
+    overflow: scroll;
+    background-color: white;
+}
+
+.th-userprofile {
+    background-color: #efebe7;
+    padding: 4px;
+    border: 1px solid #c1c1c1;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.td-userprofile {
+    border: 1px solid #c1c1c1;
+}
+
+.label-width-userprofile {
+    width: 173px;
+}
+
+.input-width-userprofile {
+    width: 70% !important;
+}
+
+.select-input-userprofile {
+    width: 70% !important;
+}
+
+.f-input-date-userprofile {
+    outline: none!important;
+    border-radius: 3px;
+    width: 143px;
+    height: 30px;
+    padding: 6px;
+    font-size: 12px;
+    border: 1px solid #939393;
+    color: #fff;
+}
+
+.action-fluids-userprofile {
+    margin-bottom: 9px;
+}
+
+.box__label__checkbox {
+    margin-left: -6%;
+    margin-top: 4px;
+}
+
+.box__label__checkbox2 {
+    margin-left: 9%;
+    margin-top: 7px;
+}
+
+.group__box__userprofile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: -11px;
+}
+/*computer access css*/
+
+.th-computer {
+    background-color: #efebe7;
+    padding: 4px;
+    border: 1px solid #c1c1c1;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.td-computer {
+    border: 1px solid #c1c1c1;
+}
+
+.tablecomputer {
+    border: 1px solid #c1c1c1;
+    height: 200px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: scroll;
+    background-color: white;
+}
+
+.label-width-computer {
+    width: 116px !important;
+}
+
+.input-width-computer {
+    width: 131px !important;
+}
+
+.input-small-computer {
+    width: 77% !important;
+}
+
+.label__computer {
+    width: 131px;
+    padding: 14px !important;
+}
+
+.group__box__top {
+    margin-top: 9px;
+}
+/*nutritional requirement css*/
+
+.label-width-nutri {
+    width: 120px !important;
+}
+
+.input-nutri {
+    width: 172px !important;
+}
+
+.input-nutri-big {
+    width: 200px !important;
+}
+
+.img-flip {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+/*departmental examination css*/
+
+.label-width-depart {
+    width: 120px !important;
+}
+
+.tabledepart {
+    border: 1px solid #c1c1c1;
+    height: 150px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: scroll;
+    background-color: white;
+}
+/*trainge parameter css*/
+
+.label-width-complain {
+    width: 120px !important;
+}
+
+.tablecomplain {
+    border: 1px solid #c1c1c1;
+    height: 200px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: scroll;
+    background-color: white;
+}
+
+.label__complain {
+    width: 100%;
+    padding: 14px !important;
+}
+/*symptom list css*/
+
+.label-width-symptom {
+    width: 120px !important;
+}
+
+.btn-symptom {
+    width: 100%;
+}
+
+.box__btn__symptom {
+    flex: 0 0 33%;
+}
+
+textarea {
+    width: 100%;
+}
+/*table css*/
+.table-scroll {
+    position:relative;
+    max-width:600px;
+    margin:auto;
+    overflow:hidden;
+    border: 1px solid #c1c1c1;
+}
+.table-wrap {
+    width:100%;
+    overflow:auto;
+}
+.table-scroll table {
+    width:100%;
+    margin:auto;
+    border-collapse:separate;
+    border-spacing:0;
+}
+.table-scroll th, .table-scroll td {
+    padding:5px 10px;
+    border: 1px solid #c1c1c1;
+    background:#fff;
+    white-space:nowrap;
+    vertical-align:top;
+}
+.table-scroll thead, .table-scroll tfoot {
+    background:#f9f9f9;
+}
+.clone {
+    position:absolute;
+    top:0;
+    left:0;
+    pointer-events:none;
+}
+.clone th, .clone td {
+    visibility:hidden
+}
+.clone td, .clone th {
+    border-color:transparent
+}
+.clone tbody th {
+    visibility:visible;
+    color:red;
+}
+.clone .fixed-side {
+    border: 1px solid #c1c1c1;
+    background:#eee;
+    visibility:visible;
+}
+.clone thead{
+    background-color: #efebe7;
+}
+
+/*food -mixture css*/
+
+.label-width-food-mixture {
+    width: 130px !important;
+}
+
+.table-food-mixture {
+    border: 1px solid #c1c1c1;
+    height: 150px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: scroll;
+    background-color: white;
+}
+.form-input-food{
+    width: 97% !important ;
+}
+.label-width-food-small{
+    width: 90% !important;
+}
+.textarea-food-mixture{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 5px;
+}
+.th-food-mixture{
+    background-color: #efebe7;
+    padding: 4px;
+    border: 1px solid #c1c1c1;
+    font-size: 15px;
+    font-weight: 400;
+}
+.td-food-mixture{
+    padding: 4px;
+    border: 1px solid #c1c1c1;
+}
+.form-input-food-mix{
+    width: 74% !important;
+}

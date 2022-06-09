@@ -1,0 +1,13 @@
+{
+    "name": "OperationTheatre",
+    "alias": "operationtheatre",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\OperationTheatre\\Providers\\OperationTheatreServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

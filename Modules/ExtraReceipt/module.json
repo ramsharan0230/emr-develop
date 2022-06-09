@@ -1,0 +1,13 @@
+{
+    "name": "ExtraReceipt",
+    "alias": "extrareceipt",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\ExtraReceipt\\Providers\\ExtraReceiptServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

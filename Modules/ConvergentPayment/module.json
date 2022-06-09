@@ -1,0 +1,13 @@
+{
+    "name": "ConvergentPayment",
+    "alias": "convergentpayment",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\ConvergentPayment\\Providers\\ConvergentPaymentServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

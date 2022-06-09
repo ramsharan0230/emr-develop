@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<title>label</title>
+
+</head>
+
+
+<body>
+
+
+<table class='header_table' style="text-align: left; width: 100%; font-size:10pt;" border="0" cellpadding="2" cellspacing="0" id="headtable">
+
+
+
+<tr>
+   
+  <td colspan="1" rowspan="4" style="vertical-align: middle; width: 35%; text-align: center;">
+<img style="width: 80px; height: 80px;" alt="" src=$BarCode[{PatientNo}]></td>
+
+
+
+<td> 
+   
+<b>Cogent Health Pvt. Ltd.</b> 
+
+   <br>
+  NAME:{PatientName} ({PatientNo})
+
+  <br> 
+EncID:{Encounter}
+
+
+  
+<br>
+  AGE/SEX:{Age/Sex}
+  
+<br>
+  ADD: {PatientAddress} 
+ 
+ <br>
+  PH: {ContactNo}
+
+  <br>
+ GUARDIAN: {PatientGuardian} ({PatientRelation})
+
+  <br>
+  DEPT: $SQLArray[SELECT=fldconsultname;TABLE=tblconsult;WHERE=fldencounterval='{Encounter}']
+ 
+ <br>
+  USER: {CurrentUser} {CurrentDate} {CurrentTime}
+
+</td>
+
+   
+</tr>
+
+
+
+</table>
+
+
+</body>

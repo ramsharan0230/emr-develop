@@ -1,0 +1,11 @@
+'fldstockno' : fldstockno,
+'fldstockid' : fldstockid,
+'fldcategory' : fldcategory,
+'fldqty' : fldqty,
+'fldcost' : fldcost,
+'fldsuppname' : fldsuppname,
+'flduserid' : flduserid,
+'fldtime' : fldtime,
+'fldsave' : fldsave,
+'fldnewreference' : fldnewreference,
+'xyz' : xyz

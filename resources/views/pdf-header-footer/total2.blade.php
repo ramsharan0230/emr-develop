@@ -1,0 +1,2 @@
+<p>Printed By: {{ Auth::guard('admin_frontend')->user()->firstname }} {{ Auth::guard('admin_frontend')->user()->lastname }}
+<br>Printed Date Time: {{ \Carbon\Carbon::now()->toDateString() }}({{ \App\Utils\Helpers::dateToNepali(date('Y-m-d H:i:s')) }})</p>

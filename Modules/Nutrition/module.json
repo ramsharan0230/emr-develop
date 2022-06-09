@@ -1,0 +1,13 @@
+{
+    "name": "Nutrition",
+    "alias": "nutrition",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Nutrition\\Providers\\NutritionServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

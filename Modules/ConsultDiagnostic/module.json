@@ -1,0 +1,13 @@
+{
+    "name": "ConsultDiagnostic",
+    "alias": "consultdiagnostic",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\ConsultDiagnostic\\Providers\\ConsultDiagnosticServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

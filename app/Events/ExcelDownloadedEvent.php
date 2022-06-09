@@ -1,0 +1,58 @@
+<?php
+
+namespace App\Events;
+
+use Carbon\Carbon;
+use Illuminate\Broadcasting\Channel;
+use Illuminate\Queue\SerializesModels;
+use Illuminate\Broadcasting\PrivateChannel;
+use Illuminate\Broadcasting\PresenceChannel;
+use Illuminate\Foundation\Events\Dispatchable;
+use Illuminate\Broadcasting\InteractsWithSockets;
+use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
+use Illuminate\Support\Facades\Log;
+
+class ExcelDownloadedEvent implements ShouldBroadcast
+{
+    use Dispatchable, InteractsWithSockets, SerializesModels;
+
+    /**
+     * Create a new event instance.
+     *
+     * @return void
+     */
+    public $user, $url ;
+    public function __construct($user ,$url=null)
+    {
+        $this->user = $user ;
+        $this->url = $url ;
+    }
+
+    public function broadcastWith()
+    {
+        return[
+            'user' => $this->user->name ,
+            'message' => 'Download is completed  ',
+            'time' => Carbon::now()->diffForHumans(),
+            'route' => "<a href='".$this->url. "' target='_blank'> Click Here For Download </a>",
+        ];
+    }
+
+    // public function broadcastAs()
+    // {
+    //     return 'excel.download';
+    // }
+
+    /**
+     * Get the channels the event should broadcast on.
+     *
+     * @return \Illuminate\Broadcasting\Channel|array
+     */
+    public function broadcastOn()
+    {
+        $channel = null ;
+        $channel [] = new PrivateChannel('excelreadychanndel.'.$this->user->id, );
+        return $channel ;
+        Log::info("cool broadcasting is successfully executing");
+    }
+}

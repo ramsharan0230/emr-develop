@@ -1,0 +1,13 @@
+{
+    "name": "ABCAnalysis",
+    "alias": "abcanalysis",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\ABCAnalysis\\Providers\\ABCAnalysisServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
